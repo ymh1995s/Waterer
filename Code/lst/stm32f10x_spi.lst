@@ -1,0 +1,1103 @@
+
+C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o:     file format elf32-littlearm
+C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+
+Disassembly of section .text.SPI_Init:
+
+00000000 <SPI_Init>:
+SPI_Init():
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:189
+  /* Set SSM, SSI and MSTR bits according to SPI_Mode and SPI_NSS values */
+  /* Set LSBFirst bit according to SPI_FirstBit value */
+  /* Set BR bits according to SPI_BaudRatePrescaler value */
+  /* Set CPOL bit according to SPI_CPOL value */
+  /* Set CPHA bit according to SPI_CPHA value */
+  tmpreg |= (uint16_t)((uint32_t)SPI_InitStruct->SPI_Direction | SPI_InitStruct->SPI_Mode |
+   0:	880a      	ldrh	r2, [r1, #0]
+   2:	884b      	ldrh	r3, [r1, #2]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:159
+  * @param  SPI_InitStruct: pointer to a SPI_InitTypeDef structure that
+  *         contains the configuration information for the specified SPI peripheral.
+  * @retval None
+  */
+void SPI_Init(SPI_TypeDef* SPIx, SPI_InitTypeDef* SPI_InitStruct)
+{
+   4:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:189
+  /* Set SSM, SSI and MSTR bits according to SPI_Mode and SPI_NSS values */
+  /* Set LSBFirst bit according to SPI_FirstBit value */
+  /* Set BR bits according to SPI_BaudRatePrescaler value */
+  /* Set CPOL bit according to SPI_CPOL value */
+  /* Set CPHA bit according to SPI_CPHA value */
+  tmpreg |= (uint16_t)((uint32_t)SPI_InitStruct->SPI_Direction | SPI_InitStruct->SPI_Mode |
+   6:	4313      	orrs	r3, r2
+   8:	888a      	ldrh	r2, [r1, #4]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:178
+  assert_param(IS_SPI_FIRST_BIT(SPI_InitStruct->SPI_FirstBit));
+  assert_param(IS_SPI_CRC_POLYNOMIAL(SPI_InitStruct->SPI_CRCPolynomial));
+
+/*---------------------------- SPIx CR1 Configuration ------------------------*/
+  /* Get the SPIx CR1 value */
+  tmpreg = SPIx->CR1;
+   a:	8804      	ldrh	r4, [r0, #0]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:189
+  /* Set SSM, SSI and MSTR bits according to SPI_Mode and SPI_NSS values */
+  /* Set LSBFirst bit according to SPI_FirstBit value */
+  /* Set BR bits according to SPI_BaudRatePrescaler value */
+  /* Set CPOL bit according to SPI_CPOL value */
+  /* Set CPHA bit according to SPI_CPHA value */
+  tmpreg |= (uint16_t)((uint32_t)SPI_InitStruct->SPI_Direction | SPI_InitStruct->SPI_Mode |
+   c:	4313      	orrs	r3, r2
+   e:	88ca      	ldrh	r2, [r1, #6]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:180
+
+/*---------------------------- SPIx CR1 Configuration ------------------------*/
+  /* Get the SPIx CR1 value */
+  tmpreg = SPIx->CR1;
+  /* Clear BIDIMode, BIDIOE, RxONLY, SSM, SSI, LSBFirst, BR, MSTR, CPOL and CPHA bits */
+  tmpreg &= CR1_CLEAR_Mask;
+  10:	f404 5441 	and.w	r4, r4, #12352	; 0x3040
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:189
+  /* Set SSM, SSI and MSTR bits according to SPI_Mode and SPI_NSS values */
+  /* Set LSBFirst bit according to SPI_FirstBit value */
+  /* Set BR bits according to SPI_BaudRatePrescaler value */
+  /* Set CPOL bit according to SPI_CPOL value */
+  /* Set CPHA bit according to SPI_CPHA value */
+  tmpreg |= (uint16_t)((uint32_t)SPI_InitStruct->SPI_Direction | SPI_InitStruct->SPI_Mode |
+  14:	4313      	orrs	r3, r2
+  16:	890a      	ldrh	r2, [r1, #8]
+  18:	4313      	orrs	r3, r2
+  1a:	894a      	ldrh	r2, [r1, #10]
+  1c:	4313      	orrs	r3, r2
+  1e:	898a      	ldrh	r2, [r1, #12]
+  20:	4313      	orrs	r3, r2
+  22:	89ca      	ldrh	r2, [r1, #14]
+  24:	4313      	orrs	r3, r2
+  26:	431c      	orrs	r4, r3
+  28:	b2a4      	uxth	r4, r4
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:194
+                  SPI_InitStruct->SPI_DataSize | SPI_InitStruct->SPI_CPOL |  
+                  SPI_InitStruct->SPI_CPHA | SPI_InitStruct->SPI_NSS |  
+                  SPI_InitStruct->SPI_BaudRatePrescaler | SPI_InitStruct->SPI_FirstBit);
+  /* Write to SPIx CR1 */
+  SPIx->CR1 = tmpreg;
+  2a:	8004      	strh	r4, [r0, #0]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:197
+  
+  /* Activate the SPI mode (Reset I2SMOD bit in I2SCFGR register) */
+  SPIx->I2SCFGR &= SPI_Mode_Select;		
+  2c:	8b83      	ldrh	r3, [r0, #28]
+  2e:	f423 6300 	bic.w	r3, r3, #2048	; 0x800
+  32:	041b      	lsls	r3, r3, #16
+  34:	0c1b      	lsrs	r3, r3, #16
+  36:	8383      	strh	r3, [r0, #28]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:201
+
+/*---------------------------- SPIx CRCPOLY Configuration --------------------*/
+  /* Write to SPIx CRCPOLY */
+  SPIx->CRCPR = SPI_InitStruct->SPI_CRCPolynomial;
+  38:	8a0b      	ldrh	r3, [r1, #16]
+  3a:	8203      	strh	r3, [r0, #16]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:202
+}
+  3c:	bd10      	pop	{r4, pc}
+  3e:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.SPI_StructInit:
+
+00000000 <SPI_StructInit>:
+SPI_StructInit():
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:374
+  */
+void SPI_StructInit(SPI_InitTypeDef* SPI_InitStruct)
+{
+/*--------------- Reset SPI init structure parameters values -----------------*/
+  /* Initialize the SPI_Direction member */
+  SPI_InitStruct->SPI_Direction = SPI_Direction_2Lines_FullDuplex;
+   0:	2300      	movs	r3, #0
+   2:	8003      	strh	r3, [r0, #0]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:376
+  /* initialize the SPI_Mode member */
+  SPI_InitStruct->SPI_Mode = SPI_Mode_Slave;
+   4:	8043      	strh	r3, [r0, #2]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:378
+  /* initialize the SPI_DataSize member */
+  SPI_InitStruct->SPI_DataSize = SPI_DataSize_8b;
+   6:	8083      	strh	r3, [r0, #4]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:380
+  /* Initialize the SPI_CPOL member */
+  SPI_InitStruct->SPI_CPOL = SPI_CPOL_Low;
+   8:	80c3      	strh	r3, [r0, #6]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:382
+  /* Initialize the SPI_CPHA member */
+  SPI_InitStruct->SPI_CPHA = SPI_CPHA_1Edge;
+   a:	8103      	strh	r3, [r0, #8]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:384
+  /* Initialize the SPI_NSS member */
+  SPI_InitStruct->SPI_NSS = SPI_NSS_Hard;
+   c:	8143      	strh	r3, [r0, #10]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:386
+  /* Initialize the SPI_BaudRatePrescaler member */
+  SPI_InitStruct->SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_2;
+   e:	8183      	strh	r3, [r0, #12]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:388
+  /* Initialize the SPI_FirstBit member */
+  SPI_InitStruct->SPI_FirstBit = SPI_FirstBit_MSB;
+  10:	81c3      	strh	r3, [r0, #14]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:390
+  /* Initialize the SPI_CRCPolynomial member */
+  SPI_InitStruct->SPI_CRCPolynomial = 7;
+  12:	f04f 0307 	mov.w	r3, #7	; 0x7
+  16:	8203      	strh	r3, [r0, #16]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:391
+}
+  18:	4770      	bx	lr
+  1a:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.I2S_StructInit:
+
+00000000 <I2S_StructInit>:
+I2S_StructInit():
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:402
+  */
+void I2S_StructInit(I2S_InitTypeDef* I2S_InitStruct)
+{
+/*--------------- Reset I2S init structure parameters values -----------------*/
+  /* Initialize the I2S_Mode member */
+  I2S_InitStruct->I2S_Mode = I2S_Mode_SlaveTx;
+   0:	2200      	movs	r2, #0
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:414
+  
+  /* Initialize the I2S_MCLKOutput member */
+  I2S_InitStruct->I2S_MCLKOutput = I2S_MCLKOutput_Disable;
+  
+  /* Initialize the I2S_AudioFreq member */
+  I2S_InitStruct->I2S_AudioFreq = I2S_AudioFreq_Default;
+   2:	2302      	movs	r3, #2
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:402
+  */
+void I2S_StructInit(I2S_InitTypeDef* I2S_InitStruct)
+{
+/*--------------- Reset I2S init structure parameters values -----------------*/
+  /* Initialize the I2S_Mode member */
+  I2S_InitStruct->I2S_Mode = I2S_Mode_SlaveTx;
+   4:	8002      	strh	r2, [r0, #0]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:405
+  
+  /* Initialize the I2S_Standard member */
+  I2S_InitStruct->I2S_Standard = I2S_Standard_Phillips;
+   6:	8042      	strh	r2, [r0, #2]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:408
+  
+  /* Initialize the I2S_DataFormat member */
+  I2S_InitStruct->I2S_DataFormat = I2S_DataFormat_16b;
+   8:	8082      	strh	r2, [r0, #4]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:411
+  
+  /* Initialize the I2S_MCLKOutput member */
+  I2S_InitStruct->I2S_MCLKOutput = I2S_MCLKOutput_Disable;
+   a:	80c2      	strh	r2, [r0, #6]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:414
+  
+  /* Initialize the I2S_AudioFreq member */
+  I2S_InitStruct->I2S_AudioFreq = I2S_AudioFreq_Default;
+   c:	6083      	str	r3, [r0, #8]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:417
+  
+  /* Initialize the I2S_CPOL member */
+  I2S_InitStruct->I2S_CPOL = I2S_CPOL_Low;
+   e:	8182      	strh	r2, [r0, #12]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:418
+}
+  10:	4770      	bx	lr
+  12:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.SPI_Cmd:
+
+00000000 <SPI_Cmd>:
+SPI_Cmd():
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:432
+void SPI_Cmd(SPI_TypeDef* SPIx, FunctionalState NewState)
+{
+  /* Check the parameters */
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  if (NewState != DISABLE)
+   0:	b121      	cbz	r1, c <SPI_Cmd+0xc>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:435
+  {
+    /* Enable the selected SPI peripheral */
+    SPIx->CR1 |= CR1_SPE_Set;
+   2:	8803      	ldrh	r3, [r0, #0]
+   4:	b29b      	uxth	r3, r3
+   6:	f043 0340 	orr.w	r3, r3, #64	; 0x40
+   a:	e004      	b.n	16 <SPI_Cmd+0x16>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:440
+  }
+  else
+  {
+    /* Disable the selected SPI peripheral */
+    SPIx->CR1 &= CR1_SPE_Reset;
+   c:	8803      	ldrh	r3, [r0, #0]
+   e:	f023 0340 	bic.w	r3, r3, #64	; 0x40
+  12:	041b      	lsls	r3, r3, #16
+  14:	0c1b      	lsrs	r3, r3, #16
+  16:	8003      	strh	r3, [r0, #0]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:442
+  }
+}
+  18:	4770      	bx	lr
+  1a:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.I2S_Cmd:
+
+00000000 <I2S_Cmd>:
+I2S_Cmd():
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:456
+void I2S_Cmd(SPI_TypeDef* SPIx, FunctionalState NewState)
+{
+  /* Check the parameters */
+  assert_param(IS_SPI_23_PERIPH(SPIx));
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  if (NewState != DISABLE)
+   0:	b121      	cbz	r1, c <I2S_Cmd+0xc>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:459
+  {
+    /* Enable the selected SPI peripheral (in I2S mode) */
+    SPIx->I2SCFGR |= I2SCFGR_I2SE_Set;
+   2:	8b83      	ldrh	r3, [r0, #28]
+   4:	b29b      	uxth	r3, r3
+   6:	f443 6380 	orr.w	r3, r3, #1024	; 0x400
+   a:	e004      	b.n	16 <I2S_Cmd+0x16>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:464
+  }
+  else
+  {
+    /* Disable the selected SPI peripheral (in I2S mode) */
+    SPIx->I2SCFGR &= I2SCFGR_I2SE_Reset;
+   c:	8b83      	ldrh	r3, [r0, #28]
+   e:	f423 6380 	bic.w	r3, r3, #1024	; 0x400
+  12:	041b      	lsls	r3, r3, #16
+  14:	0c1b      	lsrs	r3, r3, #16
+  16:	8383      	strh	r3, [r0, #28]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:466
+  }
+}
+  18:	4770      	bx	lr
+  1a:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.SPI_I2S_ITConfig:
+
+00000000 <SPI_I2S_ITConfig>:
+SPI_I2S_ITConfig():
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:494
+
+  /* Get the SPI/I2S IT index */
+  itpos = SPI_I2S_IT >> 4;
+
+  /* Set the IT mask */
+  itmask = (uint16_t)1 << (uint16_t)itpos;
+   0:	0909      	lsrs	r1, r1, #4
+   2:	2301      	movs	r3, #1
+   4:	408b      	lsls	r3, r1
+   6:	b299      	uxth	r1, r3
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:496
+
+  if (NewState != DISABLE)
+   8:	b122      	cbz	r2, 14 <SPI_I2S_ITConfig+0x14>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:499
+  {
+    /* Enable the selected SPI/I2S interrupt */
+    SPIx->CR2 |= itmask;
+   a:	8883      	ldrh	r3, [r0, #4]
+   c:	b29b      	uxth	r3, r3
+   e:	ea41 0303 	orr.w	r3, r1, r3
+  12:	e003      	b.n	1c <SPI_I2S_ITConfig+0x1c>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:504
+  }
+  else
+  {
+    /* Disable the selected SPI/I2S interrupt */
+    SPIx->CR2 &= (uint16_t)~itmask;
+  14:	8883      	ldrh	r3, [r0, #4]
+  16:	b29b      	uxth	r3, r3
+  18:	ea23 0301 	bic.w	r3, r3, r1
+  1c:	8083      	strh	r3, [r0, #4]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:506
+  }
+}
+  1e:	4770      	bx	lr
+Disassembly of section .text.SPI_I2S_DMACmd:
+
+00000000 <SPI_I2S_DMACmd>:
+SPI_I2S_DMACmd():
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:527
+{
+  /* Check the parameters */
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  assert_param(IS_SPI_I2S_DMAREQ(SPI_I2S_DMAReq));
+  if (NewState != DISABLE)
+   0:	b122      	cbz	r2, c <SPI_I2S_DMACmd+0xc>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:530
+  {
+    /* Enable the selected SPI/I2S DMA requests */
+    SPIx->CR2 |= SPI_I2S_DMAReq;
+   2:	8883      	ldrh	r3, [r0, #4]
+   4:	b29b      	uxth	r3, r3
+   6:	ea41 0303 	orr.w	r3, r1, r3
+   a:	e003      	b.n	14 <SPI_I2S_DMACmd+0x14>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:535
+  }
+  else
+  {
+    /* Disable the selected SPI/I2S DMA requests */
+    SPIx->CR2 &= (uint16_t)~SPI_I2S_DMAReq;
+   c:	8883      	ldrh	r3, [r0, #4]
+   e:	b29b      	uxth	r3, r3
+  10:	ea23 0301 	bic.w	r3, r3, r1
+  14:	8083      	strh	r3, [r0, #4]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:537
+  }
+}
+  16:	4770      	bx	lr
+Disassembly of section .text.SPI_I2S_SendData:
+
+00000000 <SPI_I2S_SendData>:
+SPI_I2S_SendData():
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:553
+{
+  /* Check the parameters */
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  
+  /* Write in the DR register the data to be sent */
+  SPIx->DR = Data;
+   0:	8181      	strh	r1, [r0, #12]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:554
+}
+   2:	4770      	bx	lr
+Disassembly of section .text.SPI_I2S_ReceiveData:
+
+00000000 <SPI_I2S_ReceiveData>:
+SPI_I2S_ReceiveData():
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:569
+{
+  /* Check the parameters */
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  
+  /* Return the data in the DR register */
+  return SPIx->DR;
+   0:	8980      	ldrh	r0, [r0, #12]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:570
+}
+   2:	b280      	uxth	r0, r0
+   4:	4770      	bx	lr
+   6:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.SPI_NSSInternalSoftwareConfig:
+
+00000000 <SPI_NSSInternalSoftwareConfig>:
+SPI_NSSInternalSoftwareConfig():
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:586
+void SPI_NSSInternalSoftwareConfig(SPI_TypeDef* SPIx, uint16_t SPI_NSSInternalSoft)
+{
+  /* Check the parameters */
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  assert_param(IS_SPI_NSS_INTERNAL(SPI_NSSInternalSoft));
+  if (SPI_NSSInternalSoft != SPI_NSSInternalSoft_Reset)
+   0:	f64f 63ff 	movw	r3, #65279	; 0xfeff
+   4:	4299      	cmp	r1, r3
+   6:	d004      	beq.n	12 <SPI_NSSInternalSoftwareConfig+0x12>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:589
+  {
+    /* Set NSS pin internally by software */
+    SPIx->CR1 |= SPI_NSSInternalSoft_Set;
+   8:	8803      	ldrh	r3, [r0, #0]
+   a:	b29b      	uxth	r3, r3
+   c:	f443 7380 	orr.w	r3, r3, #256	; 0x100
+  10:	e002      	b.n	18 <SPI_NSSInternalSoftwareConfig+0x18>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:594
+  }
+  else
+  {
+    /* Reset NSS pin internally by software */
+    SPIx->CR1 &= SPI_NSSInternalSoft_Reset;
+  12:	8803      	ldrh	r3, [r0, #0]
+  14:	ea01 0303 	and.w	r3, r1, r3
+  18:	8003      	strh	r3, [r0, #0]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:596
+  }
+}
+  1a:	4770      	bx	lr
+Disassembly of section .text.SPI_SSOutputCmd:
+
+00000000 <SPI_SSOutputCmd>:
+SPI_SSOutputCmd():
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:610
+void SPI_SSOutputCmd(SPI_TypeDef* SPIx, FunctionalState NewState)
+{
+  /* Check the parameters */
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  if (NewState != DISABLE)
+   0:	b121      	cbz	r1, c <SPI_SSOutputCmd+0xc>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:613
+  {
+    /* Enable the selected SPI SS output */
+    SPIx->CR2 |= CR2_SSOE_Set;
+   2:	8883      	ldrh	r3, [r0, #4]
+   4:	b29b      	uxth	r3, r3
+   6:	f043 0304 	orr.w	r3, r3, #4	; 0x4
+   a:	e004      	b.n	16 <SPI_SSOutputCmd+0x16>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:618
+  }
+  else
+  {
+    /* Disable the selected SPI SS output */
+    SPIx->CR2 &= CR2_SSOE_Reset;
+   c:	8883      	ldrh	r3, [r0, #4]
+   e:	f023 0304 	bic.w	r3, r3, #4	; 0x4
+  12:	041b      	lsls	r3, r3, #16
+  14:	0c1b      	lsrs	r3, r3, #16
+  16:	8083      	strh	r3, [r0, #4]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:620
+  }
+}
+  18:	4770      	bx	lr
+  1a:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.SPI_DataSizeConfig:
+
+00000000 <SPI_DataSizeConfig>:
+SPI_DataSizeConfig():
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:637
+{
+  /* Check the parameters */
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  assert_param(IS_SPI_DATASIZE(SPI_DataSize));
+  /* Clear DFF bit */
+  SPIx->CR1 &= (uint16_t)~SPI_DataSize_16b;
+   0:	8803      	ldrh	r3, [r0, #0]
+   2:	f423 6300 	bic.w	r3, r3, #2048	; 0x800
+   6:	041b      	lsls	r3, r3, #16
+   8:	0c1b      	lsrs	r3, r3, #16
+   a:	8003      	strh	r3, [r0, #0]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:639
+  /* Set new DFF bit value */
+  SPIx->CR1 |= SPI_DataSize;
+   c:	8803      	ldrh	r3, [r0, #0]
+   e:	b29b      	uxth	r3, r3
+  10:	4319      	orrs	r1, r3
+  12:	8001      	strh	r1, [r0, #0]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:640
+}
+  14:	4770      	bx	lr
+  16:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.SPI_TransmitCRC:
+
+00000000 <SPI_TransmitCRC>:
+SPI_TransmitCRC():
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:653
+{
+  /* Check the parameters */
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  
+  /* Enable the selected SPI CRC transmission */
+  SPIx->CR1 |= CR1_CRCNext_Set;
+   0:	8803      	ldrh	r3, [r0, #0]
+   2:	b29b      	uxth	r3, r3
+   4:	f443 5380 	orr.w	r3, r3, #4096	; 0x1000
+   8:	8003      	strh	r3, [r0, #0]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:654
+}
+   a:	4770      	bx	lr
+Disassembly of section .text.SPI_CalculateCRC:
+
+00000000 <SPI_CalculateCRC>:
+SPI_CalculateCRC():
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:668
+void SPI_CalculateCRC(SPI_TypeDef* SPIx, FunctionalState NewState)
+{
+  /* Check the parameters */
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  if (NewState != DISABLE)
+   0:	b121      	cbz	r1, c <SPI_CalculateCRC+0xc>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:671
+  {
+    /* Enable the selected SPI CRC calculation */
+    SPIx->CR1 |= CR1_CRCEN_Set;
+   2:	8803      	ldrh	r3, [r0, #0]
+   4:	b29b      	uxth	r3, r3
+   6:	f443 5300 	orr.w	r3, r3, #8192	; 0x2000
+   a:	e004      	b.n	16 <SPI_CalculateCRC+0x16>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:676
+  }
+  else
+  {
+    /* Disable the selected SPI CRC calculation */
+    SPIx->CR1 &= CR1_CRCEN_Reset;
+   c:	8803      	ldrh	r3, [r0, #0]
+   e:	f423 5300 	bic.w	r3, r3, #8192	; 0x2000
+  12:	041b      	lsls	r3, r3, #16
+  14:	0c1b      	lsrs	r3, r3, #16
+  16:	8003      	strh	r3, [r0, #0]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:678
+  }
+}
+  18:	4770      	bx	lr
+  1a:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.SPI_GetCRC:
+
+00000000 <SPI_GetCRC>:
+SPI_GetCRC():
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:695
+{
+  uint16_t crcreg = 0;
+  /* Check the parameters */
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  assert_param(IS_SPI_CRC(SPI_CRC));
+  if (SPI_CRC != SPI_CRC_Rx)
+   0:	2901      	cmp	r1, #1
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:698
+  {
+    /* Get the Tx CRC register */
+    crcreg = SPIx->TXCRCR;
+   2:	bf14      	ite	ne
+   4:	8b03      	ldrhne	r3, [r0, #24]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:703
+  }
+  else
+  {
+    /* Get the Rx CRC register */
+    crcreg = SPIx->RXCRCR;
+   6:	8a83      	ldrheq	r3, [r0, #20]
+   8:	b298      	uxth	r0, r3
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:707
+  }
+  /* Return the selected CRC register */
+  return crcreg;
+}
+   a:	4770      	bx	lr
+Disassembly of section .text.SPI_GetCRCPolynomial:
+
+00000000 <SPI_GetCRCPolynomial>:
+SPI_GetCRCPolynomial():
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:720
+{
+  /* Check the parameters */
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  
+  /* Return the CRC polynomial register */
+  return SPIx->CRCPR;
+   0:	8a00      	ldrh	r0, [r0, #16]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:721
+}
+   2:	b280      	uxth	r0, r0
+   4:	4770      	bx	lr
+   6:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.SPI_BiDirectionalLineConfig:
+
+00000000 <SPI_BiDirectionalLineConfig>:
+SPI_BiDirectionalLineConfig():
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:737
+void SPI_BiDirectionalLineConfig(SPI_TypeDef* SPIx, uint16_t SPI_Direction)
+{
+  /* Check the parameters */
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  assert_param(IS_SPI_DIRECTION(SPI_Direction));
+  if (SPI_Direction == SPI_Direction_Tx)
+   0:	f5b1 4f80 	cmp.w	r1, #16384	; 0x4000
+   4:	d104      	bne.n	10 <SPI_BiDirectionalLineConfig+0x10>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:740
+  {
+    /* Set the Tx only mode */
+    SPIx->CR1 |= SPI_Direction_Tx;
+   6:	8803      	ldrh	r3, [r0, #0]
+   8:	b29b      	uxth	r3, r3
+   a:	f443 4380 	orr.w	r3, r3, #16384	; 0x4000
+   e:	e004      	b.n	1a <SPI_BiDirectionalLineConfig+0x1a>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:745
+  }
+  else
+  {
+    /* Set the Rx only mode */
+    SPIx->CR1 &= SPI_Direction_Rx;
+  10:	8803      	ldrh	r3, [r0, #0]
+  12:	f423 4380 	bic.w	r3, r3, #16384	; 0x4000
+  16:	041b      	lsls	r3, r3, #16
+  18:	0c1b      	lsrs	r3, r3, #16
+  1a:	8003      	strh	r3, [r0, #0]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:747
+  }
+}
+  1c:	4770      	bx	lr
+  1e:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.SPI_I2S_GetFlagStatus:
+
+00000000 <SPI_I2S_GetFlagStatus>:
+SPI_I2S_GetFlagStatus():
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:773
+  FlagStatus bitstatus = RESET;
+  /* Check the parameters */
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  assert_param(IS_SPI_I2S_GET_FLAG(SPI_I2S_FLAG));
+  /* Check the status of the specified SPI/I2S flag */
+  if ((SPIx->SR & SPI_I2S_FLAG) != (uint16_t)RESET)
+   0:	8903      	ldrh	r3, [r0, #8]
+   2:	4219      	tst	r1, r3
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:785
+    /* SPI_I2S_FLAG is reset */
+    bitstatus = RESET;
+  }
+  /* Return the SPI_I2S_FLAG status */
+  return  bitstatus;
+}
+   4:	bf0c      	ite	eq
+   6:	2000      	moveq	r0, #0
+   8:	2001      	movne	r0, #1
+   a:	4770      	bx	lr
+Disassembly of section .text.SPI_I2S_ClearFlag:
+
+00000000 <SPI_I2S_ClearFlag>:
+SPI_I2S_ClearFlag():
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:811
+  /* Check the parameters */
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  assert_param(IS_SPI_I2S_CLEAR_FLAG(SPI_I2S_FLAG));
+    
+    /* Clear the selected SPI CRC Error (CRCERR) flag */
+    SPIx->SR = (uint16_t)~SPI_I2S_FLAG;
+   0:	43c9      	mvns	r1, r1
+   2:	b289      	uxth	r1, r1
+   4:	8101      	strh	r1, [r0, #8]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:812
+}
+   6:	4770      	bx	lr
+Disassembly of section .text.SPI_I2S_GetITStatus:
+
+00000000 <SPI_I2S_GetITStatus>:
+SPI_I2S_GetITStatus():
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:848
+
+  /* Set the IT mask */
+  itmask = 0x01 << itmask;
+
+  /* Get the SPI_I2S_IT enable bit status */
+  enablestatus = (SPIx->CR2 & itmask) ;
+   0:	8883      	ldrh	r3, [r0, #4]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:830
+  *     @arg SPI_IT_CRCERR: CRC Error interrupt.
+  *     @arg I2S_IT_UDR: Underrun Error interrupt.
+  * @retval The new state of SPI_I2S_IT (SET or RESET).
+  */
+ITStatus SPI_I2S_GetITStatus(SPI_TypeDef* SPIx, uint8_t SPI_I2S_IT)
+{
+   2:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:851
+
+  /* Get the SPI_I2S_IT enable bit status */
+  enablestatus = (SPIx->CR2 & itmask) ;
+
+  /* Check the status of the specified SPI/I2S interrupt */
+  if (((SPIx->SR & itpos) != (uint16_t)RESET) && enablestatus)
+   4:	f04f 0c01 	mov.w	ip, #1	; 0x1
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:848
+
+  /* Set the IT mask */
+  itmask = 0x01 << itmask;
+
+  /* Get the SPI_I2S_IT enable bit status */
+  enablestatus = (SPIx->CR2 & itmask) ;
+   8:	b29c      	uxth	r4, r3
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:851
+
+  /* Check the status of the specified SPI/I2S interrupt */
+  if (((SPIx->SR & itpos) != (uint16_t)RESET) && enablestatus)
+   a:	f001 030f 	and.w	r3, r1, #15	; 0xf
+   e:	fa0c f303 	lsl.w	r3, ip, r3
+  12:	8902      	ldrh	r2, [r0, #8]
+  14:	b292      	uxth	r2, r2
+  16:	ea12 0003 	ands.w	r0, r2, r3
+  1a:	d006      	beq.n	2a <SPI_I2S_GetITStatus+0x2a>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:845
+
+  /* Get the SPI/I2S IT mask */
+  itmask = SPI_I2S_IT >> 4;
+
+  /* Set the IT mask */
+  itmask = 0x01 << itmask;
+  1c:	090b      	lsrs	r3, r1, #4
+  1e:	fa0c f303 	lsl.w	r3, ip, r3
+  22:	421c      	tst	r4, r3
+  24:	bf0c      	ite	eq
+  26:	2000      	moveq	r0, #0
+  28:	2001      	movne	r0, #1
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:863
+    /* SPI_I2S_IT is reset */
+    bitstatus = RESET;
+  }
+  /* Return the SPI_I2S_IT status */
+  return bitstatus;
+}
+  2a:	bd10      	pop	{r4, pc}
+Disassembly of section .text.SPI_I2S_ClearITPendingBit:
+
+00000000 <SPI_I2S_ClearITPendingBit>:
+SPI_I2S_ClearITPendingBit():
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:894
+
+  /* Get the SPI IT index */
+  itpos = 0x01 << (SPI_I2S_IT & 0x0F);
+
+  /* Clear the selected SPI CRC Error (CRCERR) interrupt pending bit */
+  SPIx->SR = (uint16_t)~itpos;
+   0:	f001 010f 	and.w	r1, r1, #15	; 0xf
+   4:	2301      	movs	r3, #1
+   6:	408b      	lsls	r3, r1
+   8:	43db      	mvns	r3, r3
+   a:	b29b      	uxth	r3, r3
+   c:	8103      	strh	r3, [r0, #8]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:895
+}
+   e:	4770      	bx	lr
+Disassembly of section .text.I2S_Init:
+
+00000000 <I2S_Init>:
+I2S_Init():
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:237
+  assert_param(IS_I2S_AUDIO_FREQ(I2S_InitStruct->I2S_AudioFreq));
+  assert_param(IS_I2S_CPOL(I2S_InitStruct->I2S_CPOL));  
+
+/*----------------------- SPIx I2SCFGR & I2SPR Configuration -----------------*/
+  /* Clear I2SMOD, I2SE, I2SCFG, PCMSYNC, I2SSTD, CKPOL, DATLEN and CHLEN bits */
+  SPIx->I2SCFGR &= I2SCFGR_CLEAR_Mask; 
+   0:	8b83      	ldrh	r3, [r0, #28]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:220
+  *  and the product configuration). But in case the prescaler value is greater 
+  *  than 511, the default value (0x02) will be configured instead.  *   
+  * @retval None
+  */
+void I2S_Init(SPI_TypeDef* SPIx, I2S_InitTypeDef* I2S_InitStruct)
+{
+   2:	b5f0      	push	{r4, r5, r6, r7, lr}
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:237
+  assert_param(IS_I2S_AUDIO_FREQ(I2S_InitStruct->I2S_AudioFreq));
+  assert_param(IS_I2S_CPOL(I2S_InitStruct->I2S_CPOL));  
+
+/*----------------------- SPIx I2SCFGR & I2SPR Configuration -----------------*/
+  /* Clear I2SMOD, I2SE, I2SCFG, PCMSYNC, I2SSTD, CKPOL, DATLEN and CHLEN bits */
+  SPIx->I2SCFGR &= I2SCFGR_CLEAR_Mask; 
+   4:	f423 637a 	bic.w	r3, r3, #4000	; 0xfa0
+   8:	f023 031f 	bic.w	r3, r3, #31	; 0x1f
+   c:	041b      	lsls	r3, r3, #16
+   e:	0c1b      	lsrs	r3, r3, #16
+  10:	8383      	strh	r3, [r0, #28]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:238
+  SPIx->I2SPR = 0x0002;
+  12:	f04f 0302 	mov.w	r3, #2	; 0x2
+  16:	8403      	strh	r3, [r0, #32]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:241
+  
+  /* Get the I2SCFGR register value */
+  tmpreg = SPIx->I2SCFGR;
+  18:	8b83      	ldrh	r3, [r0, #28]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:220
+  *  and the product configuration). But in case the prescaler value is greater 
+  *  than 511, the default value (0x02) will be configured instead.  *   
+  * @retval None
+  */
+void I2S_Init(SPI_TypeDef* SPIx, I2S_InitTypeDef* I2S_InitStruct)
+{
+  1a:	b087      	sub	sp, #28
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:241
+  /* Clear I2SMOD, I2SE, I2SCFG, PCMSYNC, I2SSTD, CKPOL, DATLEN and CHLEN bits */
+  SPIx->I2SCFGR &= I2SCFGR_CLEAR_Mask; 
+  SPIx->I2SPR = 0x0002;
+  
+  /* Get the I2SCFGR register value */
+  tmpreg = SPIx->I2SCFGR;
+  1c:	b29f      	uxth	r7, r3
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:244
+  
+  /* If the default value has to be written, reinitialize i2sdiv and i2sodd*/
+  if(I2S_InitStruct->I2S_AudioFreq == I2S_AudioFreq_Default)
+  1e:	688b      	ldr	r3, [r1, #8]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:220
+  *  and the product configuration). But in case the prescaler value is greater 
+  *  than 511, the default value (0x02) will be configured instead.  *   
+  * @retval None
+  */
+void I2S_Init(SPI_TypeDef* SPIx, I2S_InitTypeDef* I2S_InitStruct)
+{
+  20:	4606      	mov	r6, r0
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:244
+  
+  /* Get the I2SCFGR register value */
+  tmpreg = SPIx->I2SCFGR;
+  
+  /* If the default value has to be written, reinitialize i2sdiv and i2sodd*/
+  if(I2S_InitStruct->I2S_AudioFreq == I2S_AudioFreq_Default)
+  22:	2b02      	cmp	r3, #2
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:220
+  *  and the product configuration). But in case the prescaler value is greater 
+  *  than 511, the default value (0x02) will be configured instead.  *   
+  * @retval None
+  */
+void I2S_Init(SPI_TypeDef* SPIx, I2S_InitTypeDef* I2S_InitStruct)
+{
+  24:	460c      	mov	r4, r1
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:244
+  
+  /* Get the I2SCFGR register value */
+  tmpreg = SPIx->I2SCFGR;
+  
+  /* If the default value has to be written, reinitialize i2sdiv and i2sodd*/
+  if(I2S_InitStruct->I2S_AudioFreq == I2S_AudioFreq_Default)
+  26:	d102      	bne.n	2e <I2S_Init+0x2e>
+  28:	4619      	mov	r1, r3
+  2a:	2200      	movs	r2, #0
+  2c:	e023      	b.n	76 <I2S_Init+0x76>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:253
+  }
+  /* If the requested audio frequency is not the default, compute the prescaler */
+  else
+  {
+    /* Check the frame length (For the Prescaler computing) */
+    if(I2S_InitStruct->I2S_DataFormat == I2S_DataFormat_16b)
+  2e:	888b      	ldrh	r3, [r1, #4]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:314
+      /* Get the source clock value: based on System Clock value */
+      sourceclock = RCC_Clocks.SYSCLK_Frequency;
+    }        
+#else /* STM32F10X_HD */
+    /* I2S Clock source is System clock: Get System Clock frequency */
+    RCC_GetClocksFreq(&RCC_Clocks);      
+  30:	a801      	add	r0, sp, #4
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:253
+  }
+  /* If the requested audio frequency is not the default, compute the prescaler */
+  else
+  {
+    /* Check the frame length (For the Prescaler computing) */
+    if(I2S_InitStruct->I2S_DataFormat == I2S_DataFormat_16b)
+  32:	2b00      	cmp	r3, #0
+  34:	bf0c      	ite	eq
+  36:	2501      	moveq	r5, #1
+  38:	2502      	movne	r5, #2
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:314
+      /* Get the source clock value: based on System Clock value */
+      sourceclock = RCC_Clocks.SYSCLK_Frequency;
+    }        
+#else /* STM32F10X_HD */
+    /* I2S Clock source is System clock: Get System Clock frequency */
+    RCC_GetClocksFreq(&RCC_Clocks);      
+  3a:	f7ff fffe 	bl	0 <RCC_GetClocksFreq>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:321
+    /* Get the source clock value: based on System Clock value */
+    sourceclock = RCC_Clocks.SYSCLK_Frequency;    
+#endif /* STM32F10X_CL */    
+
+    /* Compute the Real divider depending on the MCLK output state with a floating point */
+    if(I2S_InitStruct->I2S_MCLKOutput == I2S_MCLKOutput_Enable)
+  3e:	88e3      	ldrh	r3, [r4, #6]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:317
+#else /* STM32F10X_HD */
+    /* I2S Clock source is System clock: Get System Clock frequency */
+    RCC_GetClocksFreq(&RCC_Clocks);      
+      
+    /* Get the source clock value: based on System Clock value */
+    sourceclock = RCC_Clocks.SYSCLK_Frequency;    
+  40:	9901      	ldr	r1, [sp, #4]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:321
+#endif /* STM32F10X_CL */    
+
+    /* Compute the Real divider depending on the MCLK output state with a floating point */
+    if(I2S_InitStruct->I2S_MCLKOutput == I2S_MCLKOutput_Enable)
+  42:	f5b3 7f00 	cmp.w	r3, #512	; 0x200
+  46:	68a0      	ldr	r0, [r4, #8]
+  48:	d103      	bne.n	52 <RCC_GetClocksFreq+0x52>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:324
+    {
+      /* MCLK output is enabled */
+      tmp = (uint16_t)(((((sourceclock / 256) * 10) / I2S_InitStruct->I2S_AudioFreq)) + 5);
+  4a:	0a0a      	lsrs	r2, r1, #8
+  4c:	f5a3 73fb 	sub.w	r3, r3, #502	; 0x1f6
+  50:	e003      	b.n	5a <RCC_GetClocksFreq+0x5a>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:329
+    }
+    else
+    {
+      /* MCLK output is disabled */
+      tmp = (uint16_t)(((((sourceclock / (32 * packetlength)) *10 ) / I2S_InitStruct->I2S_AudioFreq)) + 5);
+  52:	016a      	lsls	r2, r5, #5
+  54:	fbb1 f2f2 	udiv	r2, r1, r2
+  58:	230a      	movs	r3, #10
+  5a:	4353      	muls	r3, r2
+  5c:	fbb3 f3f0 	udiv	r3, r3, r0
+  60:	3305      	adds	r3, #5
+  62:	b29a      	uxth	r2, r3
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:333
+    }
+    
+    /* Remove the floating point */
+    tmp = tmp / 10;  
+  64:	230a      	movs	r3, #10
+  66:	fbb2 f3f3 	udiv	r3, r2, r3
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:339
+      
+    /* Check the parity of the divider */
+    i2sodd = (uint16_t)(tmp & (uint16_t)0x0001);
+   
+    /* Compute the i2sdiv prescaler */
+    i2sdiv = (uint16_t)((tmp - i2sodd) / 2);
+  6a:	f003 0201 	and.w	r2, r3, #1	; 0x1
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:342
+   
+    /* Get the Mask for the Odd bit (SPI_I2SPR[8]) register */
+    i2sodd = (uint16_t) (i2sodd << 8);
+  6e:	0212      	lsls	r2, r2, #8
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:339
+      
+    /* Check the parity of the divider */
+    i2sodd = (uint16_t)(tmp & (uint16_t)0x0001);
+   
+    /* Compute the i2sdiv prescaler */
+    i2sdiv = (uint16_t)((tmp - i2sodd) / 2);
+  70:	f3c3 014f 	ubfx	r1, r3, #1, #16
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:342
+   
+    /* Get the Mask for the Odd bit (SPI_I2SPR[8]) register */
+    i2sodd = (uint16_t) (i2sodd << 8);
+  74:	b292      	uxth	r2, r2
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:346
+  }
+  
+  /* Test if the divider is 1 or 0 or greater than 0xFF */
+  if ((i2sdiv < 2) || (i2sdiv > 0xFF))
+  76:	1e8b      	subs	r3, r1, #2
+  78:	b29b      	uxth	r3, r3
+  7a:	2bfe      	cmp	r3, #254
+  7c:	bf28      	it	cs
+  7e:	2200      	movcs	r2, #0
+  80:	bf28      	it	cs
+  82:	2102      	movcs	r1, #2
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:354
+    i2sdiv = 2;
+    i2sodd = 0;
+  }
+
+  /* Write to SPIx I2SPR register the computed value */
+  SPIx->I2SPR = (uint16_t)(i2sdiv | (uint16_t)(i2sodd | (uint16_t)I2S_InitStruct->I2S_MCLKOutput));  
+  84:	ea41 0302 	orr.w	r3, r1, r2
+  88:	88e2      	ldrh	r2, [r4, #6]
+  8a:	4313      	orrs	r3, r2
+  8c:	b29b      	uxth	r3, r3
+  8e:	8433      	strh	r3, [r6, #32]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:357
+ 
+  /* Configure the I2S with the SPI_InitStruct values */
+  tmpreg |= (uint16_t)(I2S_Mode_Select | (uint16_t)(I2S_InitStruct->I2S_Mode | \
+  90:	8823      	ldrh	r3, [r4, #0]
+  92:	8862      	ldrh	r2, [r4, #2]
+  94:	ea47 0303 	orr.w	r3, r7, r3
+  98:	f443 6300 	orr.w	r3, r3, #2048	; 0x800
+  9c:	4313      	orrs	r3, r2
+  9e:	88a2      	ldrh	r2, [r4, #4]
+  a0:	4313      	orrs	r3, r2
+  a2:	89a2      	ldrh	r2, [r4, #12]
+  a4:	4313      	orrs	r3, r2
+  a6:	b29b      	uxth	r3, r3
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:362
+                  (uint16_t)(I2S_InitStruct->I2S_Standard | (uint16_t)(I2S_InitStruct->I2S_DataFormat | \
+                  (uint16_t)I2S_InitStruct->I2S_CPOL))));
+ 
+  /* Write to SPIx I2SCFGR */  
+  SPIx->I2SCFGR = tmpreg;   
+  a8:	83b3      	strh	r3, [r6, #28]
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:363
+}
+  aa:	b007      	add	sp, #28
+  ac:	bdf0      	pop	{r4, r5, r6, r7, pc}
+  ae:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.SPI_I2S_DeInit:
+
+00000000 <SPI_I2S_DeInit>:
+SPI_I2S_DeInit():
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:124
+void SPI_I2S_DeInit(SPI_TypeDef* SPIx)
+{
+  /* Check the parameters */
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+
+  if (SPIx == SPI1)
+   0:	4b13      	ldr	r3, [pc, #76]	(50 <SPI_I2S_DeInit+0x50>)
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:120
+  *         reset values (Affects also the I2Ss).
+  * @param  SPIx: where x can be 1, 2 or 3 to select the SPI peripheral.
+  * @retval None
+  */
+void SPI_I2S_DeInit(SPI_TypeDef* SPIx)
+{
+   2:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:124
+  /* Check the parameters */
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+
+  if (SPIx == SPI1)
+   4:	4298      	cmp	r0, r3
+   6:	d10a      	bne.n	1e <SPI_I2S_DeInit+0x1e>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:127
+  {
+    /* Enable SPI1 reset state */
+    RCC_APB2PeriphResetCmd(RCC_APB2Periph_SPI1, ENABLE);
+   8:	2101      	movs	r1, #1
+   a:	f44f 5080 	mov.w	r0, #4096	; 0x1000
+   e:	f7ff fffe 	bl	0 <RCC_APB2PeriphResetCmd>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:129
+    /* Release SPI1 from reset state */
+    RCC_APB2PeriphResetCmd(RCC_APB2Periph_SPI1, DISABLE);
+  12:	f44f 5080 	mov.w	r0, #4096	; 0x1000
+  16:	2100      	movs	r1, #0
+  18:	f7ff fffe 	bl	0 <RCC_APB2PeriphResetCmd>
+  1c:	e017      	b.n	4e <SPI_I2S_DeInit+0x4e>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:131
+  }
+  else if (SPIx == SPI2)
+  1e:	4b0d      	ldr	r3, [pc, #52]	(54 <SPI_I2S_DeInit+0x54>)
+  20:	4298      	cmp	r0, r3
+  22:	d107      	bne.n	34 <SPI_I2S_DeInit+0x34>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:134
+  {
+    /* Enable SPI2 reset state */
+    RCC_APB1PeriphResetCmd(RCC_APB1Periph_SPI2, ENABLE);
+  24:	f44f 4080 	mov.w	r0, #16384	; 0x4000
+  28:	2101      	movs	r1, #1
+  2a:	f7ff fffe 	bl	0 <RCC_APB1PeriphResetCmd>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:136
+    /* Release SPI2 from reset state */
+    RCC_APB1PeriphResetCmd(RCC_APB1Periph_SPI2, DISABLE);
+  2e:	f44f 4080 	mov.w	r0, #16384	; 0x4000
+  32:	e009      	b.n	48 <SPI_I2S_DeInit+0x48>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:140
+  }
+  else
+  {
+    if (SPIx == SPI3)
+  34:	4b08      	ldr	r3, [pc, #32]	(58 <SPI_I2S_DeInit+0x58>)
+  36:	4298      	cmp	r0, r3
+  38:	d109      	bne.n	4e <SPI_I2S_DeInit+0x4e>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:143
+    {
+      /* Enable SPI3 reset state */
+      RCC_APB1PeriphResetCmd(RCC_APB1Periph_SPI3, ENABLE);
+  3a:	f44f 4000 	mov.w	r0, #32768	; 0x8000
+  3e:	2101      	movs	r1, #1
+  40:	f7ff fffe 	bl	0 <RCC_APB1PeriphResetCmd>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:145
+      /* Release SPI3 from reset state */
+      RCC_APB1PeriphResetCmd(RCC_APB1Periph_SPI3, DISABLE);
+  44:	f44f 4000 	mov.w	r0, #32768	; 0x8000
+  48:	2100      	movs	r1, #0
+  4a:	f7ff fffe 	bl	0 <RCC_APB1PeriphResetCmd>
+C:\Users\Linux\Downloads\06_12\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_spi.c:148
+    }
+  }
+}
+  4e:	bd10      	pop	{r4, pc}
+  50:	40013000 	.word	0x40013000
+  54:	40003800 	.word	0x40003800
+  58:	40003c00 	.word	0x40003c00

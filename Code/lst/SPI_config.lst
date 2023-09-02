@@ -1,0 +1,276 @@
+
+C:\Users\Linux\Downloads\06_12\obj\SPI_config.o:     file format elf32-littlearm
+C:\Users\Linux\Downloads\06_12\obj\SPI_config.o
+
+Disassembly of section .text.Buffercmp:
+
+00000000 <Buffercmp>:
+Buffercmp():
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:64
+
+
+
+//SPIy의 Buffer값(Tx,Rx) 비교할때 사용
+TestStatus Buffercmp(uint8_t* pBuffer1, uint8_t* pBuffer2, uint16_t BufferLength)
+{
+   0:	b510      	push	{r4, lr}
+   2:	4613      	mov	r3, r2
+   4:	4604      	mov	r4, r0
+   6:	f04f 0c00 	mov.w	ip, #0	; 0x0
+   a:	4608      	mov	r0, r1
+   c:	e00b      	b.n	26 <Buffercmp+0x26>
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:67
+    while (BufferLength--)
+    {
+        if (*pBuffer1 != *pBuffer2)
+   e:	f814 100c 	ldrb.w	r1, [r4, ip]
+  12:	f810 200c 	ldrb.w	r2, [r0, ip]
+  16:	3b01      	subs	r3, #1
+  18:	4291      	cmp	r1, r2
+  1a:	f10c 0c01 	add.w	ip, ip, #1	; 0x1
+  1e:	b29b      	uxth	r3, r3
+  20:	d001      	beq.n	26 <Buffercmp+0x26>
+  22:	2000      	movs	r0, #0
+  24:	e002      	b.n	2c <Buffercmp+0x2c>
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:65
+
+
+//SPIy의 Buffer값(Tx,Rx) 비교할때 사용
+TestStatus Buffercmp(uint8_t* pBuffer1, uint8_t* pBuffer2, uint16_t BufferLength)
+{
+    while (BufferLength--)
+  26:	2b00      	cmp	r3, #0
+  28:	d1f1      	bne.n	e <Buffercmp+0xe>
+  2a:	2001      	movs	r0, #1
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:77
+        pBuffer1++;
+        pBuffer2++;
+    }
+
+    return PASSED;
+  2c:	bd10      	pop	{r4, pc}
+  2e:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.SPIz_Slave_Configuration:
+
+00000000 <SPIz_Slave_Configuration>:
+SPIz_Slave_Configuration():
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:38
+}
+
+void SPIz_Slave_Configuration()
+{
+    /* SPIz Config -------------------------------------------------------------*/
+    SPI_InitStructure.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
+   0:	490e      	ldr	r1, [pc, #56]	(3c <SPIz_Slave_Configuration+0x3c>)
+   2:	2300      	movs	r3, #0
+   4:	800b      	strh	r3, [r1, #0]
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:39
+    SPI_InitStructure.SPI_Mode = SPI_Mode_Slave;	//마스터모드셋팅
+   6:	804b      	strh	r3, [r1, #2]
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:40
+    SPI_InitStructure.SPI_DataSize = SPI_DataSize_8b;
+   8:	808b      	strh	r3, [r1, #4]
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:41
+    SPI_InitStructure.SPI_CPOL = SPI_CPOL_Low;
+   a:	80cb      	strh	r3, [r1, #6]
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:43
+    SPI_InitStructure.SPI_CPHA = SPI_CPHA_2Edge;
+    SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
+   c:	f44f 7300 	mov.w	r3, #512	; 0x200
+  10:	814b      	strh	r3, [r1, #10]
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:44
+    SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_8;
+  12:	f04f 0310 	mov.w	r3, #16	; 0x10
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:36
+    //SPI_Cmd(SPIz, ENABLE);
+
+}
+
+void SPIz_Slave_Configuration()
+{
+  16:	b570      	push	{r4, r5, r6, lr}
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:44
+    SPI_InitStructure.SPI_Mode = SPI_Mode_Slave;	//마스터모드셋팅
+    SPI_InitStructure.SPI_DataSize = SPI_DataSize_8b;
+    SPI_InitStructure.SPI_CPOL = SPI_CPOL_Low;
+    SPI_InitStructure.SPI_CPHA = SPI_CPHA_2Edge;
+    SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
+    SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_8;
+  18:	818b      	strh	r3, [r1, #12]
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:47
+    SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_LSB;
+    SPI_InitStructure.SPI_CRCPolynomial = 7;
+    SPI_Init(SPIz, &SPI_InitStructure);			//SPIy를 마스터로
+  1a:	4c09      	ldr	r4, [pc, #36]	(40 <SPIz_Slave_Configuration+0x40>)
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:45
+    SPI_InitStructure.SPI_DataSize = SPI_DataSize_8b;
+    SPI_InitStructure.SPI_CPOL = SPI_CPOL_Low;
+    SPI_InitStructure.SPI_CPHA = SPI_CPHA_2Edge;
+    SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
+    SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_8;
+    SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_LSB;
+  1c:	f04f 0380 	mov.w	r3, #128	; 0x80
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:42
+    /* SPIz Config -------------------------------------------------------------*/
+    SPI_InitStructure.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
+    SPI_InitStructure.SPI_Mode = SPI_Mode_Slave;	//마스터모드셋팅
+    SPI_InitStructure.SPI_DataSize = SPI_DataSize_8b;
+    SPI_InitStructure.SPI_CPOL = SPI_CPOL_Low;
+    SPI_InitStructure.SPI_CPHA = SPI_CPHA_2Edge;
+  20:	2501      	movs	r5, #1
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:45
+    SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
+    SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_8;
+    SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_LSB;
+  22:	81cb      	strh	r3, [r1, #14]
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:46
+    SPI_InitStructure.SPI_CRCPolynomial = 7;
+  24:	f04f 0307 	mov.w	r3, #7	; 0x7
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:42
+    /* SPIz Config -------------------------------------------------------------*/
+    SPI_InitStructure.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
+    SPI_InitStructure.SPI_Mode = SPI_Mode_Slave;	//마스터모드셋팅
+    SPI_InitStructure.SPI_DataSize = SPI_DataSize_8b;
+    SPI_InitStructure.SPI_CPOL = SPI_CPOL_Low;
+    SPI_InitStructure.SPI_CPHA = SPI_CPHA_2Edge;
+  28:	810d      	strh	r5, [r1, #8]
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:46
+    SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
+    SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_8;
+    SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_LSB;
+    SPI_InitStructure.SPI_CRCPolynomial = 7;
+  2a:	820b      	strh	r3, [r1, #16]
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:47
+    SPI_Init(SPIz, &SPI_InitStructure);			//SPIy를 마스터로
+  2c:	4620      	mov	r0, r4
+  2e:	f7ff fffe 	bl	0 <SPI_Init>
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:56
+    //SPI_Init(SPIz, &SPI_InitStructure);			//SPIz를 마스터로
+
+    /* Enable SPIy */
+    //SPI_Cmd(SPIy, ENABLE);
+    /* Enable SPIz */
+    SPI_Cmd(SPIz, ENABLE);
+  32:	4620      	mov	r0, r4
+  34:	4629      	mov	r1, r5
+  36:	f7ff fffe 	bl	0 <SPI_Cmd>
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:58
+
+}
+  3a:	bd70      	pop	{r4, r5, r6, pc}
+  3c:	00000000 	.word	0x00000000
+  40:	40003800 	.word	0x40003800
+Disassembly of section .text.SPIy_Master_Configuration:
+
+00000000 <SPIy_Master_Configuration>:
+SPIy_Master_Configuration():
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:13
+SPI_InitTypeDef SPI_InitStructure;
+
+void SPIy_Master_Configuration()
+{
+    /* SPIy Config -------------------------------------------------------------*/
+    SPI_InitStructure.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
+   0:	490f      	ldr	r1, [pc, #60]	(40 <SPIy_Master_Configuration+0x40>)
+   2:	2300      	movs	r3, #0
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:14
+    SPI_InitStructure.SPI_Mode = SPI_Mode_Master;	//마스터모드셋팅
+   4:	f44f 7282 	mov.w	r2, #260	; 0x104
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:11
+   SPI는 2개의 선을 갖는 FullDuplex임을 기억. 즉, 최대 2Line FullDuplex 사용 가능.
+*/
+SPI_InitTypeDef SPI_InitStructure;
+
+void SPIy_Master_Configuration()
+{
+   8:	b570      	push	{r4, r5, r6, lr}
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:13
+    /* SPIy Config -------------------------------------------------------------*/
+    SPI_InitStructure.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
+   a:	800b      	strh	r3, [r1, #0]
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:14
+    SPI_InitStructure.SPI_Mode = SPI_Mode_Master;	//마스터모드셋팅
+   c:	804a      	strh	r2, [r1, #2]
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:15
+    SPI_InitStructure.SPI_DataSize = SPI_DataSize_8b;
+   e:	808b      	strh	r3, [r1, #4]
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:16
+    SPI_InitStructure.SPI_CPOL = SPI_CPOL_Low;
+  10:	80cb      	strh	r3, [r1, #6]
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:22
+    SPI_InitStructure.SPI_CPHA = SPI_CPHA_2Edge;
+    SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
+    SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_8;
+    SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_LSB;
+    SPI_InitStructure.SPI_CRCPolynomial = 7;
+    SPI_Init(SPIy, &SPI_InitStructure);			//SPIy를 마스터로
+  12:	4c0c      	ldr	r4, [pc, #48]	(44 <SPIy_Master_Configuration+0x44>)
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:18
+    SPI_InitStructure.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
+    SPI_InitStructure.SPI_Mode = SPI_Mode_Master;	//마스터모드셋팅
+    SPI_InitStructure.SPI_DataSize = SPI_DataSize_8b;
+    SPI_InitStructure.SPI_CPOL = SPI_CPOL_Low;
+    SPI_InitStructure.SPI_CPHA = SPI_CPHA_2Edge;
+    SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
+  14:	f44f 7300 	mov.w	r3, #512	; 0x200
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:19
+    SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_8;
+  18:	f04f 0210 	mov.w	r2, #16	; 0x10
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:17
+    /* SPIy Config -------------------------------------------------------------*/
+    SPI_InitStructure.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
+    SPI_InitStructure.SPI_Mode = SPI_Mode_Master;	//마스터모드셋팅
+    SPI_InitStructure.SPI_DataSize = SPI_DataSize_8b;
+    SPI_InitStructure.SPI_CPOL = SPI_CPOL_Low;
+    SPI_InitStructure.SPI_CPHA = SPI_CPHA_2Edge;
+  1c:	2501      	movs	r5, #1
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:18
+    SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
+  1e:	814b      	strh	r3, [r1, #10]
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:19
+    SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_8;
+  20:	818a      	strh	r2, [r1, #12]
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:20
+    SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_LSB;
+  22:	f04f 0380 	mov.w	r3, #128	; 0x80
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:21
+    SPI_InitStructure.SPI_CRCPolynomial = 7;
+  26:	f04f 0207 	mov.w	r2, #7	; 0x7
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:17
+    /* SPIy Config -------------------------------------------------------------*/
+    SPI_InitStructure.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
+    SPI_InitStructure.SPI_Mode = SPI_Mode_Master;	//마스터모드셋팅
+    SPI_InitStructure.SPI_DataSize = SPI_DataSize_8b;
+    SPI_InitStructure.SPI_CPOL = SPI_CPOL_Low;
+    SPI_InitStructure.SPI_CPHA = SPI_CPHA_2Edge;
+  2a:	810d      	strh	r5, [r1, #8]
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:20
+    SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
+    SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_8;
+    SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_LSB;
+  2c:	81cb      	strh	r3, [r1, #14]
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:21
+    SPI_InitStructure.SPI_CRCPolynomial = 7;
+  2e:	820a      	strh	r2, [r1, #16]
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:22
+    SPI_Init(SPIy, &SPI_InitStructure);			//SPIy를 마스터로
+  30:	4620      	mov	r0, r4
+  32:	f7ff fffe 	bl	0 <SPI_Init>
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:29
+    /* SPIz Config -------------------------------------------------------------*/
+    //SPI_InitStructure.SPI_Mode = SPI_Mode_Slave;
+    //SPI_Init(SPIz, &SPI_InitStructure);			//SPIz를 마스터로
+
+    /* Enable SPIy */
+    SPI_Cmd(SPIy, ENABLE);
+  36:	4620      	mov	r0, r4
+  38:	4629      	mov	r1, r5
+  3a:	f7ff fffe 	bl	0 <SPI_Cmd>
+C:\Users\Linux\Downloads\06_12\src/SPI_config.c:33
+    /* Enable SPIz */
+    //SPI_Cmd(SPIz, ENABLE);
+
+}
+  3e:	bd70      	pop	{r4, r5, r6, pc}
+  40:	00000000 	.word	0x00000000
+  44:	40013000 	.word	0x40013000

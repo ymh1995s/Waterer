@@ -1,0 +1,152 @@
+
+C:\Users\Linux\Downloads\06_12\obj\NVIC_config.o:     file format elf32-littlearm
+C:\Users\Linux\Downloads\06_12\obj\NVIC_config.o
+
+Disassembly of section .text.NVIC_Configuration:
+
+00000000 <NVIC_Configuration>:
+NVIC_Configuration():
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:9
+    해당 명령어는 stm32f10x_nvic.c, stm32f10x_nvic.h가 아닌
+             misc.c, misc.h에 나타나 있다.
+*/
+
+void NVIC_Configuration(void)
+{
+   0:	b573      	push	{r0, r1, r4, r5, r6, lr}
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:18
+  NVIC_InitStructure.NVIC_IRQChannel = TIM2_IRQn;
+  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+  NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+
+  NVIC_Init(&NVIC_InitStructure);
+   2:	ae01      	add	r6, sp, #4
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:14
+{
+  NVIC_InitTypeDef NVIC_InitStructure;
+
+  /* Enable the TIM2 global Interrupt */
+  NVIC_InitStructure.NVIC_IRQChannel = TIM2_IRQn;
+  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+   4:	2400      	movs	r4, #0
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:16
+  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+  NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+   6:	2501      	movs	r5, #1
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:13
+void NVIC_Configuration(void)
+{
+  NVIC_InitTypeDef NVIC_InitStructure;
+
+  /* Enable the TIM2 global Interrupt */
+  NVIC_InitStructure.NVIC_IRQChannel = TIM2_IRQn;
+   8:	231c      	movs	r3, #28
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:18
+  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+  NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+
+  NVIC_Init(&NVIC_InitStructure);
+   a:	4630      	mov	r0, r6
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:13
+void NVIC_Configuration(void)
+{
+  NVIC_InitTypeDef NVIC_InitStructure;
+
+  /* Enable the TIM2 global Interrupt */
+  NVIC_InitStructure.NVIC_IRQChannel = TIM2_IRQn;
+   c:	f88d 3004 	strb.w	r3, [sp, #4]
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:14
+  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+  10:	f88d 4005 	strb.w	r4, [sp, #5]
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:15
+  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+  14:	f88d 4006 	strb.w	r4, [sp, #6]
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:16
+  NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+  18:	f88d 5007 	strb.w	r5, [sp, #7]
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:18
+
+  NVIC_Init(&NVIC_InitStructure);
+  1c:	f7ff fffe 	bl	0 <NVIC_Init>
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:21
+
+  /* Enable the TIM3 global Interrupt */
+  NVIC_InitStructure.NVIC_IRQChannel = TIM3_IRQn;
+  20:	231d      	movs	r3, #29
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:26
+  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
+  NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+
+  NVIC_Init(&NVIC_InitStructure);
+  22:	4630      	mov	r0, r6
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:21
+  NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+
+  NVIC_Init(&NVIC_InitStructure);
+
+  /* Enable the TIM3 global Interrupt */
+  NVIC_InitStructure.NVIC_IRQChannel = TIM3_IRQn;
+  24:	f88d 3004 	strb.w	r3, [sp, #4]
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:22
+  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+  28:	f88d 4005 	strb.w	r4, [sp, #5]
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:23
+  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
+  2c:	f88d 5006 	strb.w	r5, [sp, #6]
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:24
+  NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+  30:	f88d 5007 	strb.w	r5, [sp, #7]
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:26
+
+  NVIC_Init(&NVIC_InitStructure);
+  34:	f7ff fffe 	bl	0 <NVIC_Init>
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:30
+
+
+    /* Set the Vector Table base location at 0x08000000 */ 
+    NVIC_SetVectorTable(NVIC_VectTab_FLASH, 0x0);   
+  38:	4621      	mov	r1, r4
+  3a:	f04f 6000 	mov.w	r0, #134217728	; 0x8000000
+  3e:	f7ff fffe 	bl	0 <NVIC_SetVectorTable>
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:33
+
+    /* Configure one bit for preemption priority */
+    NVIC_PriorityGroupConfig(NVIC_PriorityGroup_0);
+  42:	f44f 60e0 	mov.w	r0, #1792	; 0x700
+  46:	f7ff fffe 	bl	0 <NVIC_PriorityGroupConfig>
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:36
+
+    /* Enable the EXTI0 Interrupt */
+    NVIC_InitStructure.NVIC_IRQChannel = EXTI0_IRQn;
+  4a:	2306      	movs	r3, #6
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:40
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+    NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+    NVIC_Init(&NVIC_InitStructure);
+  4c:	4630      	mov	r0, r6
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:36
+
+    /* Configure one bit for preemption priority */
+    NVIC_PriorityGroupConfig(NVIC_PriorityGroup_0);
+
+    /* Enable the EXTI0 Interrupt */
+    NVIC_InitStructure.NVIC_IRQChannel = EXTI0_IRQn;
+  4e:	f88d 3004 	strb.w	r3, [sp, #4]
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:37
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+  52:	f88d 4005 	strb.w	r4, [sp, #5]
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:38
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+  56:	f88d 4006 	strb.w	r4, [sp, #6]
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:39
+    NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+  5a:	f88d 5007 	strb.w	r5, [sp, #7]
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:40
+    NVIC_Init(&NVIC_InitStructure);
+  5e:	f7ff fffe 	bl	0 <NVIC_Init>
+C:\Users\Linux\Downloads\06_12\src/NVIC_config.c:41
+  62:	bd7c      	pop	{r2, r3, r4, r5, r6, pc}

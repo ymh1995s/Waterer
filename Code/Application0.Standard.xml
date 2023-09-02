@@ -1,0 +1,1226 @@
+<!-- DWF2XML 2.00.01 - Raisonance Dwarf information extractor -->
+<aoffile Filename="Application0" dwarf="1">
+ <modulelist>
+  <module Name="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\main.c" >
+   <type Family="Base" Name="signed char" ID="37"/>
+   <type Family="Base" Name="unsigned char" ID="55"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="44" toTI="55"/>
+   <type Family="Base" Name="short int" ID="62"/>
+   <type Family="Base" Name="short unsigned int" ID="80"/>
+   <type Family="typedef" Name="uint16_t" Line="58" ID="69" toTI="80"/>
+   <type Family="Base" Name="long int" ID="87"/>
+   <type Family="Base" Name="long unsigned int" ID="105"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="94" toTI="105"/>
+   <type Family="Base" Name="long long int" ID="112"/>
+   <type Family="Base" Name="long long unsigned int" ID="119"/>
+   <type Family="Base" Name="int" ID="126"/>
+   <type Family="Base" Name="unsigned int" ID="133"/>
+   <type Family="ComponentList" Line="1003" ID="175">
+    <Component Name="CRL" TI="184" Line="1004" Offs="0"/>
+    <Component Name="CRH" TI="199" Line="1005" Offs="4"/>
+    <Component Name="IDR" TI="214" Line="1006" Offs="8"/>
+    <Component Name="ODR" TI="229" Line="1007" Offs="12"/>
+    <Component Name="BSRR" TI="244" Line="1008" Offs="16"/>
+    <Component Name="BRR" TI="259" Line="1009" Offs="20"/>
+    <Component Name="LCKR" TI="274" Line="1010" Offs="24"/>
+   </type>
+   <type Family="ComponentList" Line="1188" ID="290">
+    <Component Name="CR1" TI="299" Line="1189" Offs="0"/>
+    <Component Name="RESERVED0" TI="314" Line="1190" Offs="2"/>
+    <Component Name="CR2" TI="329" Line="1191" Offs="4"/>
+    <Component Name="RESERVED1" TI="344" Line="1192" Offs="6"/>
+    <Component Name="SMCR" TI="359" Line="1193" Offs="8"/>
+    <Component Name="RESERVED2" TI="374" Line="1194" Offs="10"/>
+    <Component Name="DIER" TI="389" Line="1195" Offs="12"/>
+    <Component Name="RESERVED3" TI="404" Line="1196" Offs="14"/>
+    <Component Name="SR" TI="419" Line="1197" Offs="16"/>
+    <Component Name="RESERVED4" TI="433" Line="1198" Offs="18"/>
+    <Component Name="EGR" TI="448" Line="1199" Offs="20"/>
+    <Component Name="RESERVED5" TI="463" Line="1200" Offs="22"/>
+    <Component Name="CCMR1" TI="478" Line="1201" Offs="24"/>
+    <Component Name="RESERVED6" TI="493" Line="1202" Offs="26"/>
+    <Component Name="CCMR2" TI="508" Line="1203" Offs="28"/>
+    <Component Name="RESERVED7" TI="523" Line="1204" Offs="30"/>
+    <Component Name="CCER" TI="538" Line="1205" Offs="32"/>
+    <Component Name="RESERVED8" TI="553" Line="1206" Offs="34"/>
+    <Component Name="CNT" TI="568" Line="1207" Offs="36"/>
+    <Component Name="RESERVED9" TI="583" Line="1208" Offs="38"/>
+    <Component Name="PSC" TI="598" Line="1209" Offs="40"/>
+    <Component Name="RESERVED10" TI="613" Line="1210" Offs="42"/>
+    <Component Name="ARR" TI="628" Line="1211" Offs="44"/>
+    <Component Name="RESERVED11" TI="643" Line="1212" Offs="46"/>
+    <Component Name="RCR" TI="658" Line="1213" Offs="48"/>
+    <Component Name="RESERVED12" TI="673" Line="1214" Offs="50"/>
+    <Component Name="CCR1" TI="688" Line="1215" Offs="52"/>
+    <Component Name="RESERVED13" TI="703" Line="1216" Offs="54"/>
+    <Component Name="CCR2" TI="718" Line="1217" Offs="56"/>
+    <Component Name="RESERVED14" TI="733" Line="1218" Offs="58"/>
+    <Component Name="CCR3" TI="748" Line="1219" Offs="60"/>
+    <Component Name="RESERVED15" TI="763" Line="1220" Offs="62"/>
+    <Component Name="CCR4" TI="778" Line="1221" Offs="64"/>
+    <Component Name="RESERVED16" TI="793" Line="1222" Offs="66"/>
+    <Component Name="BDTR" TI="808" Line="1223" Offs="68"/>
+    <Component Name="RESERVED17" TI="823" Line="1224" Offs="70"/>
+    <Component Name="DCR" TI="838" Line="1225" Offs="72"/>
+    <Component Name="RESERVED18" TI="853" Line="1226" Offs="74"/>
+    <Component Name="DMAR" TI="868" Line="1227" Offs="76"/>
+    <Component Name="RESERVED19" TI="883" Line="1228" Offs="78"/>
+   </type>
+   <type Family="typedef" Name="GPIOSpeed_TypeDef" Line="63" ID="926" toTI="899"/>
+   <type Family="typedef" Name="GPIOMode_TypeDef" Line="80" ID="995" toTI="937"/>
+   <type Family="ComponentList" Line="92" ID="1006">
+    <Component Name="GPIO_Pin" TI="1014" Line="93" Offs="0"/>
+    <Component Name="GPIO_Speed" TI="1028" Line="96" Offs="2"/>
+    <Component Name="GPIO_Mode" TI="1042" Line="99" Offs="3"/>
+   </type>
+   <type Family="typedef" Name="GPIO_InitTypeDef" Line="101" ID="1057" toTI="1006"/>
+   <type Family="ComponentList" Line="52" ID="1089">
+    <Component Name="TIM_Prescaler" TI="1097" Line="53" Offs="0"/>
+    <Component Name="TIM_CounterMode" TI="1111" Line="56" Offs="2"/>
+    <Component Name="TIM_Period" TI="1125" Line="59" Offs="4"/>
+    <Component Name="TIM_ClockDivision" TI="1139" Line="63" Offs="6"/>
+    <Component Name="TIM_RepetitionCounter" TI="1153" Line="66" Offs="8"/>
+   </type>
+   <type Family="typedef" Name="TIM_TimeBaseInitTypeDef" Line="74" ID="1168" toTI="1089"/>
+   <type Family="ComponentList" Line="81" ID="1179">
+    <Component Name="TIM_OCMode" TI="1187" Line="82" Offs="0"/>
+    <Component Name="TIM_OutputState" TI="1201" Line="85" Offs="2"/>
+    <Component Name="TIM_OutputNState" TI="1215" Line="88" Offs="4"/>
+    <Component Name="TIM_Pulse" TI="1229" Line="92" Offs="6"/>
+    <Component Name="TIM_OCPolarity" TI="1243" Line="95" Offs="8"/>
+    <Component Name="TIM_OCNPolarity" TI="1257" Line="98" Offs="10"/>
+    <Component Name="TIM_OCIdleState" TI="1271" Line="102" Offs="12"/>
+    <Component Name="TIM_OCNIdleState" TI="1285" Line="106" Offs="14"/>
+   </type>
+   <type Family="typedef" Name="TIM_OCInitTypeDef" Line="109" ID="1300" toTI="1179"/>
+   <type Family="Base" Name="char" ID="1311"/>
+   <function Name="main" TI="126" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\main.c" Line="59">
+    <variable Name="count" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\main.c" Line="62" Addr="0x4" TI="126"/>
+    <variable Name="GPIO_InitStructure" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\main.c" Line="80" Addr="0x34000004" TI="1057"/>
+   </function >
+   <variable Name="TIM_TimeBaseStructure" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\main.c" Line="34" Addr="0x20000020" TI="1168"/>
+   <variable Name="TIM_OCInitStructure_PWM" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\main.c" Line="35" Addr="0x2000002A" TI="1300"/>
+   <variable Name="CCR1_Val" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\main.c" Line="37" Addr="0x0" TI="69"/>
+   <variable Name="CCR2_Val" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\main.c" Line="38" Addr="0x0" TI="69"/>
+   <variable Name="CCR3_Val" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\main.c" Line="39" Addr="0x0" TI="69"/>
+   <variable Name="CCR4_Val" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\main.c" Line="40" Addr="0x0" TI="69"/>
+   <type Family="array" ID="1520" toTI="126"/>
+   <variable Name="m_speed" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\main.c" Line="42" Addr="0x0" TI="1520"/>
+  </module>
+  <module Name="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" >
+   <type Family="Base" Name="signed char" ID="1592"/>
+   <type Family="Base" Name="unsigned char" ID="1599"/>
+   <type Family="Base" Name="short int" ID="1606"/>
+   <type Family="Base" Name="short unsigned int" ID="1624"/>
+   <type Family="typedef" Name="uint16_t" Line="58" ID="1613" toTI="1624"/>
+   <type Family="Base" Name="long int" ID="1631"/>
+   <type Family="Base" Name="long unsigned int" ID="1649"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="1638" toTI="1649"/>
+   <type Family="Base" Name="long long int" ID="1656"/>
+   <type Family="Base" Name="long long unsigned int" ID="1663"/>
+   <type Family="Base" Name="int" ID="1670"/>
+   <type Family="Base" Name="unsigned int" ID="1677"/>
+   <type Family="ComponentList" Line="1003" ID="1719">
+    <Component Name="CRL" TI="1728" Line="1004" Offs="0"/>
+    <Component Name="CRH" TI="1743" Line="1005" Offs="4"/>
+    <Component Name="IDR" TI="1758" Line="1006" Offs="8"/>
+    <Component Name="ODR" TI="1773" Line="1007" Offs="12"/>
+    <Component Name="BSRR" TI="1788" Line="1008" Offs="16"/>
+    <Component Name="BRR" TI="1803" Line="1009" Offs="20"/>
+    <Component Name="LCKR" TI="1818" Line="1010" Offs="24"/>
+   </type>
+   <type Family="ComponentList" Line="1188" ID="1834">
+    <Component Name="CR1" TI="1843" Line="1189" Offs="0"/>
+    <Component Name="RESERVED0" TI="1858" Line="1190" Offs="2"/>
+    <Component Name="CR2" TI="1873" Line="1191" Offs="4"/>
+    <Component Name="RESERVED1" TI="1888" Line="1192" Offs="6"/>
+    <Component Name="SMCR" TI="1903" Line="1193" Offs="8"/>
+    <Component Name="RESERVED2" TI="1918" Line="1194" Offs="10"/>
+    <Component Name="DIER" TI="1933" Line="1195" Offs="12"/>
+    <Component Name="RESERVED3" TI="1948" Line="1196" Offs="14"/>
+    <Component Name="SR" TI="1963" Line="1197" Offs="16"/>
+    <Component Name="RESERVED4" TI="1977" Line="1198" Offs="18"/>
+    <Component Name="EGR" TI="1992" Line="1199" Offs="20"/>
+    <Component Name="RESERVED5" TI="2007" Line="1200" Offs="22"/>
+    <Component Name="CCMR1" TI="2022" Line="1201" Offs="24"/>
+    <Component Name="RESERVED6" TI="2037" Line="1202" Offs="26"/>
+    <Component Name="CCMR2" TI="2052" Line="1203" Offs="28"/>
+    <Component Name="RESERVED7" TI="2067" Line="1204" Offs="30"/>
+    <Component Name="CCER" TI="2082" Line="1205" Offs="32"/>
+    <Component Name="RESERVED8" TI="2097" Line="1206" Offs="34"/>
+    <Component Name="CNT" TI="2112" Line="1207" Offs="36"/>
+    <Component Name="RESERVED9" TI="2127" Line="1208" Offs="38"/>
+    <Component Name="PSC" TI="2142" Line="1209" Offs="40"/>
+    <Component Name="RESERVED10" TI="2157" Line="1210" Offs="42"/>
+    <Component Name="ARR" TI="2172" Line="1211" Offs="44"/>
+    <Component Name="RESERVED11" TI="2187" Line="1212" Offs="46"/>
+    <Component Name="RCR" TI="2202" Line="1213" Offs="48"/>
+    <Component Name="RESERVED12" TI="2217" Line="1214" Offs="50"/>
+    <Component Name="CCR1" TI="2232" Line="1215" Offs="52"/>
+    <Component Name="RESERVED13" TI="2247" Line="1216" Offs="54"/>
+    <Component Name="CCR2" TI="2262" Line="1217" Offs="56"/>
+    <Component Name="RESERVED14" TI="2277" Line="1218" Offs="58"/>
+    <Component Name="CCR3" TI="2292" Line="1219" Offs="60"/>
+    <Component Name="RESERVED15" TI="2307" Line="1220" Offs="62"/>
+    <Component Name="CCR4" TI="2322" Line="1221" Offs="64"/>
+    <Component Name="RESERVED16" TI="2337" Line="1222" Offs="66"/>
+    <Component Name="BDTR" TI="2352" Line="1223" Offs="68"/>
+    <Component Name="RESERVED17" TI="2367" Line="1224" Offs="70"/>
+    <Component Name="DCR" TI="2382" Line="1225" Offs="72"/>
+    <Component Name="RESERVED18" TI="2397" Line="1226" Offs="74"/>
+    <Component Name="DMAR" TI="2412" Line="1227" Offs="76"/>
+    <Component Name="RESERVED19" TI="2427" Line="1228" Offs="78"/>
+   </type>
+   <type Family="Base" Name="char" ID="2443"/>
+   <function Name="NMI_Handler" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="58">
+   </function >
+   <function Name="HardFault_Handler" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="67">
+   </function >
+   <function Name="MemManage_Handler" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="79">
+   </function >
+   <function Name="BusFault_Handler" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="91">
+   </function >
+   <function Name="UsageFault_Handler" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="103">
+   </function >
+   <function Name="DebugMon_Handler" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="115">
+   </function >
+   <function Name="SVC_Handler" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="123">
+   </function >
+   <function Name="PendSV_Handler" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="131">
+   </function >
+   <function Name="SysTick_Handler" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="139">
+   </function >
+   <function Name="EXTI9_5_IRQHandler" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="246">
+   </function >
+   <function Name="EXTI0_IRQHandler" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="214">
+   </function >
+   <function Name="TIM3_IRQHandler" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="170">
+   </function >
+   <function Name="TIM2_IRQHandler" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="152">
+   </function >
+   <variable Name="capture" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="39" Addr="0x2000001C" TI="1613"/>
+   <variable Name="count" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="150" Addr="0x20000018" TI="1670"/>
+   <variable Name="count_2" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Project\STM32F10x_StdPeriph_Examples\TIM\TimeBase\stm32f10x_it.c" Line="168" Addr="0x20000014" TI="1670"/>
+  </module>
+  <module Name="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\SPI_config.c" >
+   <type Family="Base" Name="signed char" ID="2816"/>
+   <type Family="Base" Name="unsigned char" ID="2834"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="2823" toTI="2834"/>
+   <type Family="Base" Name="short int" ID="2841"/>
+   <type Family="Base" Name="short unsigned int" ID="2859"/>
+   <type Family="typedef" Name="uint16_t" Line="58" ID="2848" toTI="2859"/>
+   <type Family="Base" Name="long int" ID="2866"/>
+   <type Family="Base" Name="long unsigned int" ID="2873"/>
+   <type Family="Base" Name="long long int" ID="2880"/>
+   <type Family="Base" Name="long long unsigned int" ID="2887"/>
+   <type Family="Base" Name="int" ID="2894"/>
+   <type Family="Base" Name="unsigned int" ID="2901"/>
+   <type Family="ComponentList" Line="1162" ID="2938">
+    <Component Name="CR1" TI="2947" Line="1163" Offs="0"/>
+    <Component Name="RESERVED0" TI="2962" Line="1164" Offs="2"/>
+    <Component Name="CR2" TI="2977" Line="1165" Offs="4"/>
+    <Component Name="RESERVED1" TI="2992" Line="1166" Offs="6"/>
+    <Component Name="SR" TI="3007" Line="1167" Offs="8"/>
+    <Component Name="RESERVED2" TI="3021" Line="1168" Offs="10"/>
+    <Component Name="DR" TI="3036" Line="1169" Offs="12"/>
+    <Component Name="RESERVED3" TI="3050" Line="1170" Offs="14"/>
+    <Component Name="CRCPR" TI="3065" Line="1171" Offs="16"/>
+    <Component Name="RESERVED4" TI="3080" Line="1172" Offs="18"/>
+    <Component Name="RXCRCR" TI="3095" Line="1173" Offs="20"/>
+    <Component Name="RESERVED5" TI="3110" Line="1174" Offs="22"/>
+    <Component Name="TXCRCR" TI="3125" Line="1175" Offs="24"/>
+    <Component Name="RESERVED6" TI="3140" Line="1176" Offs="26"/>
+    <Component Name="I2SCFGR" TI="3155" Line="1177" Offs="28"/>
+    <Component Name="RESERVED7" TI="3170" Line="1178" Offs="30"/>
+    <Component Name="I2SPR" TI="3185" Line="1179" Offs="32"/>
+    <Component Name="RESERVED8" TI="3200" Line="1180" Offs="34"/>
+   </type>
+   <type Family="ComponentList" Line="51" ID="3216">
+    <Component Name="SPI_Direction" TI="3224" Line="52" Offs="0"/>
+    <Component Name="SPI_Mode" TI="3238" Line="55" Offs="2"/>
+    <Component Name="SPI_DataSize" TI="3252" Line="58" Offs="4"/>
+    <Component Name="SPI_CPOL" TI="3266" Line="61" Offs="6"/>
+    <Component Name="SPI_CPHA" TI="3280" Line="64" Offs="8"/>
+    <Component Name="SPI_NSS" TI="3294" Line="67" Offs="10"/>
+    <Component Name="SPI_BaudRatePrescaler" TI="3308" Line="71" Offs="12"/>
+    <Component Name="SPI_FirstBit" TI="3322" Line="77" Offs="14"/>
+    <Component Name="SPI_CRCPolynomial" TI="3336" Line="80" Offs="16"/>
+   </type>
+   <type Family="typedef" Name="SPI_InitTypeDef" Line="81" ID="3351" toTI="3216"/>
+   <type Family="typedef" Name="TestStatus" Line="19" ID="3383" toTI="3362"/>
+   <type Family="Pointer" TI="3469" toTI="2823"/>
+   <variable Name="SPI_InitStructure" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\SPI_config.c" Line="8" Addr="0x0" TI="3351"/>
+  </module>
+  <module Name="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\EXTI_config.c" >
+   <type Family="Base" Name="signed char" ID="3590"/>
+   <type Family="Base" Name="unsigned char" ID="3597"/>
+   <type Family="Base" Name="short int" ID="3604"/>
+   <type Family="Base" Name="short unsigned int" ID="3611"/>
+   <type Family="Base" Name="long int" ID="3618"/>
+   <type Family="Base" Name="long unsigned int" ID="3636"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="3625" toTI="3636"/>
+   <type Family="Base" Name="long long int" ID="3643"/>
+   <type Family="Base" Name="long long unsigned int" ID="3650"/>
+   <type Family="Base" Name="int" ID="3657"/>
+   <type Family="Base" Name="unsigned int" ID="3664"/>
+   <type Family="typedef" Name="FunctionalState" Line="522" ID="3701" toTI="3679"/>
+   <type Family="ComponentList" Line="1003" ID="3713">
+    <Component Name="CRL" TI="3722" Line="1004" Offs="0"/>
+    <Component Name="CRH" TI="3737" Line="1005" Offs="4"/>
+    <Component Name="IDR" TI="3752" Line="1006" Offs="8"/>
+    <Component Name="ODR" TI="3767" Line="1007" Offs="12"/>
+    <Component Name="BSRR" TI="3782" Line="1008" Offs="16"/>
+    <Component Name="BRR" TI="3797" Line="1009" Offs="20"/>
+    <Component Name="LCKR" TI="3812" Line="1010" Offs="24"/>
+   </type>
+   <type Family="typedef" Name="EXTIMode_TypeDef" Line="54" ID="3849" toTI="3828"/>
+   <type Family="typedef" Name="EXTITrigger_TypeDef" Line="67" ID="3887" toTI="3860"/>
+   <type Family="ComponentList" Line="77" ID="3898">
+    <Component Name="EXTI_Line" TI="3906" Line="78" Offs="0"/>
+    <Component Name="EXTI_Mode" TI="3920" Line="81" Offs="4"/>
+    <Component Name="EXTI_Trigger" TI="3934" Line="84" Offs="5"/>
+    <Component Name="EXTI_LineCmd" TI="3948" Line="87" Offs="6"/>
+   </type>
+   <type Family="typedef" Name="EXTI_InitTypeDef" Line="89" ID="3963" toTI="3898"/>
+  </module>
+  <module Name="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\TIM_config.c" >
+   <type Family="Base" Name="signed char" ID="4070"/>
+   <type Family="Base" Name="unsigned char" ID="4088"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="4077" toTI="4088"/>
+   <type Family="Base" Name="short int" ID="4095"/>
+   <type Family="Base" Name="short unsigned int" ID="4113"/>
+   <type Family="typedef" Name="uint16_t" Line="58" ID="4102" toTI="4113"/>
+   <type Family="Base" Name="long int" ID="4120"/>
+   <type Family="Base" Name="long unsigned int" ID="4127"/>
+   <type Family="Base" Name="long long int" ID="4134"/>
+   <type Family="Base" Name="long long unsigned int" ID="4141"/>
+   <type Family="Base" Name="int" ID="4148"/>
+   <type Family="Base" Name="unsigned int" ID="4155"/>
+   <type Family="ComponentList" Line="1188" ID="4192">
+    <Component Name="CR1" TI="4201" Line="1189" Offs="0"/>
+    <Component Name="RESERVED0" TI="4216" Line="1190" Offs="2"/>
+    <Component Name="CR2" TI="4231" Line="1191" Offs="4"/>
+    <Component Name="RESERVED1" TI="4246" Line="1192" Offs="6"/>
+    <Component Name="SMCR" TI="4261" Line="1193" Offs="8"/>
+    <Component Name="RESERVED2" TI="4276" Line="1194" Offs="10"/>
+    <Component Name="DIER" TI="4291" Line="1195" Offs="12"/>
+    <Component Name="RESERVED3" TI="4306" Line="1196" Offs="14"/>
+    <Component Name="SR" TI="4321" Line="1197" Offs="16"/>
+    <Component Name="RESERVED4" TI="4335" Line="1198" Offs="18"/>
+    <Component Name="EGR" TI="4350" Line="1199" Offs="20"/>
+    <Component Name="RESERVED5" TI="4365" Line="1200" Offs="22"/>
+    <Component Name="CCMR1" TI="4380" Line="1201" Offs="24"/>
+    <Component Name="RESERVED6" TI="4395" Line="1202" Offs="26"/>
+    <Component Name="CCMR2" TI="4410" Line="1203" Offs="28"/>
+    <Component Name="RESERVED7" TI="4425" Line="1204" Offs="30"/>
+    <Component Name="CCER" TI="4440" Line="1205" Offs="32"/>
+    <Component Name="RESERVED8" TI="4455" Line="1206" Offs="34"/>
+    <Component Name="CNT" TI="4470" Line="1207" Offs="36"/>
+    <Component Name="RESERVED9" TI="4485" Line="1208" Offs="38"/>
+    <Component Name="PSC" TI="4500" Line="1209" Offs="40"/>
+    <Component Name="RESERVED10" TI="4515" Line="1210" Offs="42"/>
+    <Component Name="ARR" TI="4530" Line="1211" Offs="44"/>
+    <Component Name="RESERVED11" TI="4545" Line="1212" Offs="46"/>
+    <Component Name="RCR" TI="4560" Line="1213" Offs="48"/>
+    <Component Name="RESERVED12" TI="4575" Line="1214" Offs="50"/>
+    <Component Name="CCR1" TI="4590" Line="1215" Offs="52"/>
+    <Component Name="RESERVED13" TI="4605" Line="1216" Offs="54"/>
+    <Component Name="CCR2" TI="4620" Line="1217" Offs="56"/>
+    <Component Name="RESERVED14" TI="4635" Line="1218" Offs="58"/>
+    <Component Name="CCR3" TI="4650" Line="1219" Offs="60"/>
+    <Component Name="RESERVED15" TI="4665" Line="1220" Offs="62"/>
+    <Component Name="CCR4" TI="4680" Line="1221" Offs="64"/>
+    <Component Name="RESERVED16" TI="4695" Line="1222" Offs="66"/>
+    <Component Name="BDTR" TI="4710" Line="1223" Offs="68"/>
+    <Component Name="RESERVED17" TI="4725" Line="1224" Offs="70"/>
+    <Component Name="DCR" TI="4740" Line="1225" Offs="72"/>
+    <Component Name="RESERVED18" TI="4755" Line="1226" Offs="74"/>
+    <Component Name="DMAR" TI="4770" Line="1227" Offs="76"/>
+    <Component Name="RESERVED19" TI="4785" Line="1228" Offs="78"/>
+   </type>
+   <type Family="ComponentList" Line="52" ID="4801">
+    <Component Name="TIM_Prescaler" TI="4809" Line="53" Offs="0"/>
+    <Component Name="TIM_CounterMode" TI="4823" Line="56" Offs="2"/>
+    <Component Name="TIM_Period" TI="4837" Line="59" Offs="4"/>
+    <Component Name="TIM_ClockDivision" TI="4851" Line="63" Offs="6"/>
+    <Component Name="TIM_RepetitionCounter" TI="4865" Line="66" Offs="8"/>
+   </type>
+   <type Family="typedef" Name="TIM_TimeBaseInitTypeDef" Line="74" ID="4880" toTI="4801"/>
+   <type Family="ComponentList" Line="81" ID="4891">
+    <Component Name="TIM_OCMode" TI="4899" Line="82" Offs="0"/>
+    <Component Name="TIM_OutputState" TI="4913" Line="85" Offs="2"/>
+    <Component Name="TIM_OutputNState" TI="4927" Line="88" Offs="4"/>
+    <Component Name="TIM_Pulse" TI="4941" Line="92" Offs="6"/>
+    <Component Name="TIM_OCPolarity" TI="4955" Line="95" Offs="8"/>
+    <Component Name="TIM_OCNPolarity" TI="4969" Line="98" Offs="10"/>
+    <Component Name="TIM_OCIdleState" TI="4983" Line="102" Offs="12"/>
+    <Component Name="TIM_OCNIdleState" TI="4997" Line="106" Offs="14"/>
+   </type>
+   <type Family="typedef" Name="TIM_OCInitTypeDef" Line="109" ID="5012" toTI="4891"/>
+   <function Name="TIM_Configuration" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\TIM_config.c" Line="13">
+   </function >
+   <variable Name="TIM_TimeBaseStructure" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\TIM_config.c" Line="8" Addr="0x20000020" TI="4880"/>
+   <variable Name="TIM_TimeBaseStructure_PWM" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\TIM_config.c" Line="9" Addr="0x2000003A" TI="4880"/>
+   <variable Name="TIM_OCInitStructure_PWM" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\TIM_config.c" Line="10" Addr="0x2000002A" TI="5012"/>
+  </module>
+  <module Name="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\NVIC_config.c" >
+   <type Family="Base" Name="signed char" ID="5474"/>
+   <type Family="Base" Name="unsigned char" ID="5492"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="5481" toTI="5492"/>
+   <type Family="Base" Name="short int" ID="5499"/>
+   <type Family="Base" Name="short unsigned int" ID="5506"/>
+   <type Family="Base" Name="long int" ID="5513"/>
+   <type Family="Base" Name="long unsigned int" ID="5520"/>
+   <type Family="Base" Name="long long int" ID="5527"/>
+   <type Family="Base" Name="long long unsigned int" ID="5534"/>
+   <type Family="Base" Name="int" ID="5541"/>
+   <type Family="Base" Name="unsigned int" ID="5548"/>
+   <type Family="typedef" Name="FunctionalState" Line="522" ID="5580" toTI="5558"/>
+   <type Family="ComponentList" Line="51" ID="5592">
+    <Component Name="NVIC_IRQChannel" TI="5600" Line="52" Offs="0"/>
+    <Component Name="NVIC_IRQChannelPreemptionPriority" TI="5614" Line="57" Offs="1"/>
+    <Component Name="NVIC_IRQChannelSubPriority" TI="5628" Line="61" Offs="2"/>
+    <Component Name="NVIC_IRQChannelCmd" TI="5642" Line="65" Offs="3"/>
+   </type>
+   <type Family="typedef" Name="NVIC_InitTypeDef" Line="68" ID="5657" toTI="5592"/>
+   <function Name="NVIC_Configuration" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\NVIC_config.c" Line="9">
+    <variable Name="NVIC_InitStructure" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\NVIC_config.c" Line="10" Addr="0x34000004" TI="5657"/>
+   </function >
+  </module>
+  <module Name="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\RCC_config.c" >
+   <type Family="Base" Name="signed char" ID="5765"/>
+   <type Family="Base" Name="unsigned char" ID="5772"/>
+   <type Family="Base" Name="short int" ID="5779"/>
+   <type Family="Base" Name="short unsigned int" ID="5786"/>
+   <type Family="Base" Name="long int" ID="5793"/>
+   <type Family="Base" Name="long unsigned int" ID="5800"/>
+   <type Family="Base" Name="long long int" ID="5807"/>
+   <type Family="Base" Name="long long unsigned int" ID="5814"/>
+   <type Family="Base" Name="int" ID="5821"/>
+   <type Family="Base" Name="unsigned int" ID="5828"/>
+   <function Name="RCC_Configuration" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\RCC_config.c" Line="8">
+   </function >
+  </module>
+  <module Name="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\GPIO_config.c" >
+   <type Family="Base" Name="signed char" ID="5938"/>
+   <type Family="Base" Name="unsigned char" ID="5945"/>
+   <type Family="Base" Name="short int" ID="5952"/>
+   <type Family="Base" Name="short unsigned int" ID="5970"/>
+   <type Family="typedef" Name="uint16_t" Line="58" ID="5959" toTI="5970"/>
+   <type Family="Base" Name="long int" ID="5977"/>
+   <type Family="Base" Name="long unsigned int" ID="5995"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="5984" toTI="5995"/>
+   <type Family="Base" Name="long long int" ID="6002"/>
+   <type Family="Base" Name="long long unsigned int" ID="6009"/>
+   <type Family="Base" Name="int" ID="6016"/>
+   <type Family="Base" Name="unsigned int" ID="6023"/>
+   <type Family="ComponentList" Line="1003" ID="6038">
+    <Component Name="CRL" TI="6047" Line="1004" Offs="0"/>
+    <Component Name="CRH" TI="6062" Line="1005" Offs="4"/>
+    <Component Name="IDR" TI="6077" Line="1006" Offs="8"/>
+    <Component Name="ODR" TI="6092" Line="1007" Offs="12"/>
+    <Component Name="BSRR" TI="6107" Line="1008" Offs="16"/>
+    <Component Name="BRR" TI="6122" Line="1009" Offs="20"/>
+    <Component Name="LCKR" TI="6137" Line="1010" Offs="24"/>
+   </type>
+   <type Family="typedef" Name="GPIOSpeed_TypeDef" Line="63" ID="6180" toTI="6153"/>
+   <type Family="typedef" Name="GPIOMode_TypeDef" Line="80" ID="6249" toTI="6191"/>
+   <type Family="ComponentList" Line="92" ID="6260">
+    <Component Name="GPIO_Pin" TI="6268" Line="93" Offs="0"/>
+    <Component Name="GPIO_Speed" TI="6282" Line="96" Offs="2"/>
+    <Component Name="GPIO_Mode" TI="6296" Line="99" Offs="3"/>
+   </type>
+   <type Family="typedef" Name="GPIO_InitTypeDef" Line="101" ID="6311" toTI="6260"/>
+   <function Name="GPIO_Configuration" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\GPIO_config.c" Line="7">
+    <variable Name="GPIO_InitStructure_LED" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\GPIO_config.c" Line="16" Addr="0x34000014" TI="6311"/>
+    <variable Name="GPIO_InitStructure_PWM" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\GPIO_config.c" Line="34" Addr="0x34000010" TI="6311"/>
+    <variable Name="GPIO_InitStructure_USART1" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\GPIO_config.c" Line="60" Addr="0x3400000C" TI="6311"/>
+    <variable Name="GPIO_InitStructure_USART3" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\GPIO_config.c" Line="84" Addr="0x34000008" TI="6311"/>
+    <variable Name="GPIO_InitStructure_KEY" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\GPIO_config.c" Line="109" Addr="0x34000004" TI="6311"/>
+    <variable Name="GPIO_InitStructure" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\GPIO_config.c" Line="124" Addr="0x34000000" TI="6311"/>
+   </function >
+  </module>
+  <module Name="C:\Users\Linux\Downloads\2주차\Project\4Digit_Segment 점등 코드\src\segment.c" >
+   <type Family="Base" Name="signed char" ID="6489"/>
+   <type Family="Base" Name="unsigned char" ID="6496"/>
+   <type Family="Base" Name="short int" ID="6503"/>
+   <type Family="Base" Name="short unsigned int" ID="6510"/>
+   <type Family="Base" Name="long int" ID="6517"/>
+   <type Family="Base" Name="long unsigned int" ID="6535"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="6524" toTI="6535"/>
+   <type Family="Base" Name="long long int" ID="6542"/>
+   <type Family="Base" Name="long long unsigned int" ID="6549"/>
+   <type Family="Base" Name="int" ID="6556"/>
+   <type Family="Base" Name="unsigned int" ID="6563"/>
+   <type Family="ComponentList" Line="1003" ID="6578">
+    <Component Name="CRL" TI="6587" Line="1004" Offs="0"/>
+    <Component Name="CRH" TI="6602" Line="1005" Offs="4"/>
+    <Component Name="IDR" TI="6617" Line="1006" Offs="8"/>
+    <Component Name="ODR" TI="6632" Line="1007" Offs="12"/>
+    <Component Name="BSRR" TI="6647" Line="1008" Offs="16"/>
+    <Component Name="BRR" TI="6662" Line="1009" Offs="20"/>
+    <Component Name="LCKR" TI="6677" Line="1010" Offs="24"/>
+   </type>
+   <function Name="GPIO_4digit_segment_0" TI="0" FileName="C:\Users\Linux\Downloads\2주차\Project\4Digit_Segment 점등 코드\src\segment.c" Line="22">
+   </function >
+   <function Name="GPIO_4digit_segment_DIG_4" TI="0" FileName="C:\Users\Linux\Downloads\2주차\Project\4Digit_Segment 점등 코드\src\segment.c" Line="120">
+   </function >
+   <function Name="GPIO_4digit_segment_DIG_3" TI="0" FileName="C:\Users\Linux\Downloads\2주차\Project\4Digit_Segment 점등 코드\src\segment.c" Line="114">
+   </function >
+   <function Name="GPIO_4digit_segment_DIG_2" TI="0" FileName="C:\Users\Linux\Downloads\2주차\Project\4Digit_Segment 점등 코드\src\segment.c" Line="108">
+   </function >
+   <function Name="GPIO_4digit_segment_DIG_1" TI="0" FileName="C:\Users\Linux\Downloads\2주차\Project\4Digit_Segment 점등 코드\src\segment.c" Line="102">
+   </function >
+   <function Name="GPIO_4digit_segment_9" TI="0" FileName="C:\Users\Linux\Downloads\2주차\Project\4Digit_Segment 점등 코드\src\segment.c" Line="82">
+   </function >
+   <function Name="GPIO_4digit_segment_8" TI="0" FileName="C:\Users\Linux\Downloads\2주차\Project\4Digit_Segment 점등 코드\src\segment.c" Line="75">
+   </function >
+   <function Name="GPIO_4digit_segment_7" TI="0" FileName="C:\Users\Linux\Downloads\2주차\Project\4Digit_Segment 점등 코드\src\segment.c" Line="68">
+   </function >
+   <function Name="GPIO_4digit_segment_6" TI="0" FileName="C:\Users\Linux\Downloads\2주차\Project\4Digit_Segment 점등 코드\src\segment.c" Line="61">
+   </function >
+   <function Name="GPIO_4digit_segment_5" TI="0" FileName="C:\Users\Linux\Downloads\2주차\Project\4Digit_Segment 점등 코드\src\segment.c" Line="54">
+   </function >
+   <function Name="GPIO_4digit_segment_4" TI="0" FileName="C:\Users\Linux\Downloads\2주차\Project\4Digit_Segment 점등 코드\src\segment.c" Line="47">
+   </function >
+   <function Name="GPIO_4digit_segment_3" TI="0" FileName="C:\Users\Linux\Downloads\2주차\Project\4Digit_Segment 점등 코드\src\segment.c" Line="41">
+   </function >
+   <function Name="GPIO_4digit_segment_2" TI="0" FileName="C:\Users\Linux\Downloads\2주차\Project\4Digit_Segment 점등 코드\src\segment.c" Line="35">
+   </function >
+   <function Name="GPIO_4digit_segment_1" TI="0" FileName="C:\Users\Linux\Downloads\2주차\Project\4Digit_Segment 점등 코드\src\segment.c" Line="28">
+   </function >
+  </module>
+  <module Name="C:\Users\Linux\Desktop\번갈아가며움직이는모터\src\USART_config.c" >
+   <type Family="Base" Name="signed char" ID="7044"/>
+   <type Family="Base" Name="unsigned char" ID="7062"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="7051" toTI="7062"/>
+   <type Family="Base" Name="short int" ID="7069"/>
+   <type Family="Base" Name="short unsigned int" ID="7087"/>
+   <type Family="typedef" Name="uint16_t" Line="58" ID="7076" toTI="7087"/>
+   <type Family="Base" Name="long int" ID="7094"/>
+   <type Family="Base" Name="long unsigned int" ID="7112"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="7101" toTI="7112"/>
+   <type Family="Base" Name="long long int" ID="7119"/>
+   <type Family="Base" Name="long long unsigned int" ID="7126"/>
+   <type Family="Base" Name="int" ID="7133"/>
+   <type Family="Base" Name="unsigned int" ID="7140"/>
+   <type Family="ComponentList" Line="1236" ID="7199">
+    <Component Name="SR" TI="7208" Line="1237" Offs="0"/>
+    <Component Name="RESERVED0" TI="7222" Line="1238" Offs="2"/>
+    <Component Name="DR" TI="7237" Line="1239" Offs="4"/>
+    <Component Name="RESERVED1" TI="7251" Line="1240" Offs="6"/>
+    <Component Name="BRR" TI="7266" Line="1241" Offs="8"/>
+    <Component Name="RESERVED2" TI="7281" Line="1242" Offs="10"/>
+    <Component Name="CR1" TI="7296" Line="1243" Offs="12"/>
+    <Component Name="RESERVED3" TI="7311" Line="1244" Offs="14"/>
+    <Component Name="CR2" TI="7326" Line="1245" Offs="16"/>
+    <Component Name="RESERVED4" TI="7341" Line="1246" Offs="18"/>
+    <Component Name="CR3" TI="7356" Line="1247" Offs="20"/>
+    <Component Name="RESERVED5" TI="7371" Line="1248" Offs="22"/>
+    <Component Name="GTPR" TI="7386" Line="1249" Offs="24"/>
+    <Component Name="RESERVED6" TI="7401" Line="1250" Offs="26"/>
+   </type>
+   <type Family="typedef" Name="USART_TypeDef" Line="1251" ID="7417" toTI="7199"/>
+   <type Family="ComponentList" Line="51" ID="7429">
+    <Component Name="USART_BaudRate" TI="7437" Line="52" Offs="0"/>
+    <Component Name="USART_WordLength" TI="7451" Line="57" Offs="4"/>
+    <Component Name="USART_StopBits" TI="7465" Line="60" Offs="6"/>
+    <Component Name="USART_Parity" TI="7479" Line="63" Offs="8"/>
+    <Component Name="USART_Mode" TI="7493" Line="70" Offs="10"/>
+    <Component Name="USART_HardwareFlowControl" TI="7507" Line="73" Offs="12"/>
+   </type>
+   <type Family="typedef" Name="USART_InitTypeDef" Line="76" ID="7522" toTI="7429"/>
+   <type Family="Pointer" TI="7591" toTI="7417"/>
+   <function Name="__io_putchar" TI="7133" FileName="C:\Users\Linux\Desktop\번갈아가며움직이는모터\src\USART_config.c" Line="60">
+    <parameter Name="ch" TI="7133" FileName="C:\Users\Linux\Desktop\번갈아가며움직이는모터\src\USART_config.c" Line="60" Addr="0x0" Param="Yes"/>
+   </function >
+   <function Name="USART1_Init" TI="0" FileName="C:\Users\Linux\Desktop\번갈아가며움직이는모터\src\USART_config.c" Line="16">
+    <variable Name="USART_InitStructure" FileName="C:\Users\Linux\Desktop\번갈아가며움직이는모터\src\USART_config.c" Line="17" Addr="0x34000000" TI="7522"/>
+   </function >
+  </module>
+  <module Name="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\delay.c" >
+   <type Family="Base" Name="signed char" ID="7738"/>
+   <type Family="Base" Name="unsigned char" ID="7745"/>
+   <type Family="Base" Name="short int" ID="7752"/>
+   <type Family="Base" Name="short unsigned int" ID="7759"/>
+   <type Family="Base" Name="long int" ID="7766"/>
+   <type Family="Base" Name="long unsigned int" ID="7773"/>
+   <type Family="Base" Name="long long int" ID="7780"/>
+   <type Family="Base" Name="long long unsigned int" ID="7787"/>
+   <type Family="Base" Name="int" ID="7794"/>
+   <type Family="Base" Name="unsigned int" ID="7801"/>
+   <function Name="delay_int_count" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\delay.c" Line="5">
+    <parameter Name="nTime" TI="7851" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\delay.c" Line="5" Addr="0x0" Param="Yes"/>
+   </function >
+   <function Name="delay_m" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\delay.c" Line="9">
+   </function >
+   <function Name="delay_m_button" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\src\delay.c" Line="14">
+   </function >
+  </module>
+  <module Name="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" >
+   <type Family="Base" Name="signed char" ID="7976"/>
+   <type Family="Base" Name="unsigned char" ID="7994"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="7983" toTI="7994"/>
+   <type Family="Base" Name="short int" ID="8001"/>
+   <type Family="Base" Name="short unsigned int" ID="8008"/>
+   <type Family="Base" Name="long int" ID="8015"/>
+   <type Family="Base" Name="long unsigned int" ID="8033"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="8022" toTI="8033"/>
+   <type Family="Base" Name="long long int" ID="8040"/>
+   <type Family="Base" Name="long long unsigned int" ID="8047"/>
+   <type Family="Base" Name="int" ID="8054"/>
+   <type Family="Base" Name="unsigned int" ID="8061"/>
+   <type Family="ComponentList" Line="156" ID="8076">
+    <Component Name="CPUID" TI="8084" Line="157" Offs="0"/>
+    <Component Name="ICSR" TI="8098" Line="158" Offs="4"/>
+    <Component Name="VTOR" TI="8112" Line="159" Offs="8"/>
+    <Component Name="AIRCR" TI="8126" Line="160" Offs="12"/>
+    <Component Name="SCR" TI="8140" Line="161" Offs="16"/>
+    <Component Name="CCR" TI="8154" Line="162" Offs="20"/>
+   <type Family="array" ID="8356" toTI="7983"/>
+    <Component Name="SHP" TI="8168" Line="163" Offs="24"/>
+    <Component Name="SHCSR" TI="8182" Line="164" Offs="36"/>
+    <Component Name="CFSR" TI="8196" Line="165" Offs="40"/>
+    <Component Name="HFSR" TI="8210" Line="166" Offs="44"/>
+    <Component Name="DFSR" TI="8224" Line="167" Offs="48"/>
+    <Component Name="MMFAR" TI="8238" Line="168" Offs="52"/>
+    <Component Name="BFAR" TI="8252" Line="169" Offs="56"/>
+    <Component Name="AFSR" TI="8266" Line="170" Offs="60"/>
+   <type Family="array" ID="8377" toTI="8022"/>
+    <Component Name="PFR" TI="8280" Line="171" Offs="64"/>
+    <Component Name="DFR" TI="8294" Line="172" Offs="72"/>
+    <Component Name="ADR" TI="8308" Line="173" Offs="76"/>
+   <type Family="array" ID="8403" toTI="8022"/>
+    <Component Name="MMFR" TI="8322" Line="174" Offs="80"/>
+   <type Family="array" ID="8429" toTI="8022"/>
+    <Component Name="ISAR" TI="8336" Line="175" Offs="96"/>
+   </type>
+   <type Family="ComponentList" Line="903" ID="8477">
+    <Component Name="ACR" TI="8486" Line="904" Offs="0"/>
+    <Component Name="KEYR" TI="8501" Line="905" Offs="4"/>
+    <Component Name="OPTKEYR" TI="8516" Line="906" Offs="8"/>
+    <Component Name="SR" TI="8531" Line="907" Offs="12"/>
+    <Component Name="CR" TI="8545" Line="908" Offs="16"/>
+    <Component Name="AR" TI="8559" Line="909" Offs="20"/>
+    <Component Name="RESERVED" TI="8573" Line="910" Offs="24"/>
+    <Component Name="OBR" TI="8588" Line="911" Offs="28"/>
+    <Component Name="WRPR" TI="8603" Line="912" Offs="32"/>
+   </type>
+   <type Family="ComponentList" Line="1078" ID="8619">
+    <Component Name="CR" TI="8628" Line="1079" Offs="0"/>
+    <Component Name="CFGR" TI="8642" Line="1080" Offs="4"/>
+    <Component Name="CIR" TI="8657" Line="1081" Offs="8"/>
+    <Component Name="APB2RSTR" TI="8672" Line="1082" Offs="12"/>
+    <Component Name="APB1RSTR" TI="8687" Line="1083" Offs="16"/>
+    <Component Name="AHBENR" TI="8702" Line="1084" Offs="20"/>
+    <Component Name="APB2ENR" TI="8717" Line="1085" Offs="24"/>
+    <Component Name="APB1ENR" TI="8732" Line="1086" Offs="28"/>
+    <Component Name="BDCR" TI="8747" Line="1087" Offs="32"/>
+    <Component Name="CSR" TI="8762" Line="1088" Offs="36"/>
+   </type>
+   <function Name="SystemInit" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" Line="213">
+    <variable Name="StartUpCounter" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" Line="989" Addr="0x3400000C" TI="0"/>
+    <variable Name="HSEStatus" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" Line="989" Addr="0x34000008" TI="0"/>
+   </function >
+   <variable Name="SystemCoreClock" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" Line="162" Addr="0x0" TI="8022"/>
+   <type Family="array" ID="9016" toTI="7983"/>
+   <variable Name="AHBPrescTable" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" Line="167" Addr="0x0" TI="9050"/>
+  </module>
+  <module Name="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" >
+   <type Family="Base" Name="signed char" ID="9098"/>
+   <type Family="Base" Name="unsigned char" ID="9116"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="9105" toTI="9116"/>
+   <type Family="Base" Name="short int" ID="9123"/>
+   <type Family="Base" Name="short unsigned int" ID="9130"/>
+   <type Family="Base" Name="long int" ID="9137"/>
+   <type Family="Base" Name="long unsigned int" ID="9155"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="9144" toTI="9155"/>
+   <type Family="Base" Name="long long int" ID="9162"/>
+   <type Family="Base" Name="long long unsigned int" ID="9169"/>
+   <type Family="Base" Name="int" ID="9176"/>
+   <type Family="Base" Name="unsigned int" ID="9183"/>
+   <type Family="ComponentList" Line="133" ID="9190">
+   <type Family="array" ID="9392" toTI="9144"/>
+    <Component Name="ISER" TI="9199" Line="134" Offs="0"/>
+   <type Family="array" ID="9416" toTI="9144"/>
+    <Component Name="RESERVED0" TI="9213" Line="135" Offs="32"/>
+    <Component Name="ICER" TI="9227" Line="136" Offs="128"/>
+    <Component Name="RSERVED1" TI="9242" Line="137" Offs="160"/>
+    <Component Name="ISPR" TI="9257" Line="138" Offs="256"/>
+    <Component Name="RESERVED2" TI="9272" Line="139" Offs="288"/>
+    <Component Name="ICPR" TI="9287" Line="140" Offs="384"/>
+    <Component Name="RESERVED3" TI="9302" Line="141" Offs="416"/>
+    <Component Name="IABR" TI="9317" Line="142" Offs="512"/>
+   <type Family="array" ID="9452" toTI="9144"/>
+    <Component Name="RESERVED4" TI="9332" Line="143" Offs="544"/>
+   <type Family="array" ID="9468" toTI="9105"/>
+    <Component Name="IP" TI="9347" Line="144" Offs="768"/>
+   <type Family="array" ID="9489" toTI="9144"/>
+    <Component Name="RESERVED5" TI="9361" Line="145" Offs="1008"/>
+    <Component Name="STIR" TI="9376" Line="146" Offs="3584"/>
+   </type>
+   <type Family="ComponentList" Line="156" ID="9511">
+    <Component Name="CPUID" TI="9519" Line="157" Offs="0"/>
+    <Component Name="ICSR" TI="9533" Line="158" Offs="4"/>
+    <Component Name="VTOR" TI="9547" Line="159" Offs="8"/>
+    <Component Name="AIRCR" TI="9561" Line="160" Offs="12"/>
+    <Component Name="SCR" TI="9575" Line="161" Offs="16"/>
+    <Component Name="CCR" TI="9589" Line="162" Offs="20"/>
+   <type Family="array" ID="9791" toTI="9105"/>
+    <Component Name="SHP" TI="9603" Line="163" Offs="24"/>
+    <Component Name="SHCSR" TI="9617" Line="164" Offs="36"/>
+    <Component Name="CFSR" TI="9631" Line="165" Offs="40"/>
+    <Component Name="HFSR" TI="9645" Line="166" Offs="44"/>
+    <Component Name="DFSR" TI="9659" Line="167" Offs="48"/>
+    <Component Name="MMFAR" TI="9673" Line="168" Offs="52"/>
+    <Component Name="BFAR" TI="9687" Line="169" Offs="56"/>
+    <Component Name="AFSR" TI="9701" Line="170" Offs="60"/>
+   <type Family="array" ID="9812" toTI="9144"/>
+    <Component Name="PFR" TI="9715" Line="171" Offs="64"/>
+    <Component Name="DFR" TI="9729" Line="172" Offs="72"/>
+    <Component Name="ADR" TI="9743" Line="173" Offs="76"/>
+   <type Family="array" ID="9838" toTI="9144"/>
+    <Component Name="MMFR" TI="9757" Line="174" Offs="80"/>
+   <type Family="array" ID="9864" toTI="9144"/>
+    <Component Name="ISAR" TI="9771" Line="175" Offs="96"/>
+   </type>
+   <type Family="ComponentList" Line="366" ID="9890">
+    <Component Name="CTRL" TI="9899" Line="367" Offs="0"/>
+    <Component Name="LOAD" TI="9914" Line="368" Offs="4"/>
+    <Component Name="VAL" TI="9929" Line="369" Offs="8"/>
+    <Component Name="CALIB" TI="9944" Line="370" Offs="12"/>
+   </type>
+   <type Family="typedef" Name="FunctionalState" Line="522" ID="9982" toTI="9960"/>
+   <type Family="ComponentList" Line="51" ID="9994">
+    <Component Name="NVIC_IRQChannel" TI="10002" Line="52" Offs="0"/>
+    <Component Name="NVIC_IRQChannelPreemptionPriority" TI="10016" Line="57" Offs="1"/>
+    <Component Name="NVIC_IRQChannelSubPriority" TI="10030" Line="61" Offs="2"/>
+    <Component Name="NVIC_IRQChannelCmd" TI="10044" Line="65" Offs="3"/>
+   </type>
+   <type Family="typedef" Name="NVIC_InitTypeDef" Line="68" ID="10059" toTI="9994"/>
+   <function Name="NVIC_PriorityGroupConfig" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" Line="97">
+    <parameter Name="NVIC_PriorityGroup" TI="9144" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" Line="97" Addr="0x0" Param="Yes"/>
+   </function >
+   <function Name="NVIC_Init" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" Line="113">
+   <type Family="Pointer" TI="10183" toTI="10059"/>
+    <parameter Name="NVIC_InitStruct" TI="10183" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" Line="113" Addr="0x0" Param="Yes"/>
+    <variable Name="tmppriority" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" Line="114" Addr="0x2" TI="9144"/>
+   </function >
+   <function Name="NVIC_SetVectorTable" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" Line="157">
+    <parameter Name="NVIC_VectTab" TI="9144" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" Line="157" Addr="0x0" Param="Yes"/>
+    <parameter Name="Offset" TI="9144" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" Line="157" Addr="0x1" Param="Yes"/>
+   </function >
+  </module>
+  <module Name="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c" >
+   <type Family="Base" Name="signed char" ID="10385"/>
+   <type Family="Base" Name="unsigned char" ID="10403"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="10392" toTI="10403"/>
+   <type Family="Base" Name="short int" ID="10410"/>
+   <type Family="Base" Name="short unsigned int" ID="10428"/>
+   <type Family="typedef" Name="uint16_t" Line="58" ID="10417" toTI="10428"/>
+   <type Family="Base" Name="long int" ID="10435"/>
+   <type Family="Base" Name="long unsigned int" ID="10453"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="10442" toTI="10453"/>
+   <type Family="Base" Name="long long int" ID="10460"/>
+   <type Family="Base" Name="long long unsigned int" ID="10467"/>
+   <type Family="Base" Name="int" ID="10474"/>
+   <type Family="Base" Name="unsigned int" ID="10481"/>
+   <type Family="typedef" Name="FlagStatus" Line="520" ID="10518" toTI="10496"/>
+   <type Family="typedef" Name="ITStatus" Line="520" ID="10530" toTI="10496"/>
+   <type Family="typedef" Name="FunctionalState" Line="522" ID="10564" toTI="10542"/>
+   <type Family="ComponentList" Line="1162" ID="10576">
+    <Component Name="CR1" TI="10585" Line="1163" Offs="0"/>
+    <Component Name="RESERVED0" TI="10600" Line="1164" Offs="2"/>
+    <Component Name="CR2" TI="10615" Line="1165" Offs="4"/>
+    <Component Name="RESERVED1" TI="10630" Line="1166" Offs="6"/>
+    <Component Name="SR" TI="10645" Line="1167" Offs="8"/>
+    <Component Name="RESERVED2" TI="10659" Line="1168" Offs="10"/>
+    <Component Name="DR" TI="10674" Line="1169" Offs="12"/>
+    <Component Name="RESERVED3" TI="10688" Line="1170" Offs="14"/>
+    <Component Name="CRCPR" TI="10703" Line="1171" Offs="16"/>
+    <Component Name="RESERVED4" TI="10718" Line="1172" Offs="18"/>
+    <Component Name="RXCRCR" TI="10733" Line="1173" Offs="20"/>
+    <Component Name="RESERVED5" TI="10748" Line="1174" Offs="22"/>
+    <Component Name="TXCRCR" TI="10763" Line="1175" Offs="24"/>
+    <Component Name="RESERVED6" TI="10778" Line="1176" Offs="26"/>
+    <Component Name="I2SCFGR" TI="10793" Line="1177" Offs="28"/>
+    <Component Name="RESERVED7" TI="10808" Line="1178" Offs="30"/>
+    <Component Name="I2SPR" TI="10823" Line="1179" Offs="32"/>
+    <Component Name="RESERVED8" TI="10838" Line="1180" Offs="34"/>
+   </type>
+   <type Family="typedef" Name="SPI_TypeDef" Line="1181" ID="10854" toTI="10576"/>
+   <type Family="ComponentList" Line="47" ID="10866">
+    <Component Name="SYSCLK_Frequency" TI="10874" Line="48" Offs="0"/>
+    <Component Name="HCLK_Frequency" TI="10888" Line="49" Offs="4"/>
+    <Component Name="PCLK1_Frequency" TI="10902" Line="50" Offs="8"/>
+    <Component Name="PCLK2_Frequency" TI="10916" Line="51" Offs="12"/>
+    <Component Name="ADCCLK_Frequency" TI="10930" Line="52" Offs="16"/>
+   </type>
+   <type Family="typedef" Name="RCC_ClocksTypeDef" Line="53" ID="10945" toTI="10866"/>
+   <type Family="ComponentList" Line="51" ID="10956">
+    <Component Name="SPI_Direction" TI="10964" Line="52" Offs="0"/>
+    <Component Name="SPI_Mode" TI="10978" Line="55" Offs="2"/>
+    <Component Name="SPI_DataSize" TI="10992" Line="58" Offs="4"/>
+    <Component Name="SPI_CPOL" TI="11006" Line="61" Offs="6"/>
+    <Component Name="SPI_CPHA" TI="11020" Line="64" Offs="8"/>
+    <Component Name="SPI_NSS" TI="11034" Line="67" Offs="10"/>
+    <Component Name="SPI_BaudRatePrescaler" TI="11048" Line="71" Offs="12"/>
+    <Component Name="SPI_FirstBit" TI="11062" Line="77" Offs="14"/>
+    <Component Name="SPI_CRCPolynomial" TI="11076" Line="80" Offs="16"/>
+   </type>
+   <type Family="typedef" Name="SPI_InitTypeDef" Line="81" ID="11091" toTI="10956"/>
+   <type Family="ComponentList" Line="88" ID="11102">
+    <Component Name="I2S_Mode" TI="11110" Line="90" Offs="0"/>
+    <Component Name="I2S_Standard" TI="11124" Line="93" Offs="2"/>
+    <Component Name="I2S_DataFormat" TI="11138" Line="96" Offs="4"/>
+    <Component Name="I2S_MCLKOutput" TI="11152" Line="99" Offs="6"/>
+    <Component Name="I2S_AudioFreq" TI="11166" Line="102" Offs="8"/>
+    <Component Name="I2S_CPOL" TI="11180" Line="105" Offs="12"/>
+   </type>
+   <type Family="typedef" Name="I2S_InitTypeDef" Line="107" ID="11195" toTI="11102"/>
+   <type Family="Pointer" TI="11273" toTI="10854"/>
+   <type Family="Pointer" TI="11279" toTI="11091"/>
+   <type Family="Pointer" TI="11363" toTI="11195"/>
+  </module>
+  <module Name="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c" >
+   <type Family="Base" Name="signed char" ID="12723"/>
+   <type Family="Base" Name="unsigned char" ID="12730"/>
+   <type Family="Base" Name="short int" ID="12737"/>
+   <type Family="Base" Name="short unsigned int" ID="12744"/>
+   <type Family="Base" Name="long int" ID="12751"/>
+   <type Family="Base" Name="long unsigned int" ID="12769"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="12758" toTI="12769"/>
+   <type Family="Base" Name="long long int" ID="12776"/>
+   <type Family="Base" Name="long long unsigned int" ID="12783"/>
+   <type Family="Base" Name="int" ID="12790"/>
+   <type Family="Base" Name="unsigned int" ID="12797"/>
+   <type Family="typedef" Name="FlagStatus" Line="520" ID="12834" toTI="12812"/>
+   <type Family="typedef" Name="ITStatus" Line="520" ID="12846" toTI="12812"/>
+   <type Family="typedef" Name="FunctionalState" Line="522" ID="12880" toTI="12858"/>
+   <type Family="ComponentList" Line="889" ID="12892">
+    <Component Name="IMR" TI="12901" Line="890" Offs="0"/>
+    <Component Name="EMR" TI="12916" Line="891" Offs="4"/>
+    <Component Name="RTSR" TI="12931" Line="892" Offs="8"/>
+    <Component Name="FTSR" TI="12946" Line="893" Offs="12"/>
+    <Component Name="SWIER" TI="12961" Line="894" Offs="16"/>
+    <Component Name="PR" TI="12976" Line="895" Offs="20"/>
+   </type>
+   <type Family="typedef" Name="EXTIMode_TypeDef" Line="54" ID="13012" toTI="12991"/>
+   <type Family="typedef" Name="EXTITrigger_TypeDef" Line="67" ID="13050" toTI="13023"/>
+   <type Family="ComponentList" Line="77" ID="13061">
+    <Component Name="EXTI_Line" TI="13069" Line="78" Offs="0"/>
+    <Component Name="EXTI_Mode" TI="13083" Line="81" Offs="4"/>
+    <Component Name="EXTI_Trigger" TI="13097" Line="84" Offs="5"/>
+    <Component Name="EXTI_LineCmd" TI="13111" Line="87" Offs="6"/>
+   </type>
+   <type Family="typedef" Name="EXTI_InitTypeDef" Line="89" ID="13126" toTI="13061"/>
+   <type Family="Pointer" TI="13208" toTI="13126"/>
+   <function Name="EXTI_GetITStatus" TI="12846" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c" Line="225">
+    <parameter Name="EXTI_Line" TI="12758" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c" Line="225" Addr="0x0" Param="Yes"/>
+    <variable Name="bitstatus" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c" Line="226" Addr="0x0" TI="12846"/>
+   </function >
+   <function Name="EXTI_ClearITPendingBit" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c" Line="250">
+    <parameter Name="EXTI_Line" TI="12758" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c" Line="250" Addr="0x0" Param="Yes"/>
+   </function >
+  </module>
+  <module Name="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c" >
+   <type Family="Base" Name="signed char" ID="13544"/>
+   <type Family="Base" Name="unsigned char" ID="13562"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="13551" toTI="13562"/>
+   <type Family="Base" Name="short int" ID="13569"/>
+   <type Family="Base" Name="short unsigned int" ID="13587"/>
+   <type Family="typedef" Name="uint16_t" Line="58" ID="13576" toTI="13587"/>
+   <type Family="Base" Name="long int" ID="13594"/>
+   <type Family="Base" Name="long unsigned int" ID="13612"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="13601" toTI="13612"/>
+   <type Family="Base" Name="long long int" ID="13619"/>
+   <type Family="Base" Name="long long unsigned int" ID="13626"/>
+   <type Family="Base" Name="int" ID="13633"/>
+   <type Family="Base" Name="unsigned int" ID="13640"/>
+   <type Family="typedef" Name="FlagStatus" Line="520" ID="13682" toTI="13660"/>
+   <type Family="typedef" Name="FunctionalState" Line="522" ID="13716" toTI="13694"/>
+   <type Family="ComponentList" Line="903" ID="13728">
+    <Component Name="ACR" TI="13737" Line="904" Offs="0"/>
+    <Component Name="KEYR" TI="13752" Line="905" Offs="4"/>
+    <Component Name="OPTKEYR" TI="13767" Line="906" Offs="8"/>
+    <Component Name="SR" TI="13782" Line="907" Offs="12"/>
+    <Component Name="CR" TI="13796" Line="908" Offs="16"/>
+    <Component Name="AR" TI="13810" Line="909" Offs="20"/>
+    <Component Name="RESERVED" TI="13824" Line="910" Offs="24"/>
+    <Component Name="OBR" TI="13839" Line="911" Offs="28"/>
+    <Component Name="WRPR" TI="13854" Line="912" Offs="32"/>
+   </type>
+   <type Family="ComponentList" Line="928" ID="13870">
+    <Component Name="RDP" TI="13879" Line="929" Offs="0"/>
+    <Component Name="USER" TI="13894" Line="930" Offs="2"/>
+    <Component Name="Data0" TI="13909" Line="931" Offs="4"/>
+    <Component Name="Data1" TI="13924" Line="932" Offs="6"/>
+    <Component Name="WRP0" TI="13939" Line="933" Offs="8"/>
+    <Component Name="WRP1" TI="13954" Line="934" Offs="10"/>
+    <Component Name="WRP2" TI="13969" Line="935" Offs="12"/>
+    <Component Name="WRP3" TI="13984" Line="936" Offs="14"/>
+   </type>
+   <type Family="typedef" Name="FLASH_Status" Line="57" ID="14039" toTI="14000"/>
+  </module>
+  <module Name="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" >
+   <type Family="Base" Name="signed char" ID="15579"/>
+   <type Family="Base" Name="unsigned char" ID="15597"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="15586" toTI="15597"/>
+   <type Family="Base" Name="short int" ID="15604"/>
+   <type Family="Base" Name="short unsigned int" ID="15622"/>
+   <type Family="typedef" Name="uint16_t" Line="58" ID="15611" toTI="15622"/>
+   <type Family="Base" Name="long int" ID="15629"/>
+   <type Family="Base" Name="long unsigned int" ID="15647"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="15636" toTI="15647"/>
+   <type Family="Base" Name="long long int" ID="15654"/>
+   <type Family="Base" Name="long long unsigned int" ID="15661"/>
+   <type Family="Base" Name="int" ID="15668"/>
+   <type Family="Base" Name="unsigned int" ID="15675"/>
+   <type Family="typedef" Name="FlagStatus" Line="520" ID="15712" toTI="15690"/>
+   <type Family="typedef" Name="ITStatus" Line="520" ID="15724" toTI="15690"/>
+   <type Family="typedef" Name="FunctionalState" Line="522" ID="15758" toTI="15736"/>
+   <type Family="ComponentList" Line="1188" ID="15770">
+    <Component Name="CR1" TI="15779" Line="1189" Offs="0"/>
+    <Component Name="RESERVED0" TI="15794" Line="1190" Offs="2"/>
+    <Component Name="CR2" TI="15809" Line="1191" Offs="4"/>
+    <Component Name="RESERVED1" TI="15824" Line="1192" Offs="6"/>
+    <Component Name="SMCR" TI="15839" Line="1193" Offs="8"/>
+    <Component Name="RESERVED2" TI="15854" Line="1194" Offs="10"/>
+    <Component Name="DIER" TI="15869" Line="1195" Offs="12"/>
+    <Component Name="RESERVED3" TI="15884" Line="1196" Offs="14"/>
+    <Component Name="SR" TI="15899" Line="1197" Offs="16"/>
+    <Component Name="RESERVED4" TI="15913" Line="1198" Offs="18"/>
+    <Component Name="EGR" TI="15928" Line="1199" Offs="20"/>
+    <Component Name="RESERVED5" TI="15943" Line="1200" Offs="22"/>
+    <Component Name="CCMR1" TI="15958" Line="1201" Offs="24"/>
+    <Component Name="RESERVED6" TI="15973" Line="1202" Offs="26"/>
+    <Component Name="CCMR2" TI="15988" Line="1203" Offs="28"/>
+    <Component Name="RESERVED7" TI="16003" Line="1204" Offs="30"/>
+    <Component Name="CCER" TI="16018" Line="1205" Offs="32"/>
+    <Component Name="RESERVED8" TI="16033" Line="1206" Offs="34"/>
+    <Component Name="CNT" TI="16048" Line="1207" Offs="36"/>
+    <Component Name="RESERVED9" TI="16063" Line="1208" Offs="38"/>
+    <Component Name="PSC" TI="16078" Line="1209" Offs="40"/>
+    <Component Name="RESERVED10" TI="16093" Line="1210" Offs="42"/>
+    <Component Name="ARR" TI="16108" Line="1211" Offs="44"/>
+    <Component Name="RESERVED11" TI="16123" Line="1212" Offs="46"/>
+    <Component Name="RCR" TI="16138" Line="1213" Offs="48"/>
+    <Component Name="RESERVED12" TI="16153" Line="1214" Offs="50"/>
+    <Component Name="CCR1" TI="16168" Line="1215" Offs="52"/>
+    <Component Name="RESERVED13" TI="16183" Line="1216" Offs="54"/>
+    <Component Name="CCR2" TI="16198" Line="1217" Offs="56"/>
+    <Component Name="RESERVED14" TI="16213" Line="1218" Offs="58"/>
+    <Component Name="CCR3" TI="16228" Line="1219" Offs="60"/>
+    <Component Name="RESERVED15" TI="16243" Line="1220" Offs="62"/>
+    <Component Name="CCR4" TI="16258" Line="1221" Offs="64"/>
+    <Component Name="RESERVED16" TI="16273" Line="1222" Offs="66"/>
+    <Component Name="BDTR" TI="16288" Line="1223" Offs="68"/>
+    <Component Name="RESERVED17" TI="16303" Line="1224" Offs="70"/>
+    <Component Name="DCR" TI="16318" Line="1225" Offs="72"/>
+    <Component Name="RESERVED18" TI="16333" Line="1226" Offs="74"/>
+    <Component Name="DMAR" TI="16348" Line="1227" Offs="76"/>
+    <Component Name="RESERVED19" TI="16363" Line="1228" Offs="78"/>
+   </type>
+   <type Family="typedef" Name="TIM_TypeDef" Line="1229" ID="16379" toTI="15770"/>
+   <type Family="ComponentList" Line="52" ID="16391">
+    <Component Name="TIM_Prescaler" TI="16399" Line="53" Offs="0"/>
+    <Component Name="TIM_CounterMode" TI="16413" Line="56" Offs="2"/>
+    <Component Name="TIM_Period" TI="16427" Line="59" Offs="4"/>
+    <Component Name="TIM_ClockDivision" TI="16441" Line="63" Offs="6"/>
+    <Component Name="TIM_RepetitionCounter" TI="16455" Line="66" Offs="8"/>
+   </type>
+   <type Family="typedef" Name="TIM_TimeBaseInitTypeDef" Line="74" ID="16470" toTI="16391"/>
+   <type Family="ComponentList" Line="81" ID="16481">
+    <Component Name="TIM_OCMode" TI="16489" Line="82" Offs="0"/>
+    <Component Name="TIM_OutputState" TI="16503" Line="85" Offs="2"/>
+    <Component Name="TIM_OutputNState" TI="16517" Line="88" Offs="4"/>
+    <Component Name="TIM_Pulse" TI="16531" Line="92" Offs="6"/>
+    <Component Name="TIM_OCPolarity" TI="16545" Line="95" Offs="8"/>
+    <Component Name="TIM_OCNPolarity" TI="16559" Line="98" Offs="10"/>
+    <Component Name="TIM_OCIdleState" TI="16573" Line="102" Offs="12"/>
+    <Component Name="TIM_OCNIdleState" TI="16587" Line="106" Offs="14"/>
+   </type>
+   <type Family="typedef" Name="TIM_OCInitTypeDef" Line="109" ID="16602" toTI="16481"/>
+   <type Family="ComponentList" Line="116" ID="16613">
+    <Component Name="TIM_Channel" TI="16621" Line="118" Offs="0"/>
+    <Component Name="TIM_ICPolarity" TI="16635" Line="121" Offs="2"/>
+    <Component Name="TIM_ICSelection" TI="16649" Line="124" Offs="4"/>
+    <Component Name="TIM_ICPrescaler" TI="16663" Line="127" Offs="6"/>
+    <Component Name="TIM_ICFilter" TI="16677" Line="130" Offs="8"/>
+   </type>
+   <type Family="typedef" Name="TIM_ICInitTypeDef" Line="132" ID="16692" toTI="16613"/>
+   <type Family="ComponentList" Line="140" ID="16703">
+    <Component Name="TIM_OSSRState" TI="16711" Line="142" Offs="0"/>
+    <Component Name="TIM_OSSIState" TI="16725" Line="145" Offs="2"/>
+    <Component Name="TIM_LOCKLevel" TI="16739" Line="148" Offs="4"/>
+    <Component Name="TIM_DeadTime" TI="16753" Line="151" Offs="6"/>
+    <Component Name="TIM_Break" TI="16767" Line="155" Offs="8"/>
+    <Component Name="TIM_BreakPolarity" TI="16781" Line="158" Offs="10"/>
+    <Component Name="TIM_AutomaticOutput" TI="16795" Line="161" Offs="12"/>
+   </type>
+   <type Family="typedef" Name="TIM_BDTRInitTypeDef" Line="163" ID="16810" toTI="16703"/>
+   <function Name="TIM_TimeBaseInit" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="227">
+   <type Family="Pointer" TI="16886" toTI="16379"/>
+    <parameter Name="TIMx" TI="16886" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="227" Addr="0x0" Param="Yes"/>
+   <type Family="Pointer" TI="16892" toTI="16470"/>
+    <parameter Name="TIM_TimeBaseInitStruct" TI="16892" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="227" Addr="0x1" Param="Yes"/>
+    <variable Name="tmpcr1" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="228" Addr="0x2" TI="15611"/>
+   </function >
+   <function Name="TIM_OC1Init" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="280">
+    <parameter Name="TIMx" TI="16886" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="280" Addr="0x0" Param="Yes"/>
+   <type Family="Pointer" TI="17003" toTI="16602"/>
+    <parameter Name="TIM_OCInitStruct" TI="17003" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="280" Addr="0x1" Param="Yes"/>
+    <variable Name="tmpccmrx" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="281" Addr="0x6" TI="15611"/>
+    <variable Name="tmpccer" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="281" Addr="0x1" TI="15611"/>
+    <variable Name="tmpcr2" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="281" Addr="0x5" TI="15611"/>
+   </function >
+   <function Name="TIM_OC2Init" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="363">
+    <parameter Name="TIMx" TI="16886" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="363" Addr="0x0" Param="Yes"/>
+    <parameter Name="TIM_OCInitStruct" TI="17003" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="363" Addr="0x1" Param="Yes"/>
+    <variable Name="tmpccmrx" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="364" Addr="0x5" TI="15611"/>
+    <variable Name="tmpccer" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="364" Addr="0x3" TI="15611"/>
+    <variable Name="tmpcr2" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="364" Addr="0x4" TI="15611"/>
+   </function >
+   <type Family="Pointer" TI="17371" toTI="16810"/>
+   <type Family="Pointer" TI="17494" toTI="16692"/>
+   <function Name="TIM_Cmd" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="807">
+    <parameter Name="TIMx" TI="16886" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="807" Addr="0x0" Param="Yes"/>
+    <parameter Name="NewState" TI="15758" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="807" Addr="0x1" Param="Yes"/>
+   </function >
+   <function Name="TIM_ITConfig" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="873">
+    <parameter Name="TIMx" TI="16886" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="873" Addr="0x0" Param="Yes"/>
+    <parameter Name="TIM_IT" TI="15611" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="873" Addr="0x1" Param="Yes"/>
+    <parameter Name="NewState" TI="15758" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="873" Addr="0x2" Param="Yes"/>
+   </function >
+   <function Name="TIM_PrescalerConfig" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1177">
+    <parameter Name="TIMx" TI="16886" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1177" Addr="0x0" Param="Yes"/>
+    <parameter Name="Prescaler" TI="15611" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1177" Addr="0x1" Param="Yes"/>
+    <parameter Name="TIM_PSCReloadMode" TI="15611" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1177" Addr="0x2" Param="Yes"/>
+   </function >
+   <function Name="TIM_OC1PreloadConfig" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1510">
+    <parameter Name="TIMx" TI="16886" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1510" Addr="0x0" Param="Yes"/>
+    <parameter Name="TIM_OCPreload" TI="15611" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1510" Addr="0x1" Param="Yes"/>
+    <variable Name="tmpccmr1" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1511" Addr="0x3" TI="15611"/>
+   </function >
+   <function Name="TIM_OC2PreloadConfig" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1535">
+    <parameter Name="TIMx" TI="16886" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1535" Addr="0x0" Param="Yes"/>
+    <parameter Name="TIM_OCPreload" TI="15611" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1535" Addr="0x1" Param="Yes"/>
+    <variable Name="tmpccmr1" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1536" Addr="0x3" TI="15611"/>
+   </function >
+   <function Name="TIM_ClearFlag" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2601">
+    <parameter Name="TIMx" TI="16886" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2601" Addr="0x0" Param="Yes"/>
+    <parameter Name="TIM_FLAG" TI="15611" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2601" Addr="0x1" Param="Yes"/>
+   </function >
+   <function Name="TIM_ClearITPendingBit" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2677">
+    <parameter Name="TIMx" TI="16886" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2677" Addr="0x0" Param="Yes"/>
+    <parameter Name="TIM_IT" TI="15611" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2677" Addr="0x1" Param="Yes"/>
+   </function >
+  </module>
+  <module Name="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" >
+   <type Family="Base" Name="signed char" ID="23169"/>
+   <type Family="Base" Name="unsigned char" ID="23187"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="23176" toTI="23187"/>
+   <type Family="Base" Name="short int" ID="23194"/>
+   <type Family="Base" Name="short unsigned int" ID="23212"/>
+   <type Family="typedef" Name="uint16_t" Line="58" ID="23201" toTI="23212"/>
+   <type Family="Base" Name="long int" ID="23219"/>
+   <type Family="Base" Name="long unsigned int" ID="23237"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="23226" toTI="23237"/>
+   <type Family="Base" Name="long long int" ID="23244"/>
+   <type Family="Base" Name="long long unsigned int" ID="23251"/>
+   <type Family="Base" Name="int" ID="23258"/>
+   <type Family="Base" Name="unsigned int" ID="23265"/>
+   <type Family="array" ID="23280" toTI="23226"/>
+   <type Family="typedef" Name="FunctionalState" Line="522" ID="23318" toTI="23296"/>
+   <type Family="ComponentList" Line="1003" ID="23330">
+    <Component Name="CRL" TI="23339" Line="1004" Offs="0"/>
+    <Component Name="CRH" TI="23354" Line="1005" Offs="4"/>
+    <Component Name="IDR" TI="23369" Line="1006" Offs="8"/>
+    <Component Name="ODR" TI="23384" Line="1007" Offs="12"/>
+    <Component Name="BSRR" TI="23399" Line="1008" Offs="16"/>
+    <Component Name="BRR" TI="23414" Line="1009" Offs="20"/>
+    <Component Name="LCKR" TI="23429" Line="1010" Offs="24"/>
+   </type>
+   <type Family="typedef" Name="GPIO_TypeDef" Line="1011" ID="23445" toTI="23330"/>
+   <type Family="ComponentList" Line="1018" ID="23457">
+    <Component Name="EVCR" TI="23466" Line="1019" Offs="0"/>
+    <Component Name="MAPR" TI="23481" Line="1020" Offs="4"/>
+    <Component Name="EXTICR" TI="23496" Line="1021" Offs="8"/>
+    <Component Name="RESERVED0" TI="23511" Line="1022" Offs="24"/>
+    <Component Name="MAPR2" TI="23526" Line="1023" Offs="28"/>
+   </type>
+   <type Family="typedef" Name="GPIOSpeed_TypeDef" Line="63" ID="23574" toTI="23547"/>
+   <type Family="typedef" Name="GPIOMode_TypeDef" Line="80" ID="23643" toTI="23585"/>
+   <type Family="ComponentList" Line="92" ID="23654">
+    <Component Name="GPIO_Pin" TI="23662" Line="93" Offs="0"/>
+    <Component Name="GPIO_Speed" TI="23676" Line="96" Offs="2"/>
+    <Component Name="GPIO_Mode" TI="23690" Line="99" Offs="3"/>
+   </type>
+   <type Family="typedef" Name="GPIO_InitTypeDef" Line="101" ID="23705" toTI="23654"/>
+   <type Family="typedef" Name="BitAction" Line="111" ID="23737" toTI="23716"/>
+   <function Name="GPIO_Init" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="174">
+   <type Family="Pointer" TI="23882" toTI="23445"/>
+    <parameter Name="GPIOx" TI="23882" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="174" Addr="0x0" Param="Yes"/>
+   <type Family="Pointer" TI="23888" toTI="23705"/>
+    <parameter Name="GPIO_InitStruct" TI="23888" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="174" Addr="0x1" Param="Yes"/>
+    <variable Name="currentmode" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="175" Addr="0x7" TI="23226"/>
+    <variable Name="currentpin" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="175" Addr="0x1" TI="23226"/>
+    <variable Name="pinpos" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="175" Addr="0xC" TI="23226"/>
+    <variable Name="pos" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="175" Addr="0x3" TI="23226"/>
+    <variable Name="tmpreg" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="176" Addr="0x4" TI="23226"/>
+   </function >
+   <function Name="GPIO_ReadInputDataBit" TI="23176" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="282">
+    <parameter Name="GPIOx" TI="23882" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="282" Addr="0x0" Param="Yes"/>
+    <parameter Name="GPIO_Pin" TI="23201" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="282" Addr="0x1" Param="Yes"/>
+   </function >
+   <function Name="GPIO_SetBits" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="359">
+    <parameter Name="GPIOx" TI="23882" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="359" Addr="0x0" Param="Yes"/>
+    <parameter Name="GPIO_Pin" TI="23201" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="359" Addr="0x1" Param="Yes"/>
+   </function >
+   <function Name="GPIO_ResetBits" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="375">
+    <parameter Name="GPIOx" TI="23882" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="375" Addr="0x0" Param="Yes"/>
+    <parameter Name="GPIO_Pin" TI="23201" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="375" Addr="0x1" Param="Yes"/>
+   </function >
+  </module>
+  <module Name="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" >
+   <type Family="Base" Name="signed char" ID="24910"/>
+   <type Family="Base" Name="unsigned char" ID="24928"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="24917" toTI="24928"/>
+   <type Family="Base" Name="short int" ID="24935"/>
+   <type Family="Base" Name="short unsigned int" ID="24953"/>
+   <type Family="typedef" Name="uint16_t" Line="58" ID="24942" toTI="24953"/>
+   <type Family="Base" Name="long int" ID="24960"/>
+   <type Family="Base" Name="long unsigned int" ID="24978"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="24967" toTI="24978"/>
+   <type Family="Base" Name="long long int" ID="24985"/>
+   <type Family="Base" Name="long long unsigned int" ID="24992"/>
+   <type Family="Base" Name="int" ID="24999"/>
+   <type Family="Base" Name="unsigned int" ID="25006"/>
+   <type Family="typedef" Name="FlagStatus" Line="520" ID="25043" toTI="25021"/>
+   <type Family="typedef" Name="ITStatus" Line="520" ID="25055" toTI="25021"/>
+   <type Family="typedef" Name="FunctionalState" Line="522" ID="25089" toTI="25067"/>
+   <type Family="ComponentList" Line="1236" ID="25101">
+    <Component Name="SR" TI="25110" Line="1237" Offs="0"/>
+    <Component Name="RESERVED0" TI="25124" Line="1238" Offs="2"/>
+    <Component Name="DR" TI="25139" Line="1239" Offs="4"/>
+    <Component Name="RESERVED1" TI="25153" Line="1240" Offs="6"/>
+    <Component Name="BRR" TI="25168" Line="1241" Offs="8"/>
+    <Component Name="RESERVED2" TI="25183" Line="1242" Offs="10"/>
+    <Component Name="CR1" TI="25198" Line="1243" Offs="12"/>
+    <Component Name="RESERVED3" TI="25213" Line="1244" Offs="14"/>
+    <Component Name="CR2" TI="25228" Line="1245" Offs="16"/>
+    <Component Name="RESERVED4" TI="25243" Line="1246" Offs="18"/>
+    <Component Name="CR3" TI="25258" Line="1247" Offs="20"/>
+    <Component Name="RESERVED5" TI="25273" Line="1248" Offs="22"/>
+    <Component Name="GTPR" TI="25288" Line="1249" Offs="24"/>
+    <Component Name="RESERVED6" TI="25303" Line="1250" Offs="26"/>
+   </type>
+   <type Family="typedef" Name="USART_TypeDef" Line="1251" ID="25319" toTI="25101"/>
+   <type Family="ComponentList" Line="47" ID="25331">
+    <Component Name="SYSCLK_Frequency" TI="25339" Line="48" Offs="0"/>
+    <Component Name="HCLK_Frequency" TI="25353" Line="49" Offs="4"/>
+    <Component Name="PCLK1_Frequency" TI="25367" Line="50" Offs="8"/>
+    <Component Name="PCLK2_Frequency" TI="25381" Line="51" Offs="12"/>
+    <Component Name="ADCCLK_Frequency" TI="25395" Line="52" Offs="16"/>
+   </type>
+   <type Family="typedef" Name="RCC_ClocksTypeDef" Line="53" ID="25410" toTI="25331"/>
+   <type Family="ComponentList" Line="51" ID="25421">
+    <Component Name="USART_BaudRate" TI="25429" Line="52" Offs="0"/>
+    <Component Name="USART_WordLength" TI="25443" Line="57" Offs="4"/>
+    <Component Name="USART_StopBits" TI="25457" Line="60" Offs="6"/>
+    <Component Name="USART_Parity" TI="25471" Line="63" Offs="8"/>
+    <Component Name="USART_Mode" TI="25485" Line="70" Offs="10"/>
+    <Component Name="USART_HardwareFlowControl" TI="25499" Line="73" Offs="12"/>
+   </type>
+   <type Family="typedef" Name="USART_InitTypeDef" Line="76" ID="25514" toTI="25421"/>
+   <type Family="ComponentList" Line="83" ID="25525">
+    <Component Name="USART_Clock" TI="25533" Line="85" Offs="0"/>
+    <Component Name="USART_CPOL" TI="25547" Line="88" Offs="2"/>
+    <Component Name="USART_CPHA" TI="25561" Line="91" Offs="4"/>
+    <Component Name="USART_LastBit" TI="25575" Line="94" Offs="6"/>
+   </type>
+   <type Family="typedef" Name="USART_ClockInitTypeDef" Line="97" ID="25590" toTI="25525"/>
+   <type Family="Pointer" TI="25640" toTI="25514"/>
+   <type Family="Pointer" TI="25717" toTI="25319"/>
+   <type Family="Pointer" TI="25723" toTI="25590"/>
+   <function Name="USART_Cmd" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="352">
+    <parameter Name="USARTx" TI="25717" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="352" Addr="0x0" Param="Yes"/>
+    <parameter Name="NewState" TI="25089" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="352" Addr="0x1" Param="Yes"/>
+   </function >
+   <function Name="USART_SendData" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="593">
+    <parameter Name="USARTx" TI="25717" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="593" Addr="0x0" Param="Yes"/>
+    <parameter Name="Data" TI="24942" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="593" Addr="0x1" Param="Yes"/>
+   </function >
+   <function Name="USART_GetFlagStatus" TI="25043" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="875">
+    <parameter Name="USARTx" TI="25717" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="875" Addr="0x0" Param="Yes"/>
+    <parameter Name="USART_FLAG" TI="24942" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="875" Addr="0x1" Param="Yes"/>
+   </function >
+   <function Name="USART_Init" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="177">
+    <parameter Name="USARTx" TI="25717" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="177" Addr="0x0" Param="Yes"/>
+    <parameter Name="USART_InitStruct" TI="25640" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="177" Addr="0x1" Param="Yes"/>
+    <variable Name="tmpreg" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="178" Addr="0x3" TI="24967"/>
+    <variable Name="apbclock" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="178" Addr="0x0" TI="24967"/>
+    <variable Name="integerdivider" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="179" Addr="0x1" TI="24967"/>
+    <variable Name="fractionaldivider" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="180" Addr="0x1" TI="24967"/>
+    <variable Name="RCC_ClocksStatus" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" Line="182" Addr="0x34000004" TI="25410"/>
+   </function >
+  </module>
+  <module Name="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" >
+   <type Family="Base" Name="signed char" ID="27469"/>
+   <type Family="Base" Name="unsigned char" ID="27487"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="27476" toTI="27487"/>
+   <type Family="Base" Name="short int" ID="27494"/>
+   <type Family="Base" Name="short unsigned int" ID="27501"/>
+   <type Family="Base" Name="long int" ID="27508"/>
+   <type Family="Base" Name="long unsigned int" ID="27526"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="27515" toTI="27526"/>
+   <type Family="Base" Name="long long int" ID="27533"/>
+   <type Family="Base" Name="long long unsigned int" ID="27540"/>
+   <type Family="Base" Name="int" ID="27547"/>
+   <type Family="Base" Name="unsigned int" ID="27554"/>
+   <type Family="typedef" Name="FlagStatus" Line="520" ID="27591" toTI="27569"/>
+   <type Family="typedef" Name="ITStatus" Line="520" ID="27603" toTI="27569"/>
+   <type Family="typedef" Name="FunctionalState" Line="522" ID="27637" toTI="27615"/>
+   <type Family="typedef" Name="ErrorStatus" Line="525" ID="27671" toTI="27649"/>
+   <type Family="ComponentList" Line="1078" ID="27683">
+    <Component Name="CR" TI="27692" Line="1079" Offs="0"/>
+    <Component Name="CFGR" TI="27706" Line="1080" Offs="4"/>
+    <Component Name="CIR" TI="27721" Line="1081" Offs="8"/>
+    <Component Name="APB2RSTR" TI="27736" Line="1082" Offs="12"/>
+    <Component Name="APB1RSTR" TI="27751" Line="1083" Offs="16"/>
+    <Component Name="AHBENR" TI="27766" Line="1084" Offs="20"/>
+    <Component Name="APB2ENR" TI="27781" Line="1085" Offs="24"/>
+    <Component Name="APB1ENR" TI="27796" Line="1086" Offs="28"/>
+    <Component Name="BDCR" TI="27811" Line="1087" Offs="32"/>
+    <Component Name="CSR" TI="27826" Line="1088" Offs="36"/>
+   </type>
+   <type Family="ComponentList" Line="47" ID="27842">
+    <Component Name="SYSCLK_Frequency" TI="27850" Line="48" Offs="0"/>
+    <Component Name="HCLK_Frequency" TI="27864" Line="49" Offs="4"/>
+    <Component Name="PCLK1_Frequency" TI="27878" Line="50" Offs="8"/>
+    <Component Name="PCLK2_Frequency" TI="27892" Line="51" Offs="12"/>
+    <Component Name="ADCCLK_Frequency" TI="27906" Line="52" Offs="16"/>
+   </type>
+   <type Family="typedef" Name="RCC_ClocksTypeDef" Line="53" ID="27921" toTI="27842"/>
+   <function Name="RCC_GetClocksFreq" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="909">
+   <type Family="Pointer" TI="28846" toTI="27921"/>
+    <parameter Name="RCC_Clocks" TI="28846" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="909" Addr="0x0" Param="Yes"/>
+    <variable Name="tmp" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="910" Addr="0x3" TI="27515"/>
+    <variable Name="pllmull" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="910" Addr="0x1" TI="27515"/>
+   </function >
+   <function Name="RCC_APB2PeriphClockCmd" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1096">
+    <parameter Name="RCC_APB2Periph" TI="27515" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1096" Addr="0x0" Param="Yes"/>
+    <parameter Name="NewState" TI="27637" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1096" Addr="0x1" Param="Yes"/>
+   </function >
+   <function Name="RCC_APB1PeriphClockCmd" TI="0" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1127">
+    <parameter Name="RCC_APB1Periph" TI="27515" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1127" Addr="0x0" Param="Yes"/>
+    <parameter Name="NewState" TI="27637" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1127" Addr="0x1" Param="Yes"/>
+   </function >
+   <type Family="array" ID="29510" toTI="27476"/>
+   <variable Name="APBAHBPrescTable" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="193" Addr="0x20000000" TI="29543"/>
+   <type Family="array" ID="29553" toTI="27476"/>
+   <variable Name="ADCPrescTable" FileName="C:\Users\Linux\Downloads\8주차\Project\(USART)자가통신\en.stsw-stm32054\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="194" Addr="0x20000010" TI="29586"/>
+  </module>
+ </modulelist>
+</aoffile>
+

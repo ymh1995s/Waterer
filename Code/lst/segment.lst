@@ -1,0 +1,398 @@
+
+C:\Users\Linux\Downloads\06_12\obj\segment.o:     file format elf32-littlearm
+C:\Users\Linux\Downloads\06_12\obj\segment.o
+
+Disassembly of section .text.GPIO_4digit_segment_0:
+
+00000000 <GPIO_4digit_segment_0>:
+GPIO_4digit_segment_0():
+C:\Users\Linux\Downloads\06_12\src/segment.c:22
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+/* 4digit segment의 출력 숫자 값을 정의한 함수 */
+void GPIO_4digit_segment_0(void)
+{
+   0:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\src/segment.c:24
+    // 0 출력
+    GPIO_ResetBits(GPIOC, A_ | B_ | C_ | D_);
+   2:	4802      	ldr	r0, [pc, #8]	(c <GPIO_4digit_segment_0+0xc>)
+   4:	210f      	movs	r1, #15
+   6:	f7ff fffe 	bl	0 <GPIO_ResetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:25
+}
+   a:	bd10      	pop	{r4, pc}
+   c:	40011000 	.word	0x40011000
+Disassembly of section .text.GPIO_4digit_segment_DIG_4:
+
+00000000 <GPIO_4digit_segment_DIG_4>:
+GPIO_4digit_segment_DIG_4():
+C:\Users\Linux\Downloads\06_12\src/segment.c:112
+    GPIO_ResetBits(GPIOC, SEG_dig_1 | SEG_dig_2 | SEG_dig_4);       // 켜기
+    GPIO_SetBits(GPIOC, SEG_dig_3);                                 // 끄기
+}
+
+void GPIO_4digit_segment_DIG_4(void)
+{
+   0:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\src/segment.c:113
+    GPIO_ResetBits(GPIOC, SEG_dig_1 | SEG_dig_2 | SEG_dig_3);       // 켜기
+   2:	4c05      	ldr	r4, [pc, #20]	(18 <GPIO_4digit_segment_DIG_4+0x18>)
+   4:	21e0      	movs	r1, #224
+   6:	4620      	mov	r0, r4
+   8:	f7ff fffe 	bl	0 <GPIO_ResetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:114
+    GPIO_SetBits(GPIOC, SEG_dig_4);                                 // 끄기
+   c:	4620      	mov	r0, r4
+   e:	2110      	movs	r1, #16
+  10:	f7ff fffe 	bl	0 <GPIO_SetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:115
+  14:	bd10      	pop	{r4, pc}
+  16:	46c0      	nop			(mov r8, r8)
+  18:	40011000 	.word	0x40011000
+Disassembly of section .text.GPIO_4digit_segment_DIG_3:
+
+00000000 <GPIO_4digit_segment_DIG_3>:
+GPIO_4digit_segment_DIG_3():
+C:\Users\Linux\Downloads\06_12\src/segment.c:106
+    GPIO_ResetBits(GPIOC, SEG_dig_1 | SEG_dig_3 | SEG_dig_4);       // 켜기
+    GPIO_SetBits(GPIOC, SEG_dig_2);                                 // 끄기
+}
+
+void GPIO_4digit_segment_DIG_3(void)
+{
+   0:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\src/segment.c:107
+    GPIO_ResetBits(GPIOC, SEG_dig_1 | SEG_dig_2 | SEG_dig_4);       // 켜기
+   2:	4c05      	ldr	r4, [pc, #20]	(18 <GPIO_4digit_segment_DIG_3+0x18>)
+   4:	21d0      	movs	r1, #208
+   6:	4620      	mov	r0, r4
+   8:	f7ff fffe 	bl	0 <GPIO_ResetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:108
+    GPIO_SetBits(GPIOC, SEG_dig_3);                                 // 끄기
+   c:	4620      	mov	r0, r4
+   e:	2120      	movs	r1, #32
+  10:	f7ff fffe 	bl	0 <GPIO_SetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:109
+}
+  14:	bd10      	pop	{r4, pc}
+  16:	46c0      	nop			(mov r8, r8)
+  18:	40011000 	.word	0x40011000
+Disassembly of section .text.GPIO_4digit_segment_DIG_2:
+
+00000000 <GPIO_4digit_segment_DIG_2>:
+GPIO_4digit_segment_DIG_2():
+C:\Users\Linux\Downloads\06_12\src/segment.c:100
+    GPIO_ResetBits(GPIOC, SEG_dig_2 | SEG_dig_3 | SEG_dig_4);       // 켜기
+    GPIO_SetBits(GPIOC, SEG_dig_1);                                 // 끄기
+}
+
+void GPIO_4digit_segment_DIG_2(void)
+{
+   0:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\src/segment.c:101
+    GPIO_ResetBits(GPIOC, SEG_dig_1 | SEG_dig_3 | SEG_dig_4);       // 켜기
+   2:	4c05      	ldr	r4, [pc, #20]	(18 <GPIO_4digit_segment_DIG_2+0x18>)
+   4:	21b0      	movs	r1, #176
+   6:	4620      	mov	r0, r4
+   8:	f7ff fffe 	bl	0 <GPIO_ResetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:102
+    GPIO_SetBits(GPIOC, SEG_dig_2);                                 // 끄기
+   c:	4620      	mov	r0, r4
+   e:	2140      	movs	r1, #64
+  10:	f7ff fffe 	bl	0 <GPIO_SetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:103
+}
+  14:	bd10      	pop	{r4, pc}
+  16:	46c0      	nop			(mov r8, r8)
+  18:	40011000 	.word	0x40011000
+Disassembly of section .text.GPIO_4digit_segment_DIG_1:
+
+00000000 <GPIO_4digit_segment_DIG_1>:
+GPIO_4digit_segment_DIG_1():
+C:\Users\Linux\Downloads\06_12\src/segment.c:94
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+/* 4digit의 자릿수를 정의하는 함수 */
+void GPIO_4digit_segment_DIG_1(void)
+{
+   0:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\src/segment.c:95
+    GPIO_ResetBits(GPIOC, SEG_dig_2 | SEG_dig_3 | SEG_dig_4);       // 켜기
+   2:	4c05      	ldr	r4, [pc, #20]	(18 <GPIO_4digit_segment_DIG_1+0x18>)
+   4:	2170      	movs	r1, #112
+   6:	4620      	mov	r0, r4
+   8:	f7ff fffe 	bl	0 <GPIO_ResetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:96
+    GPIO_SetBits(GPIOC, SEG_dig_1);                                 // 끄기
+   c:	4620      	mov	r0, r4
+   e:	2180      	movs	r1, #128
+  10:	f7ff fffe 	bl	0 <GPIO_SetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:97
+}
+  14:	bd10      	pop	{r4, pc}
+  16:	46c0      	nop			(mov r8, r8)
+  18:	40011000 	.word	0x40011000
+Disassembly of section .text.GPIO_4digit_segment_9:
+
+00000000 <GPIO_4digit_segment_9>:
+GPIO_4digit_segment_9():
+C:\Users\Linux\Downloads\06_12\src/segment.c:82
+    GPIO_SetBits(GPIOC, D_);
+    GPIO_ResetBits(GPIOC, A_ |B_ | C_);
+}
+
+void GPIO_4digit_segment_9(void)
+{
+   0:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\src/segment.c:84
+    // 9 출력
+    GPIO_SetBits(GPIOC, A_ | D_);
+   2:	4c05      	ldr	r4, [pc, #20]	(18 <GPIO_4digit_segment_9+0x18>)
+   4:	2109      	movs	r1, #9
+   6:	4620      	mov	r0, r4
+   8:	f7ff fffe 	bl	0 <GPIO_SetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:85
+    GPIO_ResetBits(GPIOC, B_ | C_);
+   c:	4620      	mov	r0, r4
+   e:	2106      	movs	r1, #6
+  10:	f7ff fffe 	bl	0 <GPIO_ResetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:86
+}
+  14:	bd10      	pop	{r4, pc}
+  16:	46c0      	nop			(mov r8, r8)
+  18:	40011000 	.word	0x40011000
+Disassembly of section .text.GPIO_4digit_segment_8:
+
+00000000 <GPIO_4digit_segment_8>:
+GPIO_4digit_segment_8():
+C:\Users\Linux\Downloads\06_12\src/segment.c:75
+    GPIO_SetBits(GPIOC, A_ | B_ | C_);
+    GPIO_ResetBits(GPIOC, D_);
+}
+
+void GPIO_4digit_segment_8(void)
+{
+   0:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\src/segment.c:77
+    // 8 출력
+    GPIO_SetBits(GPIOC, D_);
+   2:	4c05      	ldr	r4, [pc, #20]	(18 <GPIO_4digit_segment_8+0x18>)
+   4:	2108      	movs	r1, #8
+   6:	4620      	mov	r0, r4
+   8:	f7ff fffe 	bl	0 <GPIO_SetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:78
+    GPIO_ResetBits(GPIOC, A_ |B_ | C_);
+   c:	4620      	mov	r0, r4
+   e:	2107      	movs	r1, #7
+  10:	f7ff fffe 	bl	0 <GPIO_ResetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:79
+}
+  14:	bd10      	pop	{r4, pc}
+  16:	46c0      	nop			(mov r8, r8)
+  18:	40011000 	.word	0x40011000
+Disassembly of section .text.GPIO_4digit_segment_7:
+
+00000000 <GPIO_4digit_segment_7>:
+GPIO_4digit_segment_7():
+C:\Users\Linux\Downloads\06_12\src/segment.c:68
+    GPIO_SetBits(GPIOC, B_ | C_);
+    GPIO_ResetBits(GPIOC, A_ | D_);
+}
+
+void GPIO_4digit_segment_7(void)
+{
+   0:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\src/segment.c:70
+    // 7 출력
+    GPIO_SetBits(GPIOC, A_ | B_ | C_);
+   2:	4c05      	ldr	r4, [pc, #20]	(18 <GPIO_4digit_segment_7+0x18>)
+   4:	2107      	movs	r1, #7
+   6:	4620      	mov	r0, r4
+   8:	f7ff fffe 	bl	0 <GPIO_SetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:71
+    GPIO_ResetBits(GPIOC, D_);
+   c:	4620      	mov	r0, r4
+   e:	2108      	movs	r1, #8
+  10:	f7ff fffe 	bl	0 <GPIO_ResetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:72
+}
+  14:	bd10      	pop	{r4, pc}
+  16:	46c0      	nop			(mov r8, r8)
+  18:	40011000 	.word	0x40011000
+Disassembly of section .text.GPIO_4digit_segment_6:
+
+00000000 <GPIO_4digit_segment_6>:
+GPIO_4digit_segment_6():
+C:\Users\Linux\Downloads\06_12\src/segment.c:61
+    GPIO_SetBits(GPIOC, A_ | C_);
+    GPIO_ResetBits(GPIOC, B_ | D_);
+}
+
+void GPIO_4digit_segment_6(void)
+{
+   0:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\src/segment.c:63
+    // 6 출력
+    GPIO_SetBits(GPIOC, B_ | C_);
+   2:	4c05      	ldr	r4, [pc, #20]	(18 <GPIO_4digit_segment_6+0x18>)
+   4:	2106      	movs	r1, #6
+   6:	4620      	mov	r0, r4
+   8:	f7ff fffe 	bl	0 <GPIO_SetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:64
+    GPIO_ResetBits(GPIOC, A_ | D_);
+   c:	4620      	mov	r0, r4
+   e:	2109      	movs	r1, #9
+  10:	f7ff fffe 	bl	0 <GPIO_ResetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:65
+}
+  14:	bd10      	pop	{r4, pc}
+  16:	46c0      	nop			(mov r8, r8)
+  18:	40011000 	.word	0x40011000
+Disassembly of section .text.GPIO_4digit_segment_5:
+
+00000000 <GPIO_4digit_segment_5>:
+GPIO_4digit_segment_5():
+C:\Users\Linux\Downloads\06_12\src/segment.c:54
+    GPIO_SetBits(GPIOC, C_);
+    GPIO_ResetBits(GPIOC, A_| B_ | D_);
+}
+
+void GPIO_4digit_segment_5(void)
+{
+   0:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\src/segment.c:56
+    // 5 출력
+    GPIO_SetBits(GPIOC, A_ | C_);
+   2:	4c05      	ldr	r4, [pc, #20]	(18 <GPIO_4digit_segment_5+0x18>)
+   4:	2105      	movs	r1, #5
+   6:	4620      	mov	r0, r4
+   8:	f7ff fffe 	bl	0 <GPIO_SetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:57
+    GPIO_ResetBits(GPIOC, B_ | D_);
+   c:	4620      	mov	r0, r4
+   e:	210a      	movs	r1, #10
+  10:	f7ff fffe 	bl	0 <GPIO_ResetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:58
+}
+  14:	bd10      	pop	{r4, pc}
+  16:	46c0      	nop			(mov r8, r8)
+  18:	40011000 	.word	0x40011000
+Disassembly of section .text.GPIO_4digit_segment_4:
+
+00000000 <GPIO_4digit_segment_4>:
+GPIO_4digit_segment_4():
+C:\Users\Linux\Downloads\06_12\src/segment.c:47
+    // 3 출력
+    GPIO_SetBits(GPIOC, A_ | B_);
+    GPIO_ResetBits(GPIOC, C_ | D_);
+}
+void GPIO_4digit_segment_4(void)
+{
+   0:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\src/segment.c:49
+    // 4 출력
+    GPIO_SetBits(GPIOC, C_);
+   2:	4c05      	ldr	r4, [pc, #20]	(18 <GPIO_4digit_segment_4+0x18>)
+   4:	2104      	movs	r1, #4
+   6:	4620      	mov	r0, r4
+   8:	f7ff fffe 	bl	0 <GPIO_SetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:50
+    GPIO_ResetBits(GPIOC, A_| B_ | D_);
+   c:	4620      	mov	r0, r4
+   e:	210b      	movs	r1, #11
+  10:	f7ff fffe 	bl	0 <GPIO_ResetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:51
+}
+  14:	bd10      	pop	{r4, pc}
+  16:	46c0      	nop			(mov r8, r8)
+  18:	40011000 	.word	0x40011000
+Disassembly of section .text.GPIO_4digit_segment_3:
+
+00000000 <GPIO_4digit_segment_3>:
+GPIO_4digit_segment_3():
+C:\Users\Linux\Downloads\06_12\src/segment.c:41
+    // 2 출력
+    GPIO_SetBits(GPIOC,  B_);
+    GPIO_ResetBits(GPIOC, A_ | C_ | D_);
+}
+void GPIO_4digit_segment_3(void)
+{
+   0:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\src/segment.c:43
+    // 3 출력
+    GPIO_SetBits(GPIOC, A_ | B_);
+   2:	4c05      	ldr	r4, [pc, #20]	(18 <GPIO_4digit_segment_3+0x18>)
+   4:	2103      	movs	r1, #3
+   6:	4620      	mov	r0, r4
+   8:	f7ff fffe 	bl	0 <GPIO_SetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:44
+    GPIO_ResetBits(GPIOC, C_ | D_);
+   c:	4620      	mov	r0, r4
+   e:	210c      	movs	r1, #12
+  10:	f7ff fffe 	bl	0 <GPIO_ResetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:45
+}
+  14:	bd10      	pop	{r4, pc}
+  16:	46c0      	nop			(mov r8, r8)
+  18:	40011000 	.word	0x40011000
+Disassembly of section .text.GPIO_4digit_segment_2:
+
+00000000 <GPIO_4digit_segment_2>:
+GPIO_4digit_segment_2():
+C:\Users\Linux\Downloads\06_12\src/segment.c:35
+    GPIO_SetBits(GPIOC, A_);
+    GPIO_ResetBits(GPIOC, B_ | C_ | D_);
+}
+
+void GPIO_4digit_segment_2(void)
+{
+   0:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\src/segment.c:37
+    // 2 출력
+    GPIO_SetBits(GPIOC,  B_);
+   2:	4c05      	ldr	r4, [pc, #20]	(18 <GPIO_4digit_segment_2+0x18>)
+   4:	2102      	movs	r1, #2
+   6:	4620      	mov	r0, r4
+   8:	f7ff fffe 	bl	0 <GPIO_SetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:38
+    GPIO_ResetBits(GPIOC, A_ | C_ | D_);
+   c:	4620      	mov	r0, r4
+   e:	210d      	movs	r1, #13
+  10:	f7ff fffe 	bl	0 <GPIO_ResetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:39
+}
+  14:	bd10      	pop	{r4, pc}
+  16:	46c0      	nop			(mov r8, r8)
+  18:	40011000 	.word	0x40011000
+Disassembly of section .text.GPIO_4digit_segment_1:
+
+00000000 <GPIO_4digit_segment_1>:
+GPIO_4digit_segment_1():
+C:\Users\Linux\Downloads\06_12\src/segment.c:28
+    // 0 출력
+    GPIO_ResetBits(GPIOC, A_ | B_ | C_ | D_);
+}
+
+void GPIO_4digit_segment_1(void)
+{
+   0:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\src/segment.c:30
+    // 1 출력
+    GPIO_SetBits(GPIOC, A_);
+   2:	4c05      	ldr	r4, [pc, #20]	(18 <GPIO_4digit_segment_1+0x18>)
+   4:	2101      	movs	r1, #1
+   6:	4620      	mov	r0, r4
+   8:	f7ff fffe 	bl	0 <GPIO_SetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:31
+    GPIO_ResetBits(GPIOC, B_ | C_ | D_);
+   c:	4620      	mov	r0, r4
+   e:	210e      	movs	r1, #14
+  10:	f7ff fffe 	bl	0 <GPIO_ResetBits>
+C:\Users\Linux\Downloads\06_12\src/segment.c:32
+}
+  14:	bd10      	pop	{r4, pc}
+  16:	46c0      	nop			(mov r8, r8)
+  18:	40011000 	.word	0x40011000

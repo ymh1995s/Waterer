@@ -1,0 +1,196 @@
+
+C:\Users\Linux\Downloads\06_12\obj\delay.o:     file format elf32-littlearm
+C:\Users\Linux\Downloads\06_12\obj\delay.o
+
+Disassembly of section .text.delay_int_count:
+
+00000000 <delay_int_count>:
+delay_int_count():
+C:\Users\Linux\Downloads\06_12\src/delay.c:5
+#include "stm32f10x.h"
+
+/* for문으로 제작한 딜레이 함수 */
+static void delay_int_count(volatile unsigned int nTime)
+{
+   0:	b082      	sub	sp, #8
+   2:	9001      	str	r0, [sp, #4]
+   4:	e002      	b.n	c <delay_int_count+0xc>
+C:\Users\Linux\Downloads\06_12\src/delay.c:6
+    for(; nTime>0; nTime--);
+   6:	9b01      	ldr	r3, [sp, #4]
+   8:	3b01      	subs	r3, #1
+   a:	9301      	str	r3, [sp, #4]
+   c:	9b01      	ldr	r3, [sp, #4]
+   e:	2b00      	cmp	r3, #0
+  10:	d1f9      	bne.n	6 <delay_int_count+0x6>
+C:\Users\Linux\Downloads\06_12\src/delay.c:7
+}
+  12:	b002      	add	sp, #8
+  14:	4770      	bx	lr
+  16:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.delay_m:
+
+00000000 <delay_m>:
+delay_m():
+C:\Users\Linux\Downloads\06_12\src/delay.c:9
+void delay_m(void)
+{
+   0:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\src/delay.c:10
+    delay_int_count(30000/*6*/);
+   2:	f247 5030 	movw	r0, #30000	; 0x7530
+   6:	f7ff fffe 	bl	0 <delay_m>
+C:\Users\Linux\Downloads\06_12\src/delay.c:11
+}
+   a:	bd10      	pop	{r4, pc}
+Disassembly of section .text.delay_count:
+
+00000000 <delay_count>:
+delay_count():
+C:\Users\Linux\Downloads\06_12\src/delay.c:13
+void delay_count(void)
+{
+   0:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\src/delay.c:14
+    delay_int_count(10000/*6*/);
+   2:	f242 7010 	movw	r0, #10000	; 0x2710
+   6:	f7ff fffe 	bl	0 <delay_count>
+C:\Users\Linux\Downloads\06_12\src/delay.c:15
+}
+   a:	bd10      	pop	{r4, pc}
+Disassembly of section .text.delay_m_button:
+
+00000000 <delay_m_button>:
+delay_m_button():
+C:\Users\Linux\Downloads\06_12\src/delay.c:18
+
+void delay_m_button(void)
+{
+   0:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\src/delay.c:19
+    delay_int_count(806596/*6*/);
+   2:	4802      	ldr	r0, [pc, #8]	(c <delay_m_button+0xc>)
+   4:	f7ff fffe 	bl	0 <delay_m_button>
+C:\Users\Linux\Downloads\06_12\src/delay.c:20
+}
+   8:	bd10      	pop	{r4, pc}
+   a:	46c0      	nop			(mov r8, r8)
+   c:	000c4ec4 	.word	0x000c4ec4
+Disassembly of section .text.delay_m_common:
+
+00000000 <delay_m_common>:
+delay_m_common():
+C:\Users\Linux\Downloads\06_12\src/delay.c:22
+void delay_m_common(void)
+{
+   0:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\src/delay.c:23
+    delay_int_count(806596/*6*/);
+   2:	4802      	ldr	r0, [pc, #8]	(c <delay_m_common+0xc>)
+   4:	f7ff fffe 	bl	0 <delay_m_common>
+C:\Users\Linux\Downloads\06_12\src/delay.c:24
+}
+   8:	bd10      	pop	{r4, pc}
+   a:	46c0      	nop			(mov r8, r8)
+   c:	000c4ec4 	.word	0x000c4ec4
+Disassembly of section .text.delay_motor_speed:
+
+00000000 <delay_motor_speed>:
+delay_motor_speed():
+C:\Users\Linux\Downloads\06_12\src/delay.c:27
+
+void delay_motor_speed(void)//90도 돌기
+{
+   0:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\src/delay.c:28
+    delay_int_count(800000/*6*/);
+   2:	4802      	ldr	r0, [pc, #8]	(c <delay_motor_speed+0xc>)
+   4:	f7ff fffe 	bl	0 <delay_motor_speed>
+C:\Users\Linux\Downloads\06_12\src/delay.c:29
+}
+   8:	bd10      	pop	{r4, pc}
+   a:	46c0      	nop			(mov r8, r8)
+   c:	000c3500 	.word	0x000c3500
+Disassembly of section .text.delay_test:
+
+00000000 <delay_test>:
+delay_test():
+C:\Users\Linux\Downloads\06_12\src/delay.c:31
+void delay_test(void)
+{
+   0:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\src/delay.c:32
+    delay_int_count(1206596/*6*/);
+   2:	4802      	ldr	r0, [pc, #8]	(c <delay_test+0xc>)
+   4:	f7ff fffe 	bl	0 <delay_test>
+C:\Users\Linux\Downloads\06_12\src/delay.c:34
+
+}
+   8:	bd10      	pop	{r4, pc}
+   a:	46c0      	nop			(mov r8, r8)
+   c:	00126944 	.word	0x00126944
+Disassembly of section .text.delay_m_beep:
+
+00000000 <delay_m_beep>:
+delay_m_beep():
+C:\Users\Linux\Downloads\06_12\src/delay.c:37
+
+void delay_m_beep(void)
+{
+   0:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\src/delay.c:38
+    delay_int_count(10000/*6*/);
+   2:	f242 7010 	movw	r0, #10000	; 0x2710
+   6:	f7ff fffe 	bl	0 <delay_m_beep>
+C:\Users\Linux\Downloads\06_12\src/delay.c:40
+
+}
+   a:	bd10      	pop	{r4, pc}
+Disassembly of section .text.delay_m1:
+
+00000000 <delay_m1>:
+delay_m1():
+C:\Users\Linux\Downloads\06_12\src/delay.c:42
+void delay_m1(void)
+{
+   0:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\src/delay.c:43
+    delay_int_count(247000/*6*/);
+   2:	4802      	ldr	r0, [pc, #8]	(c <delay_m1+0xc>)
+   4:	f7ff fffe 	bl	0 <delay_m1>
+C:\Users\Linux\Downloads\06_12\src/delay.c:44
+}
+   8:	bd10      	pop	{r4, pc}
+   a:	46c0      	nop			(mov r8, r8)
+   c:	0003c4d8 	.word	0x0003c4d8
+Disassembly of section .text.delay_m2:
+
+00000000 <delay_m2>:
+delay_m2():
+C:\Users\Linux\Downloads\06_12\src/delay.c:46
+void delay_m2(void)
+{
+   0:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\src/delay.c:47
+    delay_int_count(256000/*6*/);
+   2:	f44f 307a 	mov.w	r0, #256000	; 0x3e800
+   6:	f7ff fffe 	bl	0 <delay_m2>
+C:\Users\Linux\Downloads\06_12\src/delay.c:48
+}
+   a:	bd10      	pop	{r4, pc}
+Disassembly of section .text.delay_m3:
+
+00000000 <delay_m3>:
+delay_m3():
+C:\Users\Linux\Downloads\06_12\src/delay.c:50
+void delay_m3(void)
+{
+   0:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\src/delay.c:51
+    delay_int_count(66660000/*6*/);     // 150ml
+   2:	4802      	ldr	r0, [pc, #8]	(c <delay_m3+0xc>)
+   4:	f7ff fffe 	bl	0 <delay_m3>
+C:\Users\Linux\Downloads\06_12\src/delay.c:52
+   8:	bd10      	pop	{r4, pc}
+   a:	46c0      	nop			(mov r8, r8)
+   c:	03f926a0 	.word	0x03f926a0

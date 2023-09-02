@@ -1,0 +1,301 @@
+
+C:\Users\Linux\Downloads\06_12\obj\TIM_config.o:     file format elf32-littlearm
+C:\Users\Linux\Downloads\06_12\obj\TIM_config.o
+
+Disassembly of section .text.TIM_Configuration:
+
+00000000 <TIM_Configuration>:
+TIM_Configuration():
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:13
+TIM_TimeBaseInitTypeDef     TIM_TimeBaseStructure;
+TIM_TimeBaseInitTypeDef     TIM_TimeBaseStructure_PWM;
+TIM_OCInitTypeDef           TIM_OCInitStructure_PWM;
+
+void TIM_Configuration(void)
+{
+   0:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:18
+    // Time base configuration 
+    // 입력은 72,000,000MHz이다. Prescaler(59999+1)로 나누면 1200이 된다. 즉, 1초에 1200번의 신호가 오는 1200Hz가 된다.
+    // 이때 신호의 주기를 1200 신호로 잡아주면 1초에 1번 타이머 신호를 받게되게끔 구현이 가능하므로 주기를 1200으로 잡아준다.(1199 + 1)
+    // 이를 두 개로 나눈 이유는 TIM_Prescaler가 16비트의 크기이기 때문에 65535 이상의 값을 넣을 수 없기에 Prescaler, Period의 개념으로 나누어 계산한다.
+    TIM_TimeBaseStructure.TIM_Period = 1199;                      // 0~1799 이므로 1800
+   4:	4c3b      	ldr	r4, [pc, #236]	(f4 <TIM_Configuration+0xf4>)
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:21
+    TIM_TimeBaseStructure.TIM_Prescaler = 0xEA5F;                 // 0~59999 이므로 60000 (0xEA5F = 59999)
+
+    TIM_TimeBaseStructure.TIM_ClockDivision = TIM_CKD_DIV1;       // 현재 예제에서는 필요 없는 부분. tDTS를 구하기 위한 부분이다.
+   6:	2600      	movs	r6, #0
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:19
+    // Time base configuration 
+    // 입력은 72,000,000MHz이다. Prescaler(59999+1)로 나누면 1200이 된다. 즉, 1초에 1200번의 신호가 오는 1200Hz가 된다.
+    // 이때 신호의 주기를 1200 신호로 잡아주면 1초에 1번 타이머 신호를 받게되게끔 구현이 가능하므로 주기를 1200으로 잡아준다.(1199 + 1)
+    // 이를 두 개로 나눈 이유는 TIM_Prescaler가 16비트의 크기이기 때문에 65535 이상의 값을 넣을 수 없기에 Prescaler, Period의 개념으로 나누어 계산한다.
+    TIM_TimeBaseStructure.TIM_Period = 1199;                      // 0~1799 이므로 1800
+    TIM_TimeBaseStructure.TIM_Prescaler = 0xEA5F;                 // 0~59999 이므로 60000 (0xEA5F = 59999)
+   8:	f64e 285f 	movw	r8, #59999	; 0xea5f
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:18
+{
+    // Time base configuration 
+    // 입력은 72,000,000MHz이다. Prescaler(59999+1)로 나누면 1200이 된다. 즉, 1초에 1200번의 신호가 오는 1200Hz가 된다.
+    // 이때 신호의 주기를 1200 신호로 잡아주면 1초에 1번 타이머 신호를 받게되게끔 구현이 가능하므로 주기를 1200으로 잡아준다.(1199 + 1)
+    // 이를 두 개로 나눈 이유는 TIM_Prescaler가 16비트의 크기이기 때문에 65535 이상의 값을 넣을 수 없기에 Prescaler, Period의 개념으로 나누어 계산한다.
+    TIM_TimeBaseStructure.TIM_Period = 1199;                      // 0~1799 이므로 1800
+   c:	f240 43af 	movw	r3, #1199	; 0x4af
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:32
+    TIM_TimeBaseStructure.TIM_Prescaler = 59999;                  // 0~59999 이므로 60000
+
+    TIM_TimeBaseStructure.TIM_ClockDivision = TIM_CKD_DIV1;       // 현재 예제에서는 필요 없는 부분. tDTS를 구하기 위한 부분이다.
+    TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;   // 다음에 지정하는 부분이 counter를 증가하는 방향으로 할지, 감소하는 방향으로 할지를 정하는 부분.
+    TIM_TimeBaseStructure.TIM_RepetitionCounter = 0x0000;         // Advanced-control timer인 TIM1, TIM8이 아닌경우에는 필요가 없음.
+    TIM_TimeBaseInit(TIM3, &TIM_TimeBaseStructure);
+  10:	4d39      	ldr	r5, [pc, #228]	(f8 <TIM_Configuration+0xf8>)
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:18
+{
+    // Time base configuration 
+    // 입력은 72,000,000MHz이다. Prescaler(59999+1)로 나누면 1200이 된다. 즉, 1초에 1200번의 신호가 오는 1200Hz가 된다.
+    // 이때 신호의 주기를 1200 신호로 잡아주면 1초에 1번 타이머 신호를 받게되게끔 구현이 가능하므로 주기를 1200으로 잡아준다.(1199 + 1)
+    // 이를 두 개로 나눈 이유는 TIM_Prescaler가 16비트의 크기이기 때문에 65535 이상의 값을 넣을 수 없기에 Prescaler, Period의 개념으로 나누어 계산한다.
+    TIM_TimeBaseStructure.TIM_Period = 1199;                      // 0~1799 이므로 1800
+  12:	80a3      	strh	r3, [r4, #4]
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:19
+    TIM_TimeBaseStructure.TIM_Prescaler = 0xEA5F;                 // 0~59999 이므로 60000 (0xEA5F = 59999)
+  14:	f8a4 8000 	strh.w	r8, [r4]
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:21
+
+    TIM_TimeBaseStructure.TIM_ClockDivision = TIM_CKD_DIV1;       // 현재 예제에서는 필요 없는 부분. tDTS를 구하기 위한 부분이다.
+  18:	80e6      	strh	r6, [r4, #6]
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:22
+    TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;   // 다음에 지정하는 부분이 counter를 증가하는 방향으로 할지, 감소하는 방향으로 할지를 정하는 부분.
+  1a:	8066      	strh	r6, [r4, #2]
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:23
+    TIM_TimeBaseStructure.TIM_RepetitionCounter = 0x0000;         // Advanced-control timer인 TIM1, TIM8이 아닌경우에는 필요가 없음.
+  1c:	7226      	strb	r6, [r4, #8]
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:24
+    TIM_TimeBaseInit(TIM2, &TIM_TimeBaseStructure);
+  1e:	4621      	mov	r1, r4
+  20:	f04f 4080 	mov.w	r0, #1073741824	; 0x40000000
+  24:	f7ff fffe 	bl	0 <TIM_TimeBaseInit>
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:26
+
+    TIM_TimeBaseStructure.TIM_Period = 0x0707;                    // 0~1799 이므로 1800 (0x0707 = 1799)
+  28:	f240 7307 	movw	r3, #1799	; 0x707
+  2c:	80a3      	strh	r3, [r4, #4]
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:27
+    TIM_TimeBaseStructure.TIM_Prescaler = 59999;                  // 0~59999 이므로 60000
+  2e:	f8a4 8000 	strh.w	r8, [r4]
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:29
+
+    TIM_TimeBaseStructure.TIM_ClockDivision = TIM_CKD_DIV1;       // 현재 예제에서는 필요 없는 부분. tDTS를 구하기 위한 부분이다.
+  32:	80e6      	strh	r6, [r4, #6]
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:30
+    TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;   // 다음에 지정하는 부분이 counter를 증가하는 방향으로 할지, 감소하는 방향으로 할지를 정하는 부분.
+  34:	8066      	strh	r6, [r4, #2]
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:31
+    TIM_TimeBaseStructure.TIM_RepetitionCounter = 0x0000;         // Advanced-control timer인 TIM1, TIM8이 아닌경우에는 필요가 없음.
+  36:	7226      	strb	r6, [r4, #8]
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:32
+    TIM_TimeBaseInit(TIM3, &TIM_TimeBaseStructure);
+  38:	4628      	mov	r0, r5
+  3a:	4621      	mov	r1, r4
+  3c:	f7ff fffe 	bl	0 <TIM_TimeBaseInit>
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:35
+  
+    // TIM2 enable counter 
+    TIM_Cmd(TIM2, ENABLE);
+  40:	2101      	movs	r1, #1
+  42:	f04f 4080 	mov.w	r0, #1073741824	; 0x40000000
+  46:	f7ff fffe 	bl	0 <TIM_Cmd>
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:36
+    TIM_Cmd(TIM3, ENABLE);
+  4a:	4628      	mov	r0, r5
+  4c:	2101      	movs	r1, #1
+  4e:	f7ff fffe 	bl	0 <TIM_Cmd>
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:39
+  
+    // 해당 코드는 현재 예제에서는 없어도 무관.
+    TIM_PrescalerConfig(TIM2, 0xEA5F, TIM_PSCReloadMode_Immediate);
+  52:	4641      	mov	r1, r8
+  54:	2201      	movs	r2, #1
+  56:	f04f 4080 	mov.w	r0, #1073741824	; 0x40000000
+  5a:	f7ff fffe 	bl	0 <TIM_PrescalerConfig>
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:40
+    TIM_PrescalerConfig(TIM3, 0xEA5F, TIM_PSCReloadMode_Immediate);
+  5e:	2201      	movs	r2, #1
+  60:	4628      	mov	r0, r5
+  62:	4641      	mov	r1, r8
+  64:	f7ff fffe 	bl	0 <TIM_PrescalerConfig>
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:43
+
+    // Clear TIM update pending flag
+    TIM_ClearFlag(TIM2, TIM_FLAG_Update);
+  68:	2101      	movs	r1, #1
+  6a:	f04f 4080 	mov.w	r0, #1073741824	; 0x40000000
+  6e:	f7ff fffe 	bl	0 <TIM_ClearFlag>
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:44
+    TIM_ClearFlag(TIM3, TIM_FLAG_Update);
+  72:	4628      	mov	r0, r5
+  74:	2101      	movs	r1, #1
+  76:	f7ff fffe 	bl	0 <TIM_ClearFlag>
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:47
+
+    // TIM IT enable 
+    TIM_ITConfig(TIM2, TIM_IT_Update, ENABLE);
+  7a:	2101      	movs	r1, #1
+  7c:	460a      	mov	r2, r1
+  7e:	f04f 4080 	mov.w	r0, #1073741824	; 0x40000000
+  82:	f7ff fffe 	bl	0 <TIM_ITConfig>
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:48
+    TIM_ITConfig(TIM3, TIM_IT_Update, ENABLE);
+  86:	2101      	movs	r1, #1
+  88:	460a      	mov	r2, r1
+  8a:	4628      	mov	r0, r5
+  8c:	f7ff fffe 	bl	0 <TIM_ITConfig>
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:69
+    
+    
+    // 여기서 TIM4는 PWM 신호를 생성하는 타이머로 사용됨
+    // 72Mhz 입력에서 주기 720으로 나누면 1,000Hz가 된다.
+    // 여기서 Prescaler가 100이면 10Hz가 된다.
+    TIM_TimeBaseStructure_PWM.TIM_Period = 719;     // 72Mhz 입력에서 주기 720으로 나누면 1,000Hz가 된다.
+  90:	491a      	ldr	r1, [pc, #104]	(fc <TIM_Configuration+0xfc>)
+  92:	f240 23cf 	movw	r3, #719	; 0x2cf
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:74
+    TIM_TimeBaseStructure_PWM.TIM_Prescaler = 99;   //   여기서 Prescaler가 100이면 10Hz가 된다.
+    TIM_TimeBaseStructure_PWM.TIM_ClockDivision = 0;
+    TIM_TimeBaseStructure_PWM.TIM_CounterMode = TIM_CounterMode_Up;
+
+    TIM_TimeBaseInit(TIM4, &TIM_TimeBaseStructure_PWM);
+  96:	f505 6580 	add.w	r5, r5, #1024	; 0x400
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:69
+    
+    
+    // 여기서 TIM4는 PWM 신호를 생성하는 타이머로 사용됨
+    // 72Mhz 입력에서 주기 720으로 나누면 1,000Hz가 된다.
+    // 여기서 Prescaler가 100이면 10Hz가 된다.
+    TIM_TimeBaseStructure_PWM.TIM_Period = 719;     // 72Mhz 입력에서 주기 720으로 나누면 1,000Hz가 된다.
+  9a:	808b      	strh	r3, [r1, #4]
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:70
+    TIM_TimeBaseStructure_PWM.TIM_Prescaler = 99;   //   여기서 Prescaler가 100이면 10Hz가 된다.
+  9c:	f04f 0363 	mov.w	r3, #99	; 0x63
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:79
+    TIM_TimeBaseInit(TIM4, &TIM_TimeBaseStructure_PWM);
+
+
+    
+    // PWM1 Mode configuration: Channel1 
+    TIM_OCInitStructure_PWM.TIM_OCMode = TIM_OCMode_PWM1;   //CCMR레지스터(Capture/compare mode register)
+  a0:	4c17      	ldr	r4, [pc, #92]	(100 <TIM_Configuration+0x100>)
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:70
+    
+    // 여기서 TIM4는 PWM 신호를 생성하는 타이머로 사용됨
+    // 72Mhz 입력에서 주기 720으로 나누면 1,000Hz가 된다.
+    // 여기서 Prescaler가 100이면 10Hz가 된다.
+    TIM_TimeBaseStructure_PWM.TIM_Period = 719;     // 72Mhz 입력에서 주기 720으로 나누면 1,000Hz가 된다.
+    TIM_TimeBaseStructure_PWM.TIM_Prescaler = 99;   //   여기서 Prescaler가 100이면 10Hz가 된다.
+  a2:	800b      	strh	r3, [r1, #0]
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:71
+    TIM_TimeBaseStructure_PWM.TIM_ClockDivision = 0;
+  a4:	80ce      	strh	r6, [r1, #6]
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:72
+    TIM_TimeBaseStructure_PWM.TIM_CounterMode = TIM_CounterMode_Up;
+  a6:	804e      	strh	r6, [r1, #2]
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:74
+
+    TIM_TimeBaseInit(TIM4, &TIM_TimeBaseStructure_PWM);
+  a8:	4628      	mov	r0, r5
+  aa:	f7ff fffe 	bl	0 <TIM_TimeBaseInit>
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:84
+    TIM_OCInitStructure_PWM.TIM_OCMode = TIM_OCMode_PWM1;   //CCMR레지스터(Capture/compare mode register)
+                                                            //TIMx_CCRM1, TIMx_CCRM2 두 종류가 있다.
+                                                            //CCMR1이 채널1,2(CH1,CH2. 즉 OC1Init, OC2Init)담당. CCMR2가 채널3,4(CH3,CH4. 즉 OC3Init, OC4Init)담당이다.
+                                                            //또한 OC는 Output Channel, IC는 Input Channel의 뜻으로, TIM_OCMode는 기본적으로 Output.
+
+    TIM_OCInitStructure_PWM.TIM_OutputState = TIM_OutputState_Enable;	//CCER레지스터(Capture/compare enable register)
+  ae:	f04f 0801 	mov.w	r8, #1	; 0x1
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:79
+    TIM_TimeBaseInit(TIM4, &TIM_TimeBaseStructure_PWM);
+
+
+    
+    // PWM1 Mode configuration: Channel1 
+    TIM_OCInitStructure_PWM.TIM_OCMode = TIM_OCMode_PWM1;   //CCMR레지스터(Capture/compare mode register)
+  b2:	f04f 0360 	mov.w	r3, #96	; 0x60
+  b6:	8023      	strh	r3, [r4, #0]
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:92
+    TIM_OCInitStructure_PWM.TIM_Pulse = 0;//CCR1_Val;		//CCR은 캡쳐/비교 레지스터
+                                                            //Channel마다 다르게 설정한 CCRx_Val을 저장.(CCR저장)
+                                                            //저장되는 값은 TIMx_CCRx에 저장.
+
+    TIM_OCInitStructure_PWM.TIM_OCPolarity = TIM_OCPolarity_High;	//CCER레지스터(Captuer/compare enable register) 셋팅
+    TIM_OC1Init(TIM4, &TIM_OCInitStructure_PWM);			        //TIM4를 위에 설정한 OC?와 연결
+  b8:	4628      	mov	r0, r5
+  ba:	4621      	mov	r1, r4
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:84
+    TIM_OCInitStructure_PWM.TIM_OCMode = TIM_OCMode_PWM1;   //CCMR레지스터(Capture/compare mode register)
+                                                            //TIMx_CCRM1, TIMx_CCRM2 두 종류가 있다.
+                                                            //CCMR1이 채널1,2(CH1,CH2. 즉 OC1Init, OC2Init)담당. CCMR2가 채널3,4(CH3,CH4. 즉 OC3Init, OC4Init)담당이다.
+                                                            //또한 OC는 Output Channel, IC는 Input Channel의 뜻으로, TIM_OCMode는 기본적으로 Output.
+
+    TIM_OCInitStructure_PWM.TIM_OutputState = TIM_OutputState_Enable;	//CCER레지스터(Capture/compare enable register)
+  bc:	f8a4 8002 	strh.w	r8, [r4, #2]
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:87
+                                                                        //말 그대로 output을 enable해줌.
+
+    TIM_OCInitStructure_PWM.TIM_Pulse = 0;//CCR1_Val;		//CCR은 캡쳐/비교 레지스터
+  c0:	80e6      	strh	r6, [r4, #6]
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:91
+                                                            //Channel마다 다르게 설정한 CCRx_Val을 저장.(CCR저장)
+                                                            //저장되는 값은 TIMx_CCRx에 저장.
+
+    TIM_OCInitStructure_PWM.TIM_OCPolarity = TIM_OCPolarity_High;	//CCER레지스터(Captuer/compare enable register) 셋팅
+  c2:	8126      	strh	r6, [r4, #8]
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:92
+    TIM_OC1Init(TIM4, &TIM_OCInitStructure_PWM);			        //TIM4를 위에 설정한 OC?와 연결
+  c4:	f7ff fffe 	bl	0 <TIM_OC1Init>
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:93
+    TIM_OC1PreloadConfig(TIM4, TIM_OCPreload_Enable);
+  c8:	4628      	mov	r0, r5
+  ca:	2108      	movs	r1, #8
+  cc:	f7ff fffe 	bl	0 <TIM_OC1PreloadConfig>
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:98
+
+
+    TIM_OCInitStructure_PWM.TIM_OutputState = TIM_OutputState_Enable;	//아래는 위와 동일
+    TIM_OCInitStructure_PWM.TIM_Pulse = 0;//CCR2_Val;
+    TIM_OC2Init(TIM4, &TIM_OCInitStructure_PWM);
+  d0:	4628      	mov	r0, r5
+  d2:	4621      	mov	r1, r4
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:96
+    TIM_OCInitStructure_PWM.TIM_OCPolarity = TIM_OCPolarity_High;	//CCER레지스터(Captuer/compare enable register) 셋팅
+    TIM_OC1Init(TIM4, &TIM_OCInitStructure_PWM);			        //TIM4를 위에 설정한 OC?와 연결
+    TIM_OC1PreloadConfig(TIM4, TIM_OCPreload_Enable);
+
+
+    TIM_OCInitStructure_PWM.TIM_OutputState = TIM_OutputState_Enable;	//아래는 위와 동일
+  d4:	f8a4 8002 	strh.w	r8, [r4, #2]
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:97
+    TIM_OCInitStructure_PWM.TIM_Pulse = 0;//CCR2_Val;
+  d8:	80e6      	strh	r6, [r4, #6]
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:98
+    TIM_OC2Init(TIM4, &TIM_OCInitStructure_PWM);
+  da:	f7ff fffe 	bl	0 <TIM_OC2Init>
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:99
+    TIM_OC2PreloadConfig(TIM4, TIM_OCPreload_Enable);
+  de:	4628      	mov	r0, r5
+  e0:	2108      	movs	r1, #8
+  e2:	f7ff fffe 	bl	0 <TIM_OC2PreloadConfig>
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:102
+
+    // TIM4 enable counter 
+    TIM_Cmd(TIM4, ENABLE);
+  e6:	4628      	mov	r0, r5
+  e8:	4641      	mov	r1, r8
+  ea:	f7ff fffe 	bl	0 <TIM_Cmd>
+C:\Users\Linux\Downloads\06_12\src/TIM_config.c:103
+}
+  ee:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
+  f2:	46c0      	nop			(mov r8, r8)
+  f4:	00000000 	.word	0x00000000
+  f8:	40000400 	.word	0x40000400
+	...

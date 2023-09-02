@@ -1,0 +1,390 @@
+
+C:\Users\Linux\Downloads\06_12\obj\GPIO_config.o:     file format elf32-littlearm
+C:\Users\Linux\Downloads\06_12\obj\GPIO_config.o
+
+Disassembly of section .text.GPIO_Configuration:
+
+00000000 <GPIO_Configuration>:
+GPIO_Configuration():
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:7
+#include "SPI_define.h"
+/*
+    GPIO 설정에 관련된 코드들을 함수화하여 나타낸 c파일
+*/
+void GPIO_Configuration(void)
+{
+   0:	e92d 4f70 	stmdb	sp!, {r4, r5, r6, r8, r9, sl, fp, lr}
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:23
+
+    GPIO_InitStructure_LED.GPIO_Pin = GPIO_Pin_5 | GPIO_Pin_8 | GPIO_Pin_9;
+    GPIO_InitStructure_LED.GPIO_Mode = GPIO_Mode_Out_PP;
+    GPIO_InitStructure_LED.GPIO_Speed = GPIO_Speed_50MHz;
+
+    GPIO_Init(GPIOB, &GPIO_InitStructure_LED);
+   4:	f8df a0f8 	ldr.w	sl, [pc, #248]	; 100 <GPIO_Configuration+0x100>
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:7
+#include "SPI_define.h"
+/*
+    GPIO 설정에 관련된 코드들을 함수화하여 나타낸 c파일
+*/
+void GPIO_Configuration(void)
+{
+   8:	b086      	sub	sp, #24
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:20
+    // 구조체 선언
+    GPIO_InitTypeDef GPIO_InitStructure_LED;
+    
+
+    GPIO_InitStructure_LED.GPIO_Pin = GPIO_Pin_5 | GPIO_Pin_8 | GPIO_Pin_9;
+    GPIO_InitStructure_LED.GPIO_Mode = GPIO_Mode_Out_PP;
+   a:	2610      	movs	r6, #16
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:21
+    GPIO_InitStructure_LED.GPIO_Speed = GPIO_Speed_50MHz;
+   c:	2403      	movs	r4, #3
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:39
+    GPIO_InitTypeDef GPIO_InitStructure_PWM;
+
+    GPIO_InitStructure_PWM.GPIO_Pin = GPIO_Pin_6|GPIO_Pin_7|GPIO_Pin_10|GPIO_Pin_11;	// PB6, PB7 -> motor PWM
+    GPIO_InitStructure_PWM.GPIO_Mode = GPIO_Mode_AF_PP;		// AFIO설정
+    GPIO_InitStructure_PWM.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOB, &GPIO_InitStructure_PWM);			// B포트설정
+   e:	eb0d 0506 	add.w	r5, sp, r6
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:19
+
+    // 구조체 선언
+    GPIO_InitTypeDef GPIO_InitStructure_LED;
+    
+
+    GPIO_InitStructure_LED.GPIO_Pin = GPIO_Pin_5 | GPIO_Pin_8 | GPIO_Pin_9;
+  12:	f44f 7348 	mov.w	r3, #800	; 0x320
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:23
+    GPIO_InitStructure_LED.GPIO_Mode = GPIO_Mode_Out_PP;
+    GPIO_InitStructure_LED.GPIO_Speed = GPIO_Speed_50MHz;
+
+    GPIO_Init(GPIOB, &GPIO_InitStructure_LED);
+  16:	4650      	mov	r0, sl
+  18:	a905      	add	r1, sp, #20
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:37
+    // PWM //   // PWM //   // PWM //   // PWM //
+
+    GPIO_InitTypeDef GPIO_InitStructure_PWM;
+
+    GPIO_InitStructure_PWM.GPIO_Pin = GPIO_Pin_6|GPIO_Pin_7|GPIO_Pin_10|GPIO_Pin_11;	// PB6, PB7 -> motor PWM
+    GPIO_InitStructure_PWM.GPIO_Mode = GPIO_Mode_AF_PP;		// AFIO설정
+  1a:	f04f 0b18 	mov.w	fp, #24	; 0x18
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:66
+    
+    /* Configure USARTx_Tx as alternate function push-pull */
+    GPIO_InitStructure_USART1.GPIO_Pin   = GPIO_Pin_9;//GPIO_USART_Tx_Pin;      //GPIO_Pin_9
+    GPIO_InitStructure_USART1.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_InitStructure_USART1.GPIO_Mode  = GPIO_Mode_AF_PP;
+    GPIO_Init(GPIOA, &GPIO_InitStructure_USART1);             //GPIO_USART = GPIOA
+  1e:	f8df 90e4 	ldr.w	r9, [pc, #228]	; 104 <GPIO_Configuration+0x104>
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:19
+
+    // 구조체 선언
+    GPIO_InitTypeDef GPIO_InitStructure_LED;
+    
+
+    GPIO_InitStructure_LED.GPIO_Pin = GPIO_Pin_5 | GPIO_Pin_8 | GPIO_Pin_9;
+  22:	f8ad 3014 	strh.w	r3, [sp, #20]
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:20
+    GPIO_InitStructure_LED.GPIO_Mode = GPIO_Mode_Out_PP;
+  26:	f88d 6017 	strb.w	r6, [sp, #23]
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:21
+    GPIO_InitStructure_LED.GPIO_Speed = GPIO_Speed_50MHz;
+  2a:	f88d 4016 	strb.w	r4, [sp, #22]
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:23
+
+    GPIO_Init(GPIOB, &GPIO_InitStructure_LED);
+  2e:	f7ff fffe 	bl	0 <GPIO_Init>
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:36
+    // PWM //   // PWM //   // PWM //   // PWM //
+    // PWM //   // PWM //   // PWM //   // PWM //
+
+    GPIO_InitTypeDef GPIO_InitStructure_PWM;
+
+    GPIO_InitStructure_PWM.GPIO_Pin = GPIO_Pin_6|GPIO_Pin_7|GPIO_Pin_10|GPIO_Pin_11;	// PB6, PB7 -> motor PWM
+  32:	f44f 634c 	mov.w	r3, #3264	; 0xcc0
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:39
+    GPIO_InitStructure_PWM.GPIO_Mode = GPIO_Mode_AF_PP;		// AFIO설정
+    GPIO_InitStructure_PWM.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOB, &GPIO_InitStructure_PWM);			// B포트설정
+  36:	4650      	mov	r0, sl
+  38:	4629      	mov	r1, r5
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:36
+    // PWM //   // PWM //   // PWM //   // PWM //
+    // PWM //   // PWM //   // PWM //   // PWM //
+
+    GPIO_InitTypeDef GPIO_InitStructure_PWM;
+
+    GPIO_InitStructure_PWM.GPIO_Pin = GPIO_Pin_6|GPIO_Pin_7|GPIO_Pin_10|GPIO_Pin_11;	// PB6, PB7 -> motor PWM
+  3a:	f8ad 3010 	strh.w	r3, [sp, #16]
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:38
+    GPIO_InitStructure_PWM.GPIO_Mode = GPIO_Mode_AF_PP;		// AFIO설정
+    GPIO_InitStructure_PWM.GPIO_Speed = GPIO_Speed_50MHz;
+  3e:	f88d 4012 	strb.w	r4, [sp, #18]
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:66
+    
+    /* Configure USARTx_Tx as alternate function push-pull */
+    GPIO_InitStructure_USART1.GPIO_Pin   = GPIO_Pin_9;//GPIO_USART_Tx_Pin;      //GPIO_Pin_9
+    GPIO_InitStructure_USART1.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_InitStructure_USART1.GPIO_Mode  = GPIO_Mode_AF_PP;
+    GPIO_Init(GPIOA, &GPIO_InitStructure_USART1);             //GPIO_USART = GPIOA
+  42:	f10d 080c 	add.w	r8, sp, #12	; 0xc
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:37
+    // PWM //   // PWM //   // PWM //   // PWM //
+
+    GPIO_InitTypeDef GPIO_InitStructure_PWM;
+
+    GPIO_InitStructure_PWM.GPIO_Pin = GPIO_Pin_6|GPIO_Pin_7|GPIO_Pin_10|GPIO_Pin_11;	// PB6, PB7 -> motor PWM
+    GPIO_InitStructure_PWM.GPIO_Mode = GPIO_Mode_AF_PP;		// AFIO설정
+  46:	f88d b013 	strb.w	fp, [sp, #19]
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:39
+    GPIO_InitStructure_PWM.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOB, &GPIO_InitStructure_PWM);			// B포트설정
+  4a:	f7ff fffe 	bl	0 <GPIO_Init>
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:42
+
+    // enable 10,11, direction 12,13
+    GPIO_InitStructure_PWM.GPIO_Pin = GPIO_Pin_8|GPIO_Pin_9|GPIO_Pin_12|GPIO_Pin_13;
+  4e:	f44f 534c 	mov.w	r3, #13056	; 0x3300
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:45
+    GPIO_InitStructure_PWM.GPIO_Mode = GPIO_Mode_Out_PP;					//얘는 GPIO
+    GPIO_InitStructure_PWM.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOB, &GPIO_InitStructure_PWM);
+  52:	4650      	mov	r0, sl
+  54:	4629      	mov	r1, r5
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:42
+    GPIO_InitStructure_PWM.GPIO_Mode = GPIO_Mode_AF_PP;		// AFIO설정
+    GPIO_InitStructure_PWM.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOB, &GPIO_InitStructure_PWM);			// B포트설정
+
+    // enable 10,11, direction 12,13
+    GPIO_InitStructure_PWM.GPIO_Pin = GPIO_Pin_8|GPIO_Pin_9|GPIO_Pin_12|GPIO_Pin_13;
+  56:	f8ad 3010 	strh.w	r3, [sp, #16]
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:43
+    GPIO_InitStructure_PWM.GPIO_Mode = GPIO_Mode_Out_PP;					//얘는 GPIO
+  5a:	f88d 6013 	strb.w	r6, [sp, #19]
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:44
+    GPIO_InitStructure_PWM.GPIO_Speed = GPIO_Speed_50MHz;
+  5e:	f88d 4012 	strb.w	r4, [sp, #18]
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:45
+    GPIO_Init(GPIOB, &GPIO_InitStructure_PWM);
+  62:	f7ff fffe 	bl	0 <GPIO_Init>
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:63
+    
+    
+    GPIO_InitTypeDef GPIO_InitStructure_USART1;
+    
+    /* Configure USARTx_Tx as alternate function push-pull */
+    GPIO_InitStructure_USART1.GPIO_Pin   = GPIO_Pin_9;//GPIO_USART_Tx_Pin;      //GPIO_Pin_9
+  66:	f44f 7300 	mov.w	r3, #512	; 0x200
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:66
+    GPIO_InitStructure_USART1.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_InitStructure_USART1.GPIO_Mode  = GPIO_Mode_AF_PP;
+    GPIO_Init(GPIOA, &GPIO_InitStructure_USART1);             //GPIO_USART = GPIOA
+  6a:	4648      	mov	r0, r9
+  6c:	4641      	mov	r1, r8
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:63
+    
+    
+    GPIO_InitTypeDef GPIO_InitStructure_USART1;
+    
+    /* Configure USARTx_Tx as alternate function push-pull */
+    GPIO_InitStructure_USART1.GPIO_Pin   = GPIO_Pin_9;//GPIO_USART_Tx_Pin;      //GPIO_Pin_9
+  6e:	f8ad 300c 	strh.w	r3, [sp, #12]
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:70
+    GPIO_InitStructure_USART1.GPIO_Mode  = GPIO_Mode_AF_PP;
+    GPIO_Init(GPIOA, &GPIO_InitStructure_USART1);             //GPIO_USART = GPIOA
+
+    /* Configure USARTx_Rx as input floating */
+    GPIO_InitStructure_USART1.GPIO_Pin  = GPIO_Pin_10;//GPIO_USART_Rx_Pin;       //GPIO_Pin_10
+    GPIO_InitStructure_USART1.GPIO_Mode = GPIO_Mode_IN_FLOATING;
+  72:	2504      	movs	r5, #4
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:64
+    
+    GPIO_InitTypeDef GPIO_InitStructure_USART1;
+    
+    /* Configure USARTx_Tx as alternate function push-pull */
+    GPIO_InitStructure_USART1.GPIO_Pin   = GPIO_Pin_9;//GPIO_USART_Tx_Pin;      //GPIO_Pin_9
+    GPIO_InitStructure_USART1.GPIO_Speed = GPIO_Speed_50MHz;
+  74:	f88d 400e 	strb.w	r4, [sp, #14]
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:69
+    GPIO_InitStructure_USART1.GPIO_Mode  = GPIO_Mode_AF_PP;
+    GPIO_Init(GPIOA, &GPIO_InitStructure_USART1);             //GPIO_USART = GPIOA
+
+    /* Configure USARTx_Rx as input floating */
+    GPIO_InitStructure_USART1.GPIO_Pin  = GPIO_Pin_10;//GPIO_USART_Rx_Pin;       //GPIO_Pin_10
+  78:	f506 767c 	add.w	r6, r6, #1008	; 0x3f0
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:65
+    GPIO_InitTypeDef GPIO_InitStructure_USART1;
+    
+    /* Configure USARTx_Tx as alternate function push-pull */
+    GPIO_InitStructure_USART1.GPIO_Pin   = GPIO_Pin_9;//GPIO_USART_Tx_Pin;      //GPIO_Pin_9
+    GPIO_InitStructure_USART1.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_InitStructure_USART1.GPIO_Mode  = GPIO_Mode_AF_PP;
+  7c:	f88d b00f 	strb.w	fp, [sp, #15]
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:66
+    GPIO_Init(GPIOA, &GPIO_InitStructure_USART1);             //GPIO_USART = GPIOA
+  80:	f7ff fffe 	bl	0 <GPIO_Init>
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:71
+
+    /* Configure USARTx_Rx as input floating */
+    GPIO_InitStructure_USART1.GPIO_Pin  = GPIO_Pin_10;//GPIO_USART_Rx_Pin;       //GPIO_Pin_10
+    GPIO_InitStructure_USART1.GPIO_Mode = GPIO_Mode_IN_FLOATING;
+    GPIO_Init(GPIOA, &GPIO_InitStructure_USART1);
+  84:	4648      	mov	r0, r9
+  86:	4641      	mov	r1, r8
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:69
+    GPIO_InitStructure_USART1.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_InitStructure_USART1.GPIO_Mode  = GPIO_Mode_AF_PP;
+    GPIO_Init(GPIOA, &GPIO_InitStructure_USART1);             //GPIO_USART = GPIOA
+
+    /* Configure USARTx_Rx as input floating */
+    GPIO_InitStructure_USART1.GPIO_Pin  = GPIO_Pin_10;//GPIO_USART_Rx_Pin;       //GPIO_Pin_10
+  88:	f8ad 600c 	strh.w	r6, [sp, #12]
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:70
+    GPIO_InitStructure_USART1.GPIO_Mode = GPIO_Mode_IN_FLOATING;
+  8c:	f88d 500f 	strb.w	r5, [sp, #15]
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:71
+    GPIO_Init(GPIOA, &GPIO_InitStructure_USART1);
+  90:	f7ff fffe 	bl	0 <GPIO_Init>
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:87
+    
+    
+    GPIO_InitTypeDef GPIO_InitStructure_USART3;
+    
+    // Configure USARTx_Tx as alternate function push-pull 
+    GPIO_InitStructure_USART3.GPIO_Pin   = GPIO_Pin_10;//GPIO_USART_Tx_Pin;      //GPIO_Pin_9
+  94:	f8ad 6008 	strh.w	r6, [sp, #8]
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:90
+    GPIO_InitStructure_USART3.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_InitStructure_USART3.GPIO_Mode  = GPIO_Mode_AF_PP;
+    GPIO_Init(GPIOB, &GPIO_InitStructure_USART3);             //GPIO_USART = GPIOA
+  98:	ae02      	add	r6, sp, #8
+  9a:	4650      	mov	r0, sl
+  9c:	4631      	mov	r1, r6
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:88
+    
+    GPIO_InitTypeDef GPIO_InitStructure_USART3;
+    
+    // Configure USARTx_Tx as alternate function push-pull 
+    GPIO_InitStructure_USART3.GPIO_Pin   = GPIO_Pin_10;//GPIO_USART_Tx_Pin;      //GPIO_Pin_9
+    GPIO_InitStructure_USART3.GPIO_Speed = GPIO_Speed_50MHz;
+  9e:	f88d 400a 	strb.w	r4, [sp, #10]
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:89
+    GPIO_InitStructure_USART3.GPIO_Mode  = GPIO_Mode_AF_PP;
+  a2:	f88d b00b 	strb.w	fp, [sp, #11]
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:90
+    GPIO_Init(GPIOB, &GPIO_InitStructure_USART3);             //GPIO_USART = GPIOA
+  a6:	f7ff fffe 	bl	0 <GPIO_Init>
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:93
+
+    // Configure USARTx_Rx as input floating 
+    GPIO_InitStructure_USART3.GPIO_Pin  = GPIO_Pin_11;//GPIO_USART_Rx_Pin;       //GPIO_Pin_10
+  aa:	f44f 6300 	mov.w	r3, #2048	; 0x800
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:95
+    GPIO_InitStructure_USART3.GPIO_Mode = GPIO_Mode_IN_FLOATING;
+    GPIO_Init(GPIOB, &GPIO_InitStructure_USART3);
+  ae:	4650      	mov	r0, sl
+  b0:	4631      	mov	r1, r6
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:93
+    GPIO_InitStructure_USART3.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_InitStructure_USART3.GPIO_Mode  = GPIO_Mode_AF_PP;
+    GPIO_Init(GPIOB, &GPIO_InitStructure_USART3);             //GPIO_USART = GPIOA
+
+    // Configure USARTx_Rx as input floating 
+    GPIO_InitStructure_USART3.GPIO_Pin  = GPIO_Pin_11;//GPIO_USART_Rx_Pin;       //GPIO_Pin_10
+  b2:	f8ad 3008 	strh.w	r3, [sp, #8]
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:94
+    GPIO_InitStructure_USART3.GPIO_Mode = GPIO_Mode_IN_FLOATING;
+  b6:	f88d 500b 	strb.w	r5, [sp, #11]
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:95
+    GPIO_Init(GPIOB, &GPIO_InitStructure_USART3);
+  ba:	f7ff fffe 	bl	0 <GPIO_Init>
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:113
+
+    GPIO_InitTypeDef GPIO_InitStructure_KEY;
+
+    GPIO_InitStructure_KEY.GPIO_Pin = GPIO_Pin_0|GPIO_Pin_1;
+    GPIO_InitStructure_KEY.GPIO_Mode = GPIO_Mode_IN_FLOATING;	
+    GPIO_Init(GPIOA, &GPIO_InitStructure_KEY);			
+  be:	4648      	mov	r0, r9
+  c0:	eb0d 0105 	add.w	r1, sp, r5
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:111
+    // KEY //   // KEY //   // KEY //   // KEY //
+    // KEY //   // KEY //   // KEY //   // KEY //
+
+    GPIO_InitTypeDef GPIO_InitStructure_KEY;
+
+    GPIO_InitStructure_KEY.GPIO_Pin = GPIO_Pin_0|GPIO_Pin_1;
+  c4:	f8ad 4004 	strh.w	r4, [sp, #4]
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:112
+    GPIO_InitStructure_KEY.GPIO_Mode = GPIO_Mode_IN_FLOATING;	
+  c8:	f88d 5007 	strb.w	r5, [sp, #7]
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:113
+    GPIO_Init(GPIOA, &GPIO_InitStructure_KEY);			
+  cc:	f7ff fffe 	bl	0 <GPIO_Init>
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:127
+    // SPI //   // SPI //   // SPI //   // SPI //
+    
+    GPIO_InitTypeDef GPIO_InitStructure;
+
+    /* Configure SPIy pins: SCK, MISO and MOSI */	//SCK는 PA5, MISO는 PA6, MOSI는 PA7
+    GPIO_InitStructure.GPIO_Pin = SPIy_PIN_SCK | SPIy_PIN_MISO | SPIy_PIN_MOSI;
+  d0:	f04f 03e0 	mov.w	r3, #224	; 0xe0
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:130
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;	//SPIy_PIN_SCK = GPIO_Pin_5
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;	//AFIO
+    GPIO_Init(SPIy_GPIO, &GPIO_InitStructure);		//SPIy_GPIO = PORTA
+  d4:	4648      	mov	r0, r9
+  d6:	4669      	mov	r1, sp
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:127
+    // SPI //   // SPI //   // SPI //   // SPI //
+    
+    GPIO_InitTypeDef GPIO_InitStructure;
+
+    /* Configure SPIy pins: SCK, MISO and MOSI */	//SCK는 PA5, MISO는 PA6, MOSI는 PA7
+    GPIO_InitStructure.GPIO_Pin = SPIy_PIN_SCK | SPIy_PIN_MISO | SPIy_PIN_MOSI;
+  d8:	f8ad 3000 	strh.w	r3, [sp]
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:128
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;	//SPIy_PIN_SCK = GPIO_Pin_5
+  dc:	f88d 4002 	strb.w	r4, [sp, #2]
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:129
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;	//AFIO
+  e0:	f88d b003 	strb.w	fp, [sp, #3]
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:130
+    GPIO_Init(SPIy_GPIO, &GPIO_InitStructure);		//SPIy_GPIO = PORTA
+  e4:	f7ff fffe 	bl	0 <GPIO_Init>
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:133
+
+    /* Configure SPIz pins: SCK, MISO and MOSI */	//SCK는 PB13, MISO는 PB14, MOSI는 PB15
+    GPIO_InitStructure.GPIO_Pin = SPIz_PIN_SCK | SPIz_PIN_MISO | SPIz_PIN_MOSI;
+  e8:	f24e 0300 	movw	r3, #57344	; 0xe000
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:134
+    GPIO_Init(SPIz_GPIO, &GPIO_InitStructure);		//SPIz_GPIO = PORTB
+  ec:	4650      	mov	r0, sl
+  ee:	4669      	mov	r1, sp
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:130
+
+    /* Configure SPIy pins: SCK, MISO and MOSI */	//SCK는 PA5, MISO는 PA6, MOSI는 PA7
+    GPIO_InitStructure.GPIO_Pin = SPIy_PIN_SCK | SPIy_PIN_MISO | SPIy_PIN_MOSI;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;	//SPIy_PIN_SCK = GPIO_Pin_5
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;	//AFIO
+    GPIO_Init(SPIy_GPIO, &GPIO_InitStructure);		//SPIy_GPIO = PORTA
+  f0:	466c      	mov	r4, sp
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:133
+
+    /* Configure SPIz pins: SCK, MISO and MOSI */	//SCK는 PB13, MISO는 PB14, MOSI는 PB15
+    GPIO_InitStructure.GPIO_Pin = SPIz_PIN_SCK | SPIz_PIN_MISO | SPIz_PIN_MOSI;
+  f2:	f8ad 3000 	strh.w	r3, [sp]
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:134
+    GPIO_Init(SPIz_GPIO, &GPIO_InitStructure);		//SPIz_GPIO = PORTB
+  f6:	f7ff fffe 	bl	0 <GPIO_Init>
+C:\Users\Linux\Downloads\06_12\src/GPIO_config.c:136
+							//얘도 위에설정한 AFIO 사용됨.
+  fa:	b006      	add	sp, #24
+  fc:	e8bd 8f70 	ldmia.w	sp!, {r4, r5, r6, r8, r9, sl, fp, pc}
+ 100:	40010c00 	.word	0x40010c00
+ 104:	40010800 	.word	0x40010800

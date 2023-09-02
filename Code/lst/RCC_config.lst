@@ -1,0 +1,76 @@
+
+C:\Users\Linux\Downloads\06_12\obj\RCC_config.o:     file format elf32-littlearm
+C:\Users\Linux\Downloads\06_12\obj\RCC_config.o
+
+Disassembly of section .text.RCC_Configuration:
+
+00000000 <RCC_Configuration>:
+RCC_Configuration():
+C:\Users\Linux\Downloads\06_12\src/RCC_config.c:8
+/*
+    RCC 설정에 관련된 코드들을 함수화하여 나타낸 c파일
+*/
+
+void RCC_Configuration(void)
+{
+   0:	b510      	push	{r4, lr}
+C:\Users\Linux\Downloads\06_12\src/RCC_config.c:14
+
+
+    // TIM2 clock enable 
+    //RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
+    //RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3, ENABLE);
+    RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
+   2:	2004      	movs	r0, #4
+   4:	2101      	movs	r1, #1
+   6:	f7ff fffe 	bl	0 <RCC_APB1PeriphClockCmd>
+C:\Users\Linux\Downloads\06_12\src/RCC_config.c:17
+
+    // GPIOA ENABLE
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
+   a:	2004      	movs	r0, #4
+   c:	2101      	movs	r1, #1
+   e:	f7ff fffe 	bl	0 <RCC_APB2PeriphClockCmd>
+C:\Users\Linux\Downloads\06_12\src/RCC_config.c:20
+
+    // GPIOB ENABLE
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+  12:	2008      	movs	r0, #8
+  14:	2101      	movs	r1, #1
+  16:	f7ff fffe 	bl	0 <RCC_APB2PeriphClockCmd>
+C:\Users\Linux\Downloads\06_12\src/RCC_config.c:23
+
+    /* Enable AFIO clock */
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
+  1a:	2001      	movs	r0, #1
+  1c:	4601      	mov	r1, r0
+  1e:	f7ff fffe 	bl	0 <RCC_APB2PeriphClockCmd>
+C:\Users\Linux\Downloads\06_12\src/RCC_config.c:26
+
+    /* Enable USART1 clocks */
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1, ENABLE);
+  22:	2101      	movs	r1, #1
+  24:	f44f 4080 	mov.w	r0, #16384	; 0x4000
+  28:	f7ff fffe 	bl	0 <RCC_APB2PeriphClockCmd>
+C:\Users\Linux\Downloads\06_12\src/RCC_config.c:29
+
+    /* Enable USART3 clocks */
+    RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART3, ENABLE);
+  2c:	2101      	movs	r1, #1
+  2e:	f44f 2080 	mov.w	r0, #262144	; 0x40000
+  32:	f7ff fffe 	bl	0 <RCC_APB1PeriphClockCmd>
+C:\Users\Linux\Downloads\06_12\src/RCC_config.c:33
+
+
+    // SPI clocks
+    RCC_APB2PeriphClockCmd(SPIy_CLK, ENABLE);	//SPI1
+  36:	2101      	movs	r1, #1
+  38:	f44f 5080 	mov.w	r0, #4096	; 0x1000
+  3c:	f7ff fffe 	bl	0 <RCC_APB2PeriphClockCmd>
+C:\Users\Linux\Downloads\06_12\src/RCC_config.c:34
+    RCC_APB1PeriphClockCmd(SPIz_CLK, ENABLE);	//SPI2
+  40:	f44f 4080 	mov.w	r0, #16384	; 0x4000
+  44:	2101      	movs	r1, #1
+  46:	f7ff fffe 	bl	0 <RCC_APB1PeriphClockCmd>
+C:\Users\Linux\Downloads\06_12\src/RCC_config.c:35
+  4a:	bd10      	pop	{r4, pc}

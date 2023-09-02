@@ -1,0 +1,1830 @@
+Archive member included because of file (symbol)
+
+C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
+                              (_write)
+C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_printf.o)
+                              C:\Users\Linux\Downloads\06_12\obj\main.o (printf)
+C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_puts.o)
+                              C:\Users\Linux\Downloads\06_12\obj\main.o (puts)
+C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o)
+                              C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_printf.o) (vfiprintf)
+c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                              C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o) (_impure_ptr)
+c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
+                              C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o) (memchr)
+c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
+                              C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_puts.o) (strlen)
+c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcrtomb.o)
+                              C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o) (_wcrtomb_r)
+c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcsrtombs.o)
+                              C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o) (_wcsrtombs_r)
+c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wctomb_r.o)
+                              c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcrtomb.o) (_wctomb_r)
+c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+                              c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wctomb_r.o) (__lc_ctype)
+c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
+                              c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wctomb_r.o) (strcmp)
+c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_udivsi3.o)
+                              C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o) (__aeabi_uidiv)
+c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_dvmd_tls.o)
+                              c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+
+Allocating common symbols
+Common symbol       size              file
+
+TIM_TimeBaseStructure
+                    0xa               C:\Users\Linux\Downloads\06_12\obj\main.o
+TIM_TimeBaseStructure_PWM
+                    0xa               C:\Users\Linux\Downloads\06_12\obj\TIM_config.o
+SPI_InitStructure   0x12              C:\Users\Linux\Downloads\06_12\obj\SPI_config.o
+TIM_OCInitStructure_PWM
+                    0x10              C:\Users\Linux\Downloads\06_12\obj\main.o
+
+Discarded input sections
+
+ .text          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\main.o
+ .text          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+ .data          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+ .text          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\SPI_config.o
+ .data          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\SPI_config.o
+ .bss           0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\SPI_config.o
+ .text.Buffercmp
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\SPI_config.o
+ .text.SPIz_Slave_Configuration
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\SPI_config.o
+ .text.SPIy_Master_Configuration
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\SPI_config.o
+ COMMON         0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\SPI_config.o
+ .text          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\EXTI_config.o
+ .data          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\EXTI_config.o
+ .bss           0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\EXTI_config.o
+ .text.EXTI_Configuration
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\EXTI_config.o
+ .text          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\NVIC_config.o
+ .data          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\NVIC_config.o
+ .bss           0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\NVIC_config.o
+ .text          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\TIM_config.o
+ .data          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\TIM_config.o
+ .bss           0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\TIM_config.o
+ .text          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\RCC_config.o
+ .data          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\RCC_config.o
+ .bss           0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\RCC_config.o
+ .text          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\GPIO_config.o
+ .data          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\GPIO_config.o
+ .bss           0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\GPIO_config.o
+ .text          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\USART_config.o
+ .data          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\USART_config.o
+ .bss           0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\USART_config.o
+ .text.USART_GetCharacter
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\USART_config.o
+ .text          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\segment.o
+ .data          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\segment.o
+ .bss           0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\segment.o
+ .text.GPIO_4digit_segment_DIG_1
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\segment.o
+ .text.GPIO_4digit_segment_9
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\segment.o
+ .text.GPIO_4digit_segment_8
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\segment.o
+ .text.GPIO_4digit_segment_7
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\segment.o
+ .text.GPIO_4digit_segment_6
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\segment.o
+ .text          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\delay.o
+ .data          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\delay.o
+ .bss           0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\delay.o
+ .text.delay_m_common
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\delay.o
+ .text.delay_motor_speed
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\delay.o
+ .text.delay_m_beep
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\delay.o
+ .text          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\startup_stm32f10x_md.o
+ .data          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\startup_stm32f10x_md.o
+ .bss           0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\startup_stm32f10x_md.o
+ .text          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\system_stm32f10x.o
+ .data          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\system_stm32f10x.o
+ .bss           0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\system_stm32f10x.o
+ .text.SystemCoreClockUpdate
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\system_stm32f10x.o
+ .text          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\misc.o
+ .data          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\misc.o
+ .bss           0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\misc.o
+ .text.NVIC_SystemLPConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\misc.o
+ .text.SysTick_CLKSourceConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\misc.o
+ .text          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .data          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .bss           0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .text.SPI_Init
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .text.SPI_StructInit
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .text.I2S_StructInit
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .text.SPI_Cmd  0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .text.I2S_Cmd  0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .text.SPI_I2S_ITConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .text.SPI_I2S_DMACmd
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .text.SPI_I2S_SendData
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .text.SPI_I2S_ReceiveData
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .text.SPI_NSSInternalSoftwareConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .text.SPI_SSOutputCmd
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .text.SPI_DataSizeConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .text.SPI_TransmitCRC
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .text.SPI_CalculateCRC
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .text.SPI_GetCRC
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .text.SPI_GetCRCPolynomial
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .text.SPI_BiDirectionalLineConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .text.SPI_I2S_GetFlagStatus
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .text.SPI_I2S_ClearFlag
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .text.SPI_I2S_GetITStatus
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .text.SPI_I2S_ClearITPendingBit
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .text.I2S_Init
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .text.SPI_I2S_DeInit
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .text          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+ .data          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+ .bss           0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+ .text.EXTI_DeInit
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+ .text.EXTI_Init
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+ .text.EXTI_StructInit
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+ .text.EXTI_GenerateSWInterrupt
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+ .text.EXTI_GetFlagStatus
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+ .text.EXTI_ClearFlag
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+ .text          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .data          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .bss           0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_SetLatency
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_HalfCycleAccessCmd
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_PrefetchBufferCmd
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_Unlock
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_UnlockBank1
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_Lock
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_LockBank1
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_GetUserOptionByte
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_GetWriteProtectionOptionByte
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_GetReadOutProtectionStatus
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_GetPrefetchBufferStatus
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_ITConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_GetFlagStatus
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_ClearFlag
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_GetStatus
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_GetBank1Status
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_WaitForLastOperation
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_UserOptionByteConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_ReadOutProtection
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_EnableWriteProtection
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_ProgramOptionByteData
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_ProgramHalfWord
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_ProgramWord
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_EraseOptionBytes
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_EraseAllPages
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_ErasePage
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_WaitForLastBank1Operation
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text.FLASH_EraseAllBank1Pages
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .text          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .data          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .bss           0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_OC3Init
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_OC4Init
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_BDTRConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_TimeBaseStructInit
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_OCStructInit
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_ICStructInit
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_BDTRStructInit
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_CtrlPWMOutputs
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_GenerateEvent
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_DMAConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_DMACmd
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_InternalClockConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_ETRConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_ETRClockMode2Config
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_ETRClockMode1Config
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_CounterModeConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_SelectInputTrigger
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_ITRxExternalClockConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_EncoderInterfaceConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_ForcedOC1Config
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_ForcedOC2Config
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_ForcedOC3Config
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_ForcedOC4Config
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_ARRPreloadConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_SelectCOM
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_SelectCCDMA
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_CCPreloadControl
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_OC3PreloadConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_OC4PreloadConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_OC1FastConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_OC2FastConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_OC3FastConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_OC4FastConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_ClearOC1Ref
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_ClearOC2Ref
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_ClearOC3Ref
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_ClearOC4Ref
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_OC1PolarityConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_OC1NPolarityConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_OC2PolarityConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_OC2NPolarityConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_OC3PolarityConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_OC3NPolarityConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_OC4PolarityConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_CCxCmd
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_CCxNCmd
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_SelectOCxM
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_UpdateDisableConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_UpdateRequestConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_SelectHallSensor
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_SelectOnePulseMode
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_SelectOutputTrigger
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_SelectSlaveMode
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_SelectMasterSlaveMode
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_SetCounter
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_SetAutoreload
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_SetCompare1
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_SetCompare2
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_SetCompare3
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_SetCompare4
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_SetIC1Prescaler
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_SetIC2Prescaler
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_SetIC3Prescaler
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_SetIC4Prescaler
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_SetClockDivision
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_GetCapture1
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_GetCapture2
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_GetCapture3
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_GetCapture4
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_GetCounter
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_GetPrescaler
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_GetFlagStatus
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_GetITStatus
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TI1_Config
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TI2_Config
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_TIxExternalClockConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_PWMIConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_ICInit
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text.TIM_DeInit
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .text          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .data          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .bss           0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .text.GPIO_StructInit
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .text.GPIO_ReadInputData
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .text.GPIO_ReadOutputDataBit
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .text.GPIO_ReadOutputData
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .text.GPIO_WriteBit
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .text.GPIO_Write
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .text.GPIO_PinLockConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .text.GPIO_EventOutputConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .text.GPIO_EventOutputCmd
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .text.GPIO_PinRemapConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .text.GPIO_EXTILineConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .text.GPIO_ETH_MediaInterfaceConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .text.GPIO_AFIODeInit
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .text.GPIO_DeInit
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .text          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .data          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .bss           0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .text.USART_StructInit
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .text.USART_ClockInit
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .text.USART_ClockStructInit
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .text.USART_ITConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .text.USART_DMACmd
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .text.USART_SetAddress
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .text.USART_WakeUpConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .text.USART_ReceiverWakeUpCmd
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .text.USART_LINBreakDetectLengthConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .text.USART_LINCmd
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .text.USART_SendBreak
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .text.USART_SetGuardTime
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .text.USART_SetPrescaler
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .text.USART_SmartCardCmd
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .text.USART_SmartCardNACKCmd
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .text.USART_HalfDuplexCmd
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .text.USART_OverSampling8Cmd
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .text.USART_OneBitMethodCmd
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .text.USART_IrDAConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .text.USART_IrDACmd
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .text.USART_ClearFlag
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .text.USART_GetITStatus
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .text.USART_ClearITPendingBit
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .text.USART_DeInit
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .text          0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .bss           0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_DeInit
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_HSEConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_AdjustHSICalibrationValue
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_HSICmd
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_PLLConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_PLLCmd
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_SYSCLKConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_GetSYSCLKSource
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_HCLKConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_PCLK1Config
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_PCLK2Config
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_ITConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_USBCLKConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_ADCCLKConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_LSEConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_LSICmd
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_RTCCLKConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_RTCCLKCmd
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_AHBPeriphClockCmd
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_APB2PeriphResetCmd
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_APB1PeriphResetCmd
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_BackupResetCmd
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_ClockSecuritySystemCmd
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_MCOConfig
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_GetFlagStatus
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_WaitForHSEStartUp
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_ClearFlag
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_GetITStatus
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text.RCC_ClearITPendingBit
+                0x00000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .text          0x00000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
+ .data          0x00000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
+ .bss           0x00000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
+ .data          0x00000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_printf.o)
+ .bss           0x00000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_printf.o)
+ .data          0x00000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_puts.o)
+ .bss           0x00000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_puts.o)
+ .data          0x00000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o)
+ .bss           0x00000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o)
+ .text          0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+ .rodata        0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+ .vfp11_veneer  0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+ .janus_2cc_veneer
+                0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+ .v4_bx         0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+ .data          0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
+ .debug_frame   0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
+ .ARM.attributes
+                0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
+ .vfp11_veneer  0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
+ .janus_2cc_veneer
+                0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
+ .v4_bx         0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
+ .data          0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
+ .debug_frame   0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
+ .ARM.attributes
+                0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
+ .vfp11_veneer  0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
+ .janus_2cc_veneer
+                0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
+ .v4_bx         0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
+ .data          0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcrtomb.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcrtomb.o)
+ .debug_frame   0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcrtomb.o)
+ .ARM.attributes
+                0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcrtomb.o)
+ .vfp11_veneer  0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcrtomb.o)
+ .janus_2cc_veneer
+                0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcrtomb.o)
+ .v4_bx         0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcrtomb.o)
+ .data          0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcsrtombs.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcsrtombs.o)
+ .debug_frame   0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcsrtombs.o)
+ .ARM.attributes
+                0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcsrtombs.o)
+ .vfp11_veneer  0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcsrtombs.o)
+ .janus_2cc_veneer
+                0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcsrtombs.o)
+ .v4_bx         0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcsrtombs.o)
+ .data          0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wctomb_r.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wctomb_r.o)
+ .debug_frame   0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wctomb_r.o)
+ .ARM.attributes
+                0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wctomb_r.o)
+ .vfp11_veneer  0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wctomb_r.o)
+ .janus_2cc_veneer
+                0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wctomb_r.o)
+ .v4_bx         0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wctomb_r.o)
+ .text          0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+ .rodata        0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+ .rodata.str1.4
+                0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+ .debug_frame   0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+ .ARM.attributes
+                0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+ .vfp11_veneer  0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+ .janus_2cc_veneer
+                0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+ .v4_bx         0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+ .data          0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
+ .debug_frame   0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
+ .ARM.attributes
+                0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
+ .vfp11_veneer  0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
+ .janus_2cc_veneer
+                0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
+ .v4_bx         0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
+ .data          0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_udivsi3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_udivsi3.o)
+ .debug_frame   0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_udivsi3.o)
+ .vfp11_veneer  0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_udivsi3.o)
+ .janus_2cc_veneer
+                0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_udivsi3.o)
+ .v4_bx         0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_udivsi3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_dvmd_tls.o)
+ .vfp11_veneer  0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_dvmd_tls.o)
+ .janus_2cc_veneer
+                0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_dvmd_tls.o)
+ .v4_bx         0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_dvmd_tls.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RAM              0x20000000         0x00005000         xrw
+FLASH            0x08000000         0x00020000         xr
+STARTFLASH       0x00000000         0x00000000         xr
+CRPPATCH         0x00000000         0x00000000         r
+FLASHPATCH       0x00000000         0x00000000         r
+ENDFLASH         0x00000000         0x00000000         xr
+FLASHB1          0x00000000         0x00000000         xr
+EXTMEMB0         0x00000000         0x00000000         xr
+EXTMEMB1         0x00000000         0x00000000         xr
+EXTMEMB2         0x00000000         0x00000000         xr
+EXTMEMB3         0x00000000         0x00000000         xr
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD C:\Users\Linux\Downloads\06_12\obj\main.o
+LOAD C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+LOAD C:\Users\Linux\Downloads\06_12\obj\SPI_config.o
+LOAD C:\Users\Linux\Downloads\06_12\obj\EXTI_config.o
+LOAD C:\Users\Linux\Downloads\06_12\obj\NVIC_config.o
+LOAD C:\Users\Linux\Downloads\06_12\obj\TIM_config.o
+LOAD C:\Users\Linux\Downloads\06_12\obj\RCC_config.o
+LOAD C:\Users\Linux\Downloads\06_12\obj\GPIO_config.o
+LOAD C:\Users\Linux\Downloads\06_12\obj\USART_config.o
+LOAD C:\Users\Linux\Downloads\06_12\obj\segment.o
+LOAD C:\Users\Linux\Downloads\06_12\obj\delay.o
+LOAD C:\Users\Linux\Downloads\06_12\obj\startup_stm32f10x_md.o
+LOAD C:\Users\Linux\Downloads\06_12\obj\system_stm32f10x.o
+LOAD C:\Users\Linux\Downloads\06_12\obj\misc.o
+LOAD C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+LOAD C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+LOAD C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+LOAD C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+LOAD C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+LOAD C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+LOAD C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+START GROUP
+LOAD C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\STM32x_io_putchar_thumb.a
+LOAD C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib
+LOAD C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a
+LOAD c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a
+LOAD c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libm.a
+END GROUP
+                0x00000400                __Stack_Size = 0x400
+                0x00000400                PROVIDE (_Stack_Size, __Stack_Size)
+                0x20004c00                __Stack_Init = (_estack - __Stack_Size)
+                0x20004c00                PROVIDE (_Stack_Init, __Stack_Init)
+                0x00000100                _Minimum_Stack_Size = 0x100
+                0x00000000                PROVIDE (Undefined_Handler, 0x0)
+                0x00000000                PROVIDE (SWI_Handler, 0x0)
+                0x00000000                PROVIDE (IRQ_Handler, 0x0)
+                0x00000000                PROVIDE (Prefetch_Handler, 0x0)
+                0x00000000                PROVIDE (Abort_Handler, 0x0)
+                0x00000000                PROVIDE (FIQ_Handler, 0x0)
+                0x00000000                PROVIDE (NMIException, 0x0)
+                0x00000000                PROVIDE (NMI_Handler, 0x0)
+                0x00000000                PROVIDE (HardFaultException, 0x0)
+                0x00000000                PROVIDE (HardFault_Handler, 0x0)
+                0x00000000                PROVIDE (MemManageException, 0x0)
+                0x00000000                PROVIDE (MemManage_Handler, 0x0)
+                0x00000000                PROVIDE (BusFaultException, 0x0)
+                0x00000000                PROVIDE (BusFault_Handler, 0x0)
+                0x00000000                PROVIDE (UsageFaultException, 0x0)
+                0x00000000                PROVIDE (UsageFault_Handler, 0x0)
+                0x00000000                PROVIDE (SVCHandler, 0x0)
+                0x00000000                PROVIDE (SVC_Handler, 0x0)
+                0x00000000                PROVIDE (DebugMonitor, 0x0)
+                0x00000000                PROVIDE (DebugMon_Handler, 0x0)
+                0x00000000                PROVIDE (PendSVC, 0x0)
+                0x00000000                PROVIDE (PendSV_Handler, 0x0)
+                0x00000000                PROVIDE (SysTickHandler, 0x0)
+                0x00000000                PROVIDE (SysTick_Handler, 0x0)
+                0x00000000                PROVIDE (WWDG_IRQHandler, 0x0)
+                0x00000000                PROVIDE (PVD_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TAMPER_IRQHandler, 0x0)
+                0x00000000                PROVIDE (RTC_IRQHandler, 0x0)
+                0x00000000                PROVIDE (FLASH_IRQHandler, 0x0)
+                0x00000000                PROVIDE (RCC_IRQHandler, 0x0)
+                0x00000000                PROVIDE (EXTI0_IRQHandler, 0x0)
+                0x00000000                PROVIDE (EXTI1_IRQHandler, 0x0)
+                0x00000000                PROVIDE (EXTI2_IRQHandler, 0x0)
+                0x00000000                PROVIDE (EXTI3_IRQHandler, 0x0)
+                0x00000000                PROVIDE (EXTI4_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMAChannel1_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMAChannel2_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMAChannel3_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMAChannel4_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMAChannel5_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMAChannel6_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMAChannel7_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMA1_Channel1_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMA1_Channel2_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMA1_Channel3_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMA1_Channel4_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMA1_Channel5_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMA1_Channel6_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMA1_Channel7_IRQHandler, 0x0)
+                0x00000000                PROVIDE (ADC_IRQHandler, 0x0)
+                0x00000000                PROVIDE (ADC1_2_IRQHandler, 0x0)
+                0x00000000                PROVIDE (USB_HP_CAN_TX_IRQHandler, 0x0)
+                0x00000000                PROVIDE (USB_HP_CAN1_TX_IRQHandler, 0x0)
+                0x00000000                PROVIDE (USB_LP_CAN_RX0_IRQHandler, 0x0)
+                0x00000000                PROVIDE (USB_LP_CAN1_RX0_IRQHandler, 0x0)
+                0x00000000                PROVIDE (CAN_RX1_IRQHandler, 0x0)
+                0x00000000                PROVIDE (CAN1_RX1_IRQHandler, 0x0)
+                0x00000000                PROVIDE (CAN_SCE_IRQHandler, 0x0)
+                0x00000000                PROVIDE (CAN1_SCE_IRQHandler, 0x0)
+                0x00000000                PROVIDE (EXTI9_5_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM1_BRK_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM1_UP_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM1_TRG_COM_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM1_CC_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM2_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM3_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM4_IRQHandler, 0x0)
+                0x00000000                PROVIDE (I2C1_EV_IRQHandler, 0x0)
+                0x00000000                PROVIDE (I2C1_ER_IRQHandler, 0x0)
+                0x00000000                PROVIDE (I2C2_EV_IRQHandler, 0x0)
+                0x00000000                PROVIDE (I2C2_ER_IRQHandler, 0x0)
+                0x00000000                PROVIDE (SPI1_IRQHandler, 0x0)
+                0x00000000                PROVIDE (SPI2_IRQHandler, 0x0)
+                0x00000000                PROVIDE (USART1_IRQHandler, 0x0)
+                0x00000000                PROVIDE (USART2_IRQHandler, 0x0)
+                0x00000000                PROVIDE (USART3_IRQHandler, 0x0)
+                0x00000000                PROVIDE (EXTI15_10_IRQHandler, 0x0)
+                0x00000000                PROVIDE (RTCAlarm_IRQHandler, 0x0)
+                0x00000000                PROVIDE (USBWakeUp_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM8_BRK_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM8_UP_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM8_TRG_COM_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM8_CC_IRQHandler, 0x0)
+                0x00000000                PROVIDE (ADC3_IRQHandler, 0x0)
+                0x00000000                PROVIDE (FSMC_IRQHandler, 0x0)
+                0x00000000                PROVIDE (SDIO_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM5_IRQHandler, 0x0)
+                0x00000000                PROVIDE (SPI3_IRQHandler, 0x0)
+                0x00000000                PROVIDE (UART4_IRQHandler, 0x0)
+                0x00000000                PROVIDE (UART5_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM6_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM7_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMA2_Channel1_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMA2_Channel2_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMA2_Channel3_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMA2_Channel4_5_IRQHandler, 0x0)
+                0x42000000                PERIPH_BB_BASE = 0x42000000
+                0x22000000                SRAM_BB_BASE = 0x22000000
+                0x20000000                SRAM_BASE = 0x20000000
+                0x40000000                PERIPH_BASE = 0x40000000
+                0x40022000                PROVIDE (FLASH_BASE, 0x40022000)
+                0x1ffff800                PROVIDE (OB_BASE, 0x1ffff800)
+                0x40000000                APB1PERIPH_BASE = PERIPH_BASE
+                0x40010000                APB2PERIPH_BASE = (PERIPH_BASE + 0x10000)
+                0x40020000                AHBPERIPH_BASE = (PERIPH_BASE + 0x20000)
+                0x40000000                PROVIDE (TIM2, (APB1PERIPH_BASE + 0x0))
+                0x40000400                PROVIDE (TIM3, (APB1PERIPH_BASE + 0x400))
+                0x40000800                PROVIDE (TIM4, (APB1PERIPH_BASE + 0x800))
+                0x40002800                PROVIDE (RTC, (APB1PERIPH_BASE + 0x2800))
+                0x40002c00                PROVIDE (WWDG, (APB1PERIPH_BASE + 0x2c00))
+                0x40003000                PROVIDE (IWDG, (APB1PERIPH_BASE + 0x3000))
+                0x40003800                PROVIDE (SPI2, (APB1PERIPH_BASE + 0x3800))
+                0x40004400                PROVIDE (USART2, (APB1PERIPH_BASE + 0x4400))
+                0x40004800                PROVIDE (USART3, (APB1PERIPH_BASE + 0x4800))
+                0x40005400                PROVIDE (I2C1, (APB1PERIPH_BASE + 0x5400))
+                0x40005800                PROVIDE (I2C2, (APB1PERIPH_BASE + 0x5800))
+                0x40006400                PROVIDE (CAN, (APB1PERIPH_BASE + 0x6400))
+                0x40006c00                PROVIDE (BKP, (APB1PERIPH_BASE + 0x6c00))
+                0x40007000                PROVIDE (PWR, (APB1PERIPH_BASE + 0x7000))
+                0x40010000                PROVIDE (AFIO, (APB2PERIPH_BASE + 0x0))
+                0x40010400                PROVIDE (EXTI, (APB2PERIPH_BASE + 0x400))
+                0x40010800                PROVIDE (GPIOA, (APB2PERIPH_BASE + 0x800))
+                0x40010c00                PROVIDE (GPIOB, (APB2PERIPH_BASE + 0xc00))
+                0x40011000                PROVIDE (GPIOC, (APB2PERIPH_BASE + 0x1000))
+                0x40011400                PROVIDE (GPIOD, (APB2PERIPH_BASE + 0x1400))
+                0x40011800                PROVIDE (GPIOE, (APB2PERIPH_BASE + 0x1800))
+                0x40012400                PROVIDE (ADC1, (APB2PERIPH_BASE + 0x2400))
+                0x40012800                PROVIDE (ADC2, (APB2PERIPH_BASE + 0x2800))
+                0x40012c00                PROVIDE (TIM1, (APB2PERIPH_BASE + 0x2c00))
+                0x40013000                PROVIDE (SPI1, (APB2PERIPH_BASE + 0x3000))
+                0x40013800                PROVIDE (USART1, (APB2PERIPH_BASE + 0x3800))
+                0x40020000                PROVIDE (DMA, (AHBPERIPH_BASE + 0x0))
+                0x40020008                PROVIDE (DMA_Channel1, (AHBPERIPH_BASE + 0x8))
+                0x4002001c                PROVIDE (DMA_Channel2, (AHBPERIPH_BASE + 0x1c))
+                0x40020030                PROVIDE (DMA_Channel3, (AHBPERIPH_BASE + 0x30))
+                0x40020044                PROVIDE (DMA_Channel4, (AHBPERIPH_BASE + 0x44))
+                0x40020058                PROVIDE (DMA_Channel5, (AHBPERIPH_BASE + 0x58))
+                0x4002006c                PROVIDE (DMA_Channel6, (AHBPERIPH_BASE + 0x6c))
+                0x40020080                PROVIDE (DMA_Channel7, (AHBPERIPH_BASE + 0x80))
+                0x40021000                PROVIDE (RCC, (AHBPERIPH_BASE + 0x1000))
+                0xe000e000                SCS_BASE = 0xe000e000
+                0xe000e010                PROVIDE (SysTick, (SCS_BASE + 0x10))
+                0xe000e100                PROVIDE (NVIC, (SCS_BASE + 0x100))
+                0xe000ed00                PROVIDE (SCB, (SCS_BASE + 0xd00))
+                0x20005000                _estack = 0x20005000
+
+.isr_vector     0x08000000      0x10c
+                0x08000000                . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x08000000      0x10c C:\Users\Linux\Downloads\06_12\obj\startup_stm32f10x_md.o
+                0x08000000                g_pfnVectors
+                0x0800010c                . = ALIGN (0x4)
+
+.flash_start    0x00000000        0x0
+                0x00000000                . = ALIGN (0x4)
+ *(.flash_start)
+ *(.flash_start.*)
+                0x00000000                . = ALIGN (0x4)
+
+.crp_patch      0x00000000        0x0
+                0x00000000                . = ALIGN (0x4)
+ *(.crp_patch)
+                0x00000000                . = ALIGN (0x4)
+
+.flashtext      0x0800010c        0x0
+                0x0800010c                . = ALIGN (0x4)
+ *(.flashtext)
+                0x0800010c                . = ALIGN (0x4)
+
+.text           0x0800010c     0x20e4
+                0x0800010c                . = ALIGN (0x4)
+ *(.text)
+ .text          0x0800010c       0x20 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_printf.o)
+                0x0800010c                printf
+ .text          0x0800012c       0x84 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_puts.o)
+                0x0800012c                _SMALL_PRINTF_puts
+                0x08000188                puts
+ .text          0x080001b0      0x6a8 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o)
+                0x08000834                vfiprintf
+                0x080001b0                _vfiprintf_r
+ .text          0x08000858       0x80 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
+                0x08000858                memchr
+ .text          0x080008d8       0x34 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
+                0x080008d8                strlen
+ .text          0x0800090c       0x4c c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcrtomb.o)
+                0x0800090c                _wcrtomb_r
+                0x0800093c                wcrtomb
+ .text          0x08000958       0xf0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcsrtombs.o)
+                0x08000958                _wcsrtombs_r
+                0x08000a24                wcsrtombs
+ .text          0x08000a48      0x340 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wctomb_r.o)
+                0x08000a48                _wctomb_r
+ .text          0x08000d88       0x50 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
+                0x08000d88                strcmp
+ .text          0x08000dd8       0x8c c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_udivsi3.o)
+                0x08000dd8                __udivsi3
+                0x08000dd8                __aeabi_uidiv
+                0x08000e50                __aeabi_uidivmod
+ .text          0x08000e64        0x4 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_dvmd_tls.o)
+                0x08000e64                __aeabi_ldiv0
+                0x08000e64                __aeabi_idiv0
+ *(.text.*)
+ .text.main     0x08000e68      0x460 C:\Users\Linux\Downloads\06_12\obj\main.o
+                0x08000e68                main
+ .text.NMI_Handler
+                0x080012c8        0x4 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+                0x080012c8                NMI_Handler
+ .text.HardFault_Handler
+                0x080012cc        0x4 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+                0x080012cc                HardFault_Handler
+ .text.MemManage_Handler
+                0x080012d0        0x4 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+                0x080012d0                MemManage_Handler
+ .text.BusFault_Handler
+                0x080012d4        0x4 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+                0x080012d4                BusFault_Handler
+ .text.UsageFault_Handler
+                0x080012d8        0x4 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+                0x080012d8                UsageFault_Handler
+ .text.DebugMon_Handler
+                0x080012dc        0x4 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+                0x080012dc                DebugMon_Handler
+ .text.SVC_Handler
+                0x080012e0        0x4 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+                0x080012e0                SVC_Handler
+ .text.PendSV_Handler
+                0x080012e4        0x4 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+                0x080012e4                PendSV_Handler
+ .text.SysTick_Handler
+                0x080012e8        0x4 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+                0x080012e8                SysTick_Handler
+ .text.EXTI9_5_IRQHandler
+                0x080012ec       0x18 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+                0x080012ec                EXTI9_5_IRQHandler
+ .text.EXTI0_IRQHandler
+                0x08001304       0x2c C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+                0x08001304                EXTI0_IRQHandler
+ .text.TIM3_IRQHandler
+                0x08001330       0x64 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+                0x08001330                TIM3_IRQHandler
+ .text.TIM2_IRQHandler
+                0x08001394       0x54 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+                0x08001394                TIM2_IRQHandler
+ .text.NVIC_Configuration
+                0x080013e8       0x64 C:\Users\Linux\Downloads\06_12\obj\NVIC_config.o
+                0x080013e8                NVIC_Configuration
+ .text.TIM_Configuration
+                0x0800144c      0x104 C:\Users\Linux\Downloads\06_12\obj\TIM_config.o
+                0x0800144c                TIM_Configuration
+ .text.RCC_Configuration
+                0x08001550       0x4c C:\Users\Linux\Downloads\06_12\obj\RCC_config.o
+                0x08001550                RCC_Configuration
+ .text.GPIO_Configuration
+                0x0800159c      0x108 C:\Users\Linux\Downloads\06_12\obj\GPIO_config.o
+                0x0800159c                GPIO_Configuration
+ .text.__io_putchar
+                0x080016a4       0x40 C:\Users\Linux\Downloads\06_12\obj\USART_config.o
+                0x080016a4                __io_putchar
+ .text.USART1_Configuration
+                0x080016e4       0x3c C:\Users\Linux\Downloads\06_12\obj\USART_config.o
+                0x080016e4                USART1_Configuration
+ .text.USART3_Configuration
+                0x08001720       0x3c C:\Users\Linux\Downloads\06_12\obj\USART_config.o
+                0x08001720                USART3_Configuration
+ .text.GPIO_4digit_segment_0
+                0x0800175c       0x10 C:\Users\Linux\Downloads\06_12\obj\segment.o
+                0x0800175c                GPIO_4digit_segment_0
+ .text.GPIO_4digit_segment_DIG_4
+                0x0800176c       0x1c C:\Users\Linux\Downloads\06_12\obj\segment.o
+                0x0800176c                GPIO_4digit_segment_DIG_4
+ .text.GPIO_4digit_segment_DIG_3
+                0x08001788       0x1c C:\Users\Linux\Downloads\06_12\obj\segment.o
+                0x08001788                GPIO_4digit_segment_DIG_3
+ .text.GPIO_4digit_segment_DIG_2
+                0x080017a4       0x1c C:\Users\Linux\Downloads\06_12\obj\segment.o
+                0x080017a4                GPIO_4digit_segment_DIG_2
+ .text.GPIO_4digit_segment_5
+                0x080017c0       0x1c C:\Users\Linux\Downloads\06_12\obj\segment.o
+                0x080017c0                GPIO_4digit_segment_5
+ .text.GPIO_4digit_segment_4
+                0x080017dc       0x1c C:\Users\Linux\Downloads\06_12\obj\segment.o
+                0x080017dc                GPIO_4digit_segment_4
+ .text.GPIO_4digit_segment_3
+                0x080017f8       0x1c C:\Users\Linux\Downloads\06_12\obj\segment.o
+                0x080017f8                GPIO_4digit_segment_3
+ .text.GPIO_4digit_segment_2
+                0x08001814       0x1c C:\Users\Linux\Downloads\06_12\obj\segment.o
+                0x08001814                GPIO_4digit_segment_2
+ .text.GPIO_4digit_segment_1
+                0x08001830       0x1c C:\Users\Linux\Downloads\06_12\obj\segment.o
+                0x08001830                GPIO_4digit_segment_1
+ .text.delay_int_count
+                0x0800184c       0x18 C:\Users\Linux\Downloads\06_12\obj\delay.o
+ .text.delay_m  0x08001864        0xc C:\Users\Linux\Downloads\06_12\obj\delay.o
+                0x08001864                delay_m
+ .text.delay_count
+                0x08001870        0xc C:\Users\Linux\Downloads\06_12\obj\delay.o
+                0x08001870                delay_count
+ .text.delay_m_button
+                0x0800187c       0x10 C:\Users\Linux\Downloads\06_12\obj\delay.o
+                0x0800187c                delay_m_button
+ .text.delay_test
+                0x0800188c       0x10 C:\Users\Linux\Downloads\06_12\obj\delay.o
+                0x0800188c                delay_test
+ .text.delay_m1
+                0x0800189c       0x10 C:\Users\Linux\Downloads\06_12\obj\delay.o
+                0x0800189c                delay_m1
+ .text.delay_m2
+                0x080018ac        0xc C:\Users\Linux\Downloads\06_12\obj\delay.o
+                0x080018ac                delay_m2
+ .text.delay_m3
+                0x080018b8       0x10 C:\Users\Linux\Downloads\06_12\obj\delay.o
+                0x080018b8                delay_m3
+ .text.Reset_Handler
+                0x080018c8       0x44 C:\Users\Linux\Downloads\06_12\obj\startup_stm32f10x_md.o
+                0x080018c8                Reset_Handler
+ .text.Default_Handler
+                0x0800190c        0x2 C:\Users\Linux\Downloads\06_12\obj\startup_stm32f10x_md.o
+                0x0800190c                EXTI2_IRQHandler
+                0x0800190c                TIM1_CC_IRQHandler
+                0x0800190c                PVD_IRQHandler
+                0x0800190c                EXTI3_IRQHandler
+                0x0800190c                I2C2_EV_IRQHandler
+                0x0800190c                ADC1_2_IRQHandler
+                0x0800190c                SPI1_IRQHandler
+                0x0800190c                TAMPER_IRQHandler
+                0x0800190c                DMA1_Channel4_IRQHandler
+                0x0800190c                USART3_IRQHandler
+                0x0800190c                RTC_IRQHandler
+                0x0800190c                DMA1_Channel7_IRQHandler
+                0x0800190c                CAN1_RX1_IRQHandler
+                0x0800190c                TIM4_IRQHandler
+                0x0800190c                I2C1_EV_IRQHandler
+                0x0800190c                DMA1_Channel6_IRQHandler
+                0x0800190c                RCC_IRQHandler
+                0x0800190c                TIM1_TRG_COM_IRQHandler
+                0x0800190c                DMA1_Channel1_IRQHandler
+                0x0800190c                Default_Handler
+                0x0800190c                EXTI15_10_IRQHandler
+                0x0800190c                SPI2_IRQHandler
+                0x0800190c                DMA1_Channel5_IRQHandler
+                0x0800190c                EXTI4_IRQHandler
+                0x0800190c                USB_LP_CAN1_RX0_IRQHandler
+                0x0800190c                USB_HP_CAN1_TX_IRQHandler
+                0x0800190c                DMA1_Channel3_IRQHandler
+                0x0800190c                TIM1_UP_IRQHandler
+                0x0800190c                WWDG_IRQHandler
+                0x0800190c                TIM1_BRK_IRQHandler
+                0x0800190c                EXTI1_IRQHandler
+                0x0800190c                RTCAlarm_IRQHandler
+                0x0800190c                USART2_IRQHandler
+                0x0800190c                I2C2_ER_IRQHandler
+                0x0800190c                DMA1_Channel2_IRQHandler
+                0x0800190c                CAN1_SCE_IRQHandler
+                0x0800190c                FLASH_IRQHandler
+                0x0800190c                USART1_IRQHandler
+                0x0800190c                I2C1_ER_IRQHandler
+                0x0800190c                USBWakeUp_IRQHandler
+ *fill*         0x0800190e        0x2 00
+ .text.SystemInit
+                0x08001910      0x100 C:\Users\Linux\Downloads\06_12\obj\system_stm32f10x.o
+                0x08001910                SystemInit
+ .text.NVIC_PriorityGroupConfig
+                0x08001a10       0x14 C:\Users\Linux\Downloads\06_12\obj\misc.o
+                0x08001a10                NVIC_PriorityGroupConfig
+ .text.NVIC_Init
+                0x08001a24       0x5c C:\Users\Linux\Downloads\06_12\obj\misc.o
+                0x08001a24                NVIC_Init
+ .text.NVIC_SetVectorTable
+                0x08001a80       0x14 C:\Users\Linux\Downloads\06_12\obj\misc.o
+                0x08001a80                NVIC_SetVectorTable
+ .text.EXTI_GetITStatus
+                0x08001a94       0x1c C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+                0x08001a94                EXTI_GetITStatus
+ .text.EXTI_ClearITPendingBit
+                0x08001ab0        0xc C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+                0x08001ab0                EXTI_ClearITPendingBit
+ .text.TIM_TimeBaseInit
+                0x08001abc       0xa0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+                0x08001abc                TIM_TimeBaseInit
+ .text.TIM_OC1Init
+                0x08001b5c       0xa0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+                0x08001b5c                TIM_OC1Init
+ .text.TIM_OC2Init
+                0x08001bfc       0x9c C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+                0x08001bfc                TIM_OC2Init
+ .text.TIM_Cmd  0x08001c98       0x1c C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+                0x08001c98                TIM_Cmd
+ .text.TIM_ITConfig
+                0x08001cb4       0x18 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+                0x08001cb4                TIM_ITConfig
+ .text.TIM_PrescalerConfig
+                0x08001ccc        0x8 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+                0x08001ccc                TIM_PrescalerConfig
+ .text.TIM_OC1PreloadConfig
+                0x08001cd4       0x10 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+                0x08001cd4                TIM_OC1PreloadConfig
+ .text.TIM_OC2PreloadConfig
+                0x08001ce4       0x14 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+                0x08001ce4                TIM_OC2PreloadConfig
+ .text.TIM_ClearFlag
+                0x08001cf8        0x8 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+                0x08001cf8                TIM_ClearFlag
+ .text.TIM_ClearITPendingBit
+                0x08001d00        0x8 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+                0x08001d00                TIM_ClearITPendingBit
+ .text.GPIO_Init
+                0x08001d08       0xa8 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+                0x08001d08                GPIO_Init
+ .text.GPIO_ReadInputDataBit
+                0x08001db0        0xc C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+                0x08001db0                GPIO_ReadInputDataBit
+ .text.GPIO_SetBits
+                0x08001dbc        0x4 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+                0x08001dbc                GPIO_SetBits
+ .text.GPIO_ResetBits
+                0x08001dc0        0x4 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+                0x08001dc0                GPIO_ResetBits
+ .text.USART_Cmd
+                0x08001dc4       0x1c C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+                0x08001dc4                USART_Cmd
+ .text.USART_SendData
+                0x08001de0        0x8 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+                0x08001de0                USART_SendData
+ .text.USART_ReceiveData
+                0x08001de8        0x8 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+                0x08001de8                USART_ReceiveData
+ .text.USART_GetFlagStatus
+                0x08001df0        0xc C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+                0x08001df0                USART_GetFlagStatus
+ .text.USART_Init
+                0x08001dfc       0xb4 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+                0x08001dfc                USART_Init
+ .text.RCC_GetClocksFreq
+                0x08001eb0       0x98 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+                0x08001eb0                RCC_GetClocksFreq
+ .text.RCC_APB2PeriphClockCmd
+                0x08001f48       0x1c C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+                0x08001f48                RCC_APB2PeriphClockCmd
+ .text.RCC_APB1PeriphClockCmd
+                0x08001f64       0x1c C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+                0x08001f64                RCC_APB1PeriphClockCmd
+ .text._write   0x08001f80        0x4 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
+                0x08001f80                _write
+ *(.rodata)
+ .rodata        0x08001f84      0x184 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o)
+ *(.rodata*)
+ .rodata.str1.1
+                0x08002108       0x67 C:\Users\Linux\Downloads\06_12\obj\main.o
+ .rodata.str1.1
+                0x0800216f       0x11 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+ .rodata.str1.4
+                0x08002180       0x4b C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o)
+                                 0x4c (size before relaxing)
+ *fill*         0x080021cb        0x1 00
+ .rodata.str1.4
+                0x080021cc        0x2 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                                  0x4 (size before relaxing)
+ *fill*         0x080021ce        0x2 00
+ .rodata.str1.4
+                0x080021d0       0x20 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wctomb_r.o)
+ *(.glue_7)
+ .glue_7        0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\main.o
+ .glue_7        0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+ .glue_7        0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\SPI_config.o
+ .glue_7        0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\EXTI_config.o
+ .glue_7        0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\NVIC_config.o
+ .glue_7        0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\TIM_config.o
+ .glue_7        0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\RCC_config.o
+ .glue_7        0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\GPIO_config.o
+ .glue_7        0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\USART_config.o
+ .glue_7        0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\segment.o
+ .glue_7        0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\delay.o
+ .glue_7        0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\startup_stm32f10x_md.o
+ .glue_7        0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\system_stm32f10x.o
+ .glue_7        0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\misc.o
+ .glue_7        0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .glue_7        0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+ .glue_7        0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .glue_7        0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .glue_7        0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .glue_7        0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .glue_7        0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .glue_7        0x080021f0        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
+ .glue_7        0x080021f0        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_printf.o)
+ .glue_7        0x080021f0        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_puts.o)
+ .glue_7        0x080021f0        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o)
+ .glue_7        0x080021f0        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+ .glue_7        0x080021f0        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
+ .glue_7        0x080021f0        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
+ .glue_7        0x080021f0        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcrtomb.o)
+ .glue_7        0x080021f0        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcsrtombs.o)
+ .glue_7        0x080021f0        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wctomb_r.o)
+ .glue_7        0x080021f0        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+ .glue_7        0x080021f0        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
+ .glue_7        0x080021f0        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_udivsi3.o)
+ .glue_7        0x080021f0        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_dvmd_tls.o)
+ *(.glue_7t)
+ .glue_7t       0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\main.o
+ .glue_7t       0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+ .glue_7t       0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\SPI_config.o
+ .glue_7t       0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\EXTI_config.o
+ .glue_7t       0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\NVIC_config.o
+ .glue_7t       0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\TIM_config.o
+ .glue_7t       0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\RCC_config.o
+ .glue_7t       0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\GPIO_config.o
+ .glue_7t       0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\USART_config.o
+ .glue_7t       0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\segment.o
+ .glue_7t       0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\delay.o
+ .glue_7t       0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\startup_stm32f10x_md.o
+ .glue_7t       0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\system_stm32f10x.o
+ .glue_7t       0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\misc.o
+ .glue_7t       0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .glue_7t       0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+ .glue_7t       0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .glue_7t       0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .glue_7t       0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .glue_7t       0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .glue_7t       0x080021f0        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .glue_7t       0x080021f0        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
+ .glue_7t       0x080021f0        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_printf.o)
+ .glue_7t       0x080021f0        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_puts.o)
+ .glue_7t       0x080021f0        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o)
+ .glue_7t       0x080021f0        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+ .glue_7t       0x080021f0        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
+ .glue_7t       0x080021f0        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
+ .glue_7t       0x080021f0        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcrtomb.o)
+ .glue_7t       0x080021f0        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wcsrtombs.o)
+ .glue_7t       0x080021f0        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wctomb_r.o)
+ .glue_7t       0x080021f0        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+ .glue_7t       0x080021f0        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
+ .glue_7t       0x080021f0        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_udivsi3.o)
+ .glue_7t       0x080021f0        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_dvmd_tls.o)
+                0x080021f0                . = ALIGN (0x4)
+                0x080021f0                _etext = .
+                0x080021f0                _sidata = _etext
+
+.vfp11_veneer   0x20000000        0x0
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\main.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\SPI_config.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\EXTI_config.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\NVIC_config.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\TIM_config.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\RCC_config.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\GPIO_config.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\USART_config.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\segment.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\delay.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\startup_stm32f10x_md.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\system_stm32f10x.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\misc.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .vfp11_veneer  0x20000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
+ .vfp11_veneer  0x20000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_printf.o)
+ .vfp11_veneer  0x20000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_puts.o)
+ .vfp11_veneer  0x20000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o)
+
+.janus_2cc_veneer
+                0x20000000        0x0
+ .janus_2cc_veneer
+                0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\main.o
+ .janus_2cc_veneer
+                0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+ .janus_2cc_veneer
+                0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\SPI_config.o
+ .janus_2cc_veneer
+                0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\EXTI_config.o
+ .janus_2cc_veneer
+                0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\NVIC_config.o
+ .janus_2cc_veneer
+                0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\TIM_config.o
+ .janus_2cc_veneer
+                0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\RCC_config.o
+ .janus_2cc_veneer
+                0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\GPIO_config.o
+ .janus_2cc_veneer
+                0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\USART_config.o
+ .janus_2cc_veneer
+                0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\segment.o
+ .janus_2cc_veneer
+                0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\delay.o
+ .janus_2cc_veneer
+                0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\startup_stm32f10x_md.o
+ .janus_2cc_veneer
+                0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\system_stm32f10x.o
+ .janus_2cc_veneer
+                0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\misc.o
+ .janus_2cc_veneer
+                0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .janus_2cc_veneer
+                0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+ .janus_2cc_veneer
+                0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .janus_2cc_veneer
+                0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .janus_2cc_veneer
+                0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .janus_2cc_veneer
+                0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .janus_2cc_veneer
+                0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .janus_2cc_veneer
+                0x20000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
+ .janus_2cc_veneer
+                0x20000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_printf.o)
+ .janus_2cc_veneer
+                0x20000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_puts.o)
+ .janus_2cc_veneer
+                0x20000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o)
+
+.v4_bx          0x20000000        0x0
+ .v4_bx         0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\main.o
+ .v4_bx         0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+ .v4_bx         0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\SPI_config.o
+ .v4_bx         0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\EXTI_config.o
+ .v4_bx         0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\NVIC_config.o
+ .v4_bx         0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\TIM_config.o
+ .v4_bx         0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\RCC_config.o
+ .v4_bx         0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\GPIO_config.o
+ .v4_bx         0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\USART_config.o
+ .v4_bx         0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\segment.o
+ .v4_bx         0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\delay.o
+ .v4_bx         0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\startup_stm32f10x_md.o
+ .v4_bx         0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\system_stm32f10x.o
+ .v4_bx         0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\misc.o
+ .v4_bx         0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .v4_bx         0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+ .v4_bx         0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .v4_bx         0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .v4_bx         0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .v4_bx         0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .v4_bx         0x20000000        0x0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .v4_bx         0x20000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
+ .v4_bx         0x20000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_printf.o)
+ .v4_bx         0x20000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_puts.o)
+ .v4_bx         0x20000000        0x0 C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o)
+
+.flashpatch     0x00000000        0x0
+                0x00000000                . = ALIGN (0x4)
+ *(.flashpatch)
+                0x00000000                . = ALIGN (0x4)
+
+.endflash       0x00000000        0x0
+                0x00000000                . = ALIGN (0x4)
+ *(.endflash)
+                0x00000000                . = ALIGN (0x4)
+                0x00000000                _e_endflash = .
+
+.data           0x20000000      0x130 load address 0x080021f0
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _sdata = .
+                0x20000000                _data = .
+ *(.data)
+ .data          0x20000000       0x18 C:\Users\Linux\Downloads\06_12\obj\main.o
+                0x20000000                m_speed
+ .data          0x20000018       0x14 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .data          0x2000002c       0xf4 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                0x2000002c                _impure_ptr
+ .data          0x20000120       0x10 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+                0x20000120                __mb_cur_max
+                0x20000124                __lc_ctype
+ *(.data.*)
+ *(.RAMtext)
+                0x20000130                . = ALIGN (0x4)
+                0x20000130                _edata = .
+                0x08002320                _eidata = ((_sidata + _edata) - _sdata)
+                0x08020000                _lastdataromaddress = 0x8020000
+                0x00000000                toobig = (_eidata > _lastdataromaddress)?!!!!!!!!! FLASH IS FULL !!!!!!!!!:0x0
+
+.bss            0x20000130       0x38 load address 0x08002320
+                0x20000130                . = ALIGN (0x4)
+                0x20000130                _sbss = .
+                0x20000130                _bss = .
+ *(.bss)
+ .bss           0x20000130        0x8 C:\Users\Linux\Downloads\06_12\obj\main.o
+                0x20000130                CCR1_Val
+                0x20000136                CCR4_Val
+                0x20000132                CCR2_Val
+                0x20000134                CCR3_Val
+ .bss           0x20000138        0xc C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+                0x20000138                count_2
+                0x2000013c                count
+                0x20000140                capture
+ *(COMMON)
+ COMMON         0x20000144       0x1a C:\Users\Linux\Downloads\06_12\obj\main.o
+                0x20000144                TIM_TimeBaseStructure
+                0x2000014e                TIM_OCInitStructure_PWM
+ COMMON         0x2000015e        0xa C:\Users\Linux\Downloads\06_12\obj\TIM_config.o
+                0x2000015e                TIM_TimeBaseStructure_PWM
+                0x20000168                . = ALIGN (0x4)
+                0x20000168                _ebss = .
+                0x20000168                PROVIDE (end, _ebss)
+                0x20000168                PROVIDE (_end, _ebss)
+
+._usrstack      0x20000168      0x100 load address 0x08002358
+                0x20000168                . = ALIGN (0x4)
+                0x20000168                _susrstack = .
+                0x20000268                . = (. + _Minimum_Stack_Size)
+ *fill*         0x20000168      0x100 00
+                0x20000268                . = ALIGN (0x4)
+                0x20000268                _eusrstack = .
+
+.b1text
+ *(.b1text)
+ *(.b1rodata)
+ *(.b1rodata*)
+
+.eb0text
+ *(.eb0text)
+ *(.eb0rodata)
+ *(.eb0rodata*)
+
+.eb1text
+ *(.eb1text)
+ *(.eb1rodata)
+ *(.eb1rodata*)
+
+.eb2text
+ *(.eb2text)
+ *(.eb2rodata)
+ *(.eb2rodata*)
+
+.eb3text
+ *(.eb3text)
+ *(.eb3rodata)
+ *(.eb3rodata*)
+                0x20000268                __exidx_start = .
+                0x20000268                __exidx_end = .
+
+/DISCARD/
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000      0x459
+ *(.comment)
+ .comment       0x00000000       0x2a C:\Users\Linux\Downloads\06_12\obj\main.o
+ .comment       0x0000002a       0x2a C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+ .comment       0x00000054       0x2a C:\Users\Linux\Downloads\06_12\obj\SPI_config.o
+ .comment       0x0000007e       0x2a C:\Users\Linux\Downloads\06_12\obj\EXTI_config.o
+ .comment       0x000000a8       0x2a C:\Users\Linux\Downloads\06_12\obj\NVIC_config.o
+ .comment       0x000000d2       0x2a C:\Users\Linux\Downloads\06_12\obj\TIM_config.o
+ .comment       0x000000fc       0x2a C:\Users\Linux\Downloads\06_12\obj\RCC_config.o
+ .comment       0x00000126       0x2a C:\Users\Linux\Downloads\06_12\obj\GPIO_config.o
+ .comment       0x00000150       0x2a C:\Users\Linux\Downloads\06_12\obj\USART_config.o
+ .comment       0x0000017a       0x2a C:\Users\Linux\Downloads\06_12\obj\segment.o
+ .comment       0x000001a4       0x2a C:\Users\Linux\Downloads\06_12\obj\delay.o
+ .comment       0x000001ce       0x2a C:\Users\Linux\Downloads\06_12\obj\system_stm32f10x.o
+ .comment       0x000001f8       0x2a C:\Users\Linux\Downloads\06_12\obj\misc.o
+ .comment       0x00000222       0x2a C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .comment       0x0000024c       0x2a C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+ .comment       0x00000276       0x2a C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .comment       0x000002a0       0x2a C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .comment       0x000002ca       0x2a C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .comment       0x000002f4       0x2a C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .comment       0x0000031e       0x2a C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .comment       0x00000348       0x2a C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
+ .comment       0x00000372       0x4d C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_printf.o)
+ .comment       0x000003bf       0x4d C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_puts.o)
+ .comment       0x0000040c       0x4d C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0xac8
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 C:\Users\Linux\Downloads\06_12\obj\main.o
+ .debug_aranges
+                0x00000020       0x80 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+ .debug_aranges
+                0x000000a0       0x30 C:\Users\Linux\Downloads\06_12\obj\SPI_config.o
+ .debug_aranges
+                0x000000d0       0x20 C:\Users\Linux\Downloads\06_12\obj\EXTI_config.o
+ .debug_aranges
+                0x000000f0       0x20 C:\Users\Linux\Downloads\06_12\obj\NVIC_config.o
+ .debug_aranges
+                0x00000110       0x20 C:\Users\Linux\Downloads\06_12\obj\TIM_config.o
+ .debug_aranges
+                0x00000130       0x20 C:\Users\Linux\Downloads\06_12\obj\RCC_config.o
+ .debug_aranges
+                0x00000150       0x20 C:\Users\Linux\Downloads\06_12\obj\GPIO_config.o
+ .debug_aranges
+                0x00000170       0x38 C:\Users\Linux\Downloads\06_12\obj\USART_config.o
+ .debug_aranges
+                0x000001a8       0x88 C:\Users\Linux\Downloads\06_12\obj\segment.o
+ .debug_aranges
+                0x00000230       0x70 C:\Users\Linux\Downloads\06_12\obj\delay.o
+ .debug_aranges
+                0x000002a0       0x28 C:\Users\Linux\Downloads\06_12\obj\system_stm32f10x.o
+ .debug_aranges
+                0x000002c8       0x40 C:\Users\Linux\Downloads\06_12\obj\misc.o
+ .debug_aranges
+                0x00000308       0xd0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .debug_aranges
+                0x000003d8       0x58 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+ .debug_aranges
+                0x00000430       0xf8 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .debug_aranges
+                0x00000528      0x2e0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .debug_aranges
+                0x00000808       0xa8 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .debug_aranges
+                0x000008b0      0x100 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .debug_aranges
+                0x000009b0      0x118 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+
+.debug_pubnames
+                0x00000000     0x1b3a
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x91 C:\Users\Linux\Downloads\06_12\obj\main.o
+ .debug_pubnames
+                0x00000091      0x13c C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+ .debug_pubnames
+                0x000001cd       0x71 C:\Users\Linux\Downloads\06_12\obj\SPI_config.o
+ .debug_pubnames
+                0x0000023e       0x29 C:\Users\Linux\Downloads\06_12\obj\EXTI_config.o
+ .debug_pubnames
+                0x00000267       0x29 C:\Users\Linux\Downloads\06_12\obj\NVIC_config.o
+ .debug_pubnames
+                0x00000290       0x7c C:\Users\Linux\Downloads\06_12\obj\TIM_config.o
+ .debug_pubnames
+                0x0000030c       0x28 C:\Users\Linux\Downloads\06_12\obj\RCC_config.o
+ .debug_pubnames
+                0x00000334       0x29 C:\Users\Linux\Downloads\06_12\obj\GPIO_config.o
+ .debug_pubnames
+                0x0000035d       0x6c C:\Users\Linux\Downloads\06_12\obj\USART_config.o
+ .debug_pubnames
+                0x000003c9      0x18e C:\Users\Linux\Downloads\06_12\obj\segment.o
+ .debug_pubnames
+                0x00000557       0xb1 C:\Users\Linux\Downloads\06_12\obj\delay.o
+ .debug_pubnames
+                0x00000608       0x61 C:\Users\Linux\Downloads\06_12\obj\system_stm32f10x.o
+ .debug_pubnames
+                0x00000669       0x89 C:\Users\Linux\Downloads\06_12\obj\misc.o
+ .debug_pubnames
+                0x000006f2      0x1f6 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .debug_pubnames
+                0x000008e8       0xbb C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+ .debug_pubnames
+                0x000009a3      0x2f2 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .debug_pubnames
+                0x00000c95      0x7b0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .debug_pubnames
+                0x00001445      0x19d C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .debug_pubnames
+                0x000015e2      0x294 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .debug_pubnames
+                0x00001876      0x2c4 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+
+.debug_info     0x00000000     0x75b8
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x760 C:\Users\Linux\Downloads\06_12\obj\main.o
+ .debug_info    0x00000760      0x4c8 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+ .debug_info    0x00000c28      0x306 C:\Users\Linux\Downloads\06_12\obj\SPI_config.o
+ .debug_info    0x00000f2e      0x1e0 C:\Users\Linux\Downloads\06_12\obj\EXTI_config.o
+ .debug_info    0x0000110e      0x262 C:\Users\Linux\Downloads\06_12\obj\NVIC_config.o
+ .debug_info    0x00001370      0x43d C:\Users\Linux\Downloads\06_12\obj\TIM_config.o
+ .debug_info    0x000017ad       0xad C:\Users\Linux\Downloads\06_12\obj\RCC_config.o
+ .debug_info    0x0000185a      0x227 C:\Users\Linux\Downloads\06_12\obj\GPIO_config.o
+ .debug_info    0x00001a81      0x2de C:\Users\Linux\Downloads\06_12\obj\USART_config.o
+ .debug_info    0x00001d5f      0x22b C:\Users\Linux\Downloads\06_12\obj\segment.o
+ .debug_info    0x00001f8a      0x181 C:\Users\Linux\Downloads\06_12\obj\delay.o
+ .debug_info    0x0000210b      0x462 C:\Users\Linux\Downloads\06_12\obj\system_stm32f10x.o
+ .debug_info    0x0000256d      0x507 C:\Users\Linux\Downloads\06_12\obj\misc.o
+ .debug_info    0x00002a74      0x922 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .debug_info    0x00003396      0x335 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+ .debug_info    0x000036cb      0x7f3 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .debug_info    0x00003ebe     0x1da6 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .debug_info    0x00005c64      0x6cd C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .debug_info    0x00006331      0x9ff C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .debug_info    0x00006d30      0x888 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+
+.debug_abbrev   0x00000000     0x19c0
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x18b C:\Users\Linux\Downloads\06_12\obj\main.o
+ .debug_abbrev  0x0000018b       0xdd C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+ .debug_abbrev  0x00000268      0x117 C:\Users\Linux\Downloads\06_12\obj\SPI_config.o
+ .debug_abbrev  0x0000037f       0xf3 C:\Users\Linux\Downloads\06_12\obj\EXTI_config.o
+ .debug_abbrev  0x00000472       0xcc C:\Users\Linux\Downloads\06_12\obj\NVIC_config.o
+ .debug_abbrev  0x0000053e       0xdb C:\Users\Linux\Downloads\06_12\obj\TIM_config.o
+ .debug_abbrev  0x00000619       0x76 C:\Users\Linux\Downloads\06_12\obj\RCC_config.o
+ .debug_abbrev  0x0000068f       0xdb C:\Users\Linux\Downloads\06_12\obj\GPIO_config.o
+ .debug_abbrev  0x0000076a      0x131 C:\Users\Linux\Downloads\06_12\obj\USART_config.o
+ .debug_abbrev  0x0000089b       0x98 C:\Users\Linux\Downloads\06_12\obj\segment.o
+ .debug_abbrev  0x00000933       0x84 C:\Users\Linux\Downloads\06_12\obj\delay.o
+ .debug_abbrev  0x000009b7      0x198 C:\Users\Linux\Downloads\06_12\obj\system_stm32f10x.o
+ .debug_abbrev  0x00000b4f      0x15a C:\Users\Linux\Downloads\06_12\obj\misc.o
+ .debug_abbrev  0x00000ca9      0x1c8 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .debug_abbrev  0x00000e71      0x184 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+ .debug_abbrev  0x00000ff5      0x1af C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .debug_abbrev  0x000011a4      0x24e C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .debug_abbrev  0x000013f2      0x20b C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .debug_abbrev  0x000015fd      0x1ce C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .debug_abbrev  0x000017cb      0x1f5 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+
+.debug_line     0x00000000     0x4bc2
+ *(.debug_line)
+ .debug_line    0x00000000      0x373 C:\Users\Linux\Downloads\06_12\obj\main.o
+ .debug_line    0x00000373      0x32c C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+ .debug_line    0x0000069f      0x2f6 C:\Users\Linux\Downloads\06_12\obj\SPI_config.o
+ .debug_line    0x00000995      0x28a C:\Users\Linux\Downloads\06_12\obj\EXTI_config.o
+ .debug_line    0x00000c1f      0x287 C:\Users\Linux\Downloads\06_12\obj\NVIC_config.o
+ .debug_line    0x00000ea6      0x2b5 C:\Users\Linux\Downloads\06_12\obj\TIM_config.o
+ .debug_line    0x0000115b      0x170 C:\Users\Linux\Downloads\06_12\obj\RCC_config.o
+ .debug_line    0x000012cb      0x2d4 C:\Users\Linux\Downloads\06_12\obj\GPIO_config.o
+ .debug_line    0x0000159f      0x2d8 C:\Users\Linux\Downloads\06_12\obj\USART_config.o
+ .debug_line    0x00001877      0x2d9 C:\Users\Linux\Downloads\06_12\obj\segment.o
+ .debug_line    0x00001b50      0x180 C:\Users\Linux\Downloads\06_12\obj\delay.o
+ .debug_line    0x00001cd0      0x2a2 C:\Users\Linux\Downloads\06_12\obj\system_stm32f10x.o
+ .debug_line    0x00001f72      0x311 C:\Users\Linux\Downloads\06_12\obj\misc.o
+ .debug_line    0x00002283      0x502 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .debug_line    0x00002785      0x373 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+ .debug_line    0x00002af8      0x5b4 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .debug_line    0x000030ac      0xb8b C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .debug_line    0x00003c37      0x487 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .debug_line    0x000040be      0x59c C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .debug_line    0x0000465a      0x568 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+
+.debug_frame    0x00000000     0x16a4
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x38 C:\Users\Linux\Downloads\06_12\obj\main.o
+ .debug_frame   0x00000038      0x100 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+ .debug_frame   0x00000138       0x60 C:\Users\Linux\Downloads\06_12\obj\SPI_config.o
+ .debug_frame   0x00000198       0x34 C:\Users\Linux\Downloads\06_12\obj\EXTI_config.o
+ .debug_frame   0x000001cc       0x30 C:\Users\Linux\Downloads\06_12\obj\NVIC_config.o
+ .debug_frame   0x000001fc       0x30 C:\Users\Linux\Downloads\06_12\obj\TIM_config.o
+ .debug_frame   0x0000022c       0x28 C:\Users\Linux\Downloads\06_12\obj\RCC_config.o
+ .debug_frame   0x00000254       0x38 C:\Users\Linux\Downloads\06_12\obj\GPIO_config.o
+ .debug_frame   0x0000028c       0x84 C:\Users\Linux\Downloads\06_12\obj\USART_config.o
+ .debug_frame   0x00000310      0x160 C:\Users\Linux\Downloads\06_12\obj\segment.o
+ .debug_frame   0x00000470      0x114 C:\Users\Linux\Downloads\06_12\obj\delay.o
+ .debug_frame   0x00000584       0x34 C:\Users\Linux\Downloads\06_12\obj\system_stm32f10x.o
+ .debug_frame   0x000005b8       0x60 C:\Users\Linux\Downloads\06_12\obj\misc.o
+ .debug_frame   0x00000618      0x1a8 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .debug_frame   0x000007c0       0x98 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+ .debug_frame   0x00000858      0x254 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .debug_frame   0x00000aac      0x664 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .debug_frame   0x00001110      0x16c C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .debug_frame   0x0000127c      0x204 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .debug_frame   0x00001480      0x224 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+
+.debug_str      0x00000000     0x3136
+ *(.debug_str)
+ .debug_str     0x00000000      0x478 C:\Users\Linux\Downloads\06_12\obj\main.o
+                                0x4bd (size before relaxing)
+ .debug_str     0x00000478      0x174 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+                                0x349 (size before relaxing)
+ .debug_str     0x000005ec      0x15c C:\Users\Linux\Downloads\06_12\obj\SPI_config.o
+                                0x273 (size before relaxing)
+ .debug_str     0x00000748      0x138 C:\Users\Linux\Downloads\06_12\obj\EXTI_config.o
+                                0x1f7 (size before relaxing)
+ .debug_str     0x00000880      0x38d C:\Users\Linux\Downloads\06_12\obj\NVIC_config.o
+                                0x456 (size before relaxing)
+ .debug_str     0x00000c0d       0x5c C:\Users\Linux\Downloads\06_12\obj\TIM_config.o
+                                0x343 (size before relaxing)
+ .debug_str     0x00000c69       0x42 C:\Users\Linux\Downloads\06_12\obj\RCC_config.o
+                                 0xee (size before relaxing)
+ .debug_str     0x00000cab       0xbd C:\Users\Linux\Downloads\06_12\obj\GPIO_config.o
+                                0x28f (size before relaxing)
+ .debug_str     0x00000d68      0x119 C:\Users\Linux\Downloads\06_12\obj\USART_config.o
+                                0x235 (size before relaxing)
+ .debug_str     0x00000e81      0x171 C:\Users\Linux\Downloads\06_12\obj\segment.o
+                                0x221 (size before relaxing)
+ .debug_str     0x00000ff2       0xb8 C:\Users\Linux\Downloads\06_12\obj\delay.o
+                                0x155 (size before relaxing)
+ .debug_str     0x000010aa      0x192 C:\Users\Linux\Downloads\06_12\obj\system_stm32f10x.o
+                                0x25e (size before relaxing)
+ .debug_str     0x0000123c      0x192 C:\Users\Linux\Downloads\06_12\obj\misc.o
+                                0x347 (size before relaxing)
+ .debug_str     0x000013ce      0x39e C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+                                0x5a1 (size before relaxing)
+ .debug_str     0x0000176c      0x132 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+                                0x2f5 (size before relaxing)
+ .debug_str     0x0000189e      0x443 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+                                0x573 (size before relaxing)
+ .debug_str     0x00001ce1      0xa2f C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+                                0xd81 (size before relaxing)
+ .debug_str     0x00002710      0x27c C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+                                0x4b0 (size before relaxing)
+ .debug_str     0x0000298c      0x3e9 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+                                0x634 (size before relaxing)
+ .debug_str     0x00002d75      0x3c1 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+                                0x5a9 (size before relaxing)
+
+.debug_loc      0x00000000     0x28d5
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x49 C:\Users\Linux\Downloads\06_12\obj\main.o
+ .debug_loc     0x00000049       0x7c C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+ .debug_loc     0x000000c5       0xd8 C:\Users\Linux\Downloads\06_12\obj\SPI_config.o
+ .debug_loc     0x0000019d       0x1f C:\Users\Linux\Downloads\06_12\obj\EXTI_config.o
+ .debug_loc     0x000001bc       0x1f C:\Users\Linux\Downloads\06_12\obj\NVIC_config.o
+ .debug_loc     0x000001db       0x1f C:\Users\Linux\Downloads\06_12\obj\TIM_config.o
+ .debug_loc     0x000001fa       0x1f C:\Users\Linux\Downloads\06_12\obj\RCC_config.o
+ .debug_loc     0x00000219       0x2b C:\Users\Linux\Downloads\06_12\obj\GPIO_config.o
+ .debug_loc     0x00000244       0xb8 C:\Users\Linux\Downloads\06_12\obj\USART_config.o
+ .debug_loc     0x000002fc      0x1b2 C:\Users\Linux\Downloads\06_12\obj\segment.o
+ .debug_loc     0x000004ae      0x197 C:\Users\Linux\Downloads\06_12\obj\delay.o
+ .debug_loc     0x00000645       0x6a C:\Users\Linux\Downloads\06_12\obj\system_stm32f10x.o
+ .debug_loc     0x000006af       0x4f C:\Users\Linux\Downloads\06_12\obj\misc.o
+ .debug_loc     0x000006fe      0x27d C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .debug_loc     0x0000097b       0x9f C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+ .debug_loc     0x00000a1a      0x6a3 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .debug_loc     0x000010bd     0x1006 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .debug_loc     0x000020c3      0x2cc C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .debug_loc     0x0000238f      0x303 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .debug_loc     0x00002692      0x243 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+START GROUP
+LOAD c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a
+LOAD c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a
+END GROUP
+OUTPUT(C:\Users\Linux\Downloads\06_12\Application0.elf elf32-littlearm)
+
+.debug_ranges   0x00000000      0xa28
+ .debug_ranges  0x00000000       0x18 C:\Users\Linux\Downloads\06_12\obj\main.o
+ .debug_ranges  0x00000018       0x78 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+ .debug_ranges  0x00000090       0x28 C:\Users\Linux\Downloads\06_12\obj\SPI_config.o
+ .debug_ranges  0x000000b8       0x18 C:\Users\Linux\Downloads\06_12\obj\EXTI_config.o
+ .debug_ranges  0x000000d0       0x18 C:\Users\Linux\Downloads\06_12\obj\NVIC_config.o
+ .debug_ranges  0x000000e8       0x18 C:\Users\Linux\Downloads\06_12\obj\TIM_config.o
+ .debug_ranges  0x00000100       0x18 C:\Users\Linux\Downloads\06_12\obj\RCC_config.o
+ .debug_ranges  0x00000118       0x18 C:\Users\Linux\Downloads\06_12\obj\GPIO_config.o
+ .debug_ranges  0x00000130       0x30 C:\Users\Linux\Downloads\06_12\obj\USART_config.o
+ .debug_ranges  0x00000160       0x80 C:\Users\Linux\Downloads\06_12\obj\segment.o
+ .debug_ranges  0x000001e0       0x68 C:\Users\Linux\Downloads\06_12\obj\delay.o
+ .debug_ranges  0x00000248       0x20 C:\Users\Linux\Downloads\06_12\obj\system_stm32f10x.o
+ .debug_ranges  0x00000268       0x38 C:\Users\Linux\Downloads\06_12\obj\misc.o
+ .debug_ranges  0x000002a0       0xc8 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .debug_ranges  0x00000368       0x50 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+ .debug_ranges  0x000003b8       0xf0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .debug_ranges  0x000004a8      0x2d8 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .debug_ranges  0x00000780       0xa0 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .debug_ranges  0x00000820       0xf8 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .debug_ranges  0x00000918      0x110 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+
+.ARM.attributes
+                0x00000000       0x31
+ .ARM.attributes
+                0x00000000       0x31 C:\Users\Linux\Downloads\06_12\obj\main.o
+ .ARM.attributes
+                0x00000031       0x31 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_it.o
+ .ARM.attributes
+                0x00000062       0x31 C:\Users\Linux\Downloads\06_12\obj\SPI_config.o
+ .ARM.attributes
+                0x00000093       0x31 C:\Users\Linux\Downloads\06_12\obj\EXTI_config.o
+ .ARM.attributes
+                0x000000c4       0x31 C:\Users\Linux\Downloads\06_12\obj\NVIC_config.o
+ .ARM.attributes
+                0x000000f5       0x31 C:\Users\Linux\Downloads\06_12\obj\TIM_config.o
+ .ARM.attributes
+                0x00000126       0x31 C:\Users\Linux\Downloads\06_12\obj\RCC_config.o
+ .ARM.attributes
+                0x00000157       0x31 C:\Users\Linux\Downloads\06_12\obj\GPIO_config.o
+ .ARM.attributes
+                0x00000188       0x31 C:\Users\Linux\Downloads\06_12\obj\USART_config.o
+ .ARM.attributes
+                0x000001b9       0x31 C:\Users\Linux\Downloads\06_12\obj\segment.o
+ .ARM.attributes
+                0x000001ea       0x31 C:\Users\Linux\Downloads\06_12\obj\delay.o
+ .ARM.attributes
+                0x0000021b       0x21 C:\Users\Linux\Downloads\06_12\obj\startup_stm32f10x_md.o
+ .ARM.attributes
+                0x0000023c       0x31 C:\Users\Linux\Downloads\06_12\obj\system_stm32f10x.o
+ .ARM.attributes
+                0x0000026d       0x31 C:\Users\Linux\Downloads\06_12\obj\misc.o
+ .ARM.attributes
+                0x0000029e       0x31 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_spi.o
+ .ARM.attributes
+                0x000002cf       0x31 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_exti.o
+ .ARM.attributes
+                0x00000300       0x31 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_flash.o
+ .ARM.attributes
+                0x00000331       0x31 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_tim.o
+ .ARM.attributes
+                0x00000362       0x31 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_gpio.o
+ .ARM.attributes
+                0x00000393       0x31 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_usart.o
+ .ARM.attributes
+                0x000003c4       0x31 C:\Users\Linux\Downloads\06_12\obj\stm32f10x_rcc.o
+ .ARM.attributes
+                0x000003f5       0x2e C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib(write.o)
+ .ARM.attributes
+                0x00000423       0x2e C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_printf.o)
+ .ARM.attributes
+                0x00000451       0x2e C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_puts.o)
+ .ARM.attributes
+                0x0000047f       0x2e C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a(_SP_vfprintf.o)

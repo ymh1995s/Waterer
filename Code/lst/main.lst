@@ -1,0 +1,1088 @@
+
+C:\Users\Linux\Downloads\06_12\obj\main.o:     file format elf32-littlearm
+C:\Users\Linux\Downloads\06_12\obj\main.o
+
+Disassembly of section .text.main:
+
+00000000 <main>:
+main():
+C:\Users\Linux\Downloads\06_12\src/main.c:37
+void GPIO_4digit_segment_DIG_4(void);
+void delay_m(void);
+
+
+int main(void)
+{
+   0:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+   4:	b085      	sub	sp, #20
+C:\Users\Linux\Downloads\06_12\src/main.c:39
+
+    delay_test();
+   6:	f7ff fffe 	bl	0 <delay_test>
+C:\Users\Linux\Downloads\06_12\src/main.c:40
+    delay_test();
+   a:	f7ff fffe 	bl	0 <delay_test>
+C:\Users\Linux\Downloads\06_12\src/main.c:41
+    delay_test();
+   e:	f7ff fffe 	bl	0 <delay_test>
+C:\Users\Linux\Downloads\06_12\src/main.c:49
+
+int ok=0; //보드 1 
+int Receive_data = 0; //보드2 ==OK
+
+
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE);   //Port C를 Enable하는 것.
+  12:	2010      	movs	r0, #16
+  14:	2101      	movs	r1, #1
+  16:	f7ff fffe 	bl	0 <RCC_APB2PeriphClockCmd>
+C:\Users\Linux\Downloads\06_12\src/main.c:74
+
+    GPIO_InitStructure.GPIO_Pin      = GPIO_Pin_4|GPIO_Pin_5|GPIO_Pin_6 ;         // 객체 A를 9번 핀으로 선언
+    GPIO_InitStructure.GPIO_Speed   = GPIO_Speed_50MHz;      // 최대 스피드를 50MHz
+    GPIO_InitStructure.GPIO_Mode   = GPIO_Mode_Out_PP;      // In/Out 모드 선택
+
+    GPIO_Init(GPIOA, &GPIO_InitStructure);            // Port B에 객체 A의 셋팅값 입력
+  1a:	ad03      	add	r5, sp, #12
+C:\Users\Linux\Downloads\06_12\src/main.c:52
+
+
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE);   //Port C를 Enable하는 것.
+    // RCC->APB2ENR |= RCC_APB2Periph_GPIOC;                //Port C를 Enable하는 것.
+
+    SystemInit();//RCC 초기화
+  1c:	f7ff fffe 	bl	0 <SystemInit>
+C:\Users\Linux\Downloads\06_12\src/main.c:54
+
+    TIM_Configuration();
+  20:	f7ff fffe 	bl	0 <TIM_Configuration>
+C:\Users\Linux\Downloads\06_12\src/main.c:55
+    NVIC_Configuration();
+  24:	f7ff fffe 	bl	0 <NVIC_Configuration>
+C:\Users\Linux\Downloads\06_12\src/main.c:56
+    RCC_Configuration();                // RCC 셋팅을 불러오는 함수
+  28:	f7ff fffe 	bl	0 <RCC_Configuration>
+C:\Users\Linux\Downloads\06_12\src/main.c:57
+    GPIO_Configuration();               // GPIO 셋팅을 불러오는 함수
+  2c:	f7ff fffe 	bl	0 <GPIO_Configuration>
+C:\Users\Linux\Downloads\06_12\src/main.c:59
+
+    USART1_Configuration();
+  30:	f7ff fffe 	bl	0 <USART1_Configuration>
+C:\Users\Linux\Downloads\06_12\src/main.c:60
+    USART3_Configuration();
+  34:	f7ff fffe 	bl	0 <USART3_Configuration>
+C:\Users\Linux\Downloads\06_12\src/main.c:66
+
+    //USART1_Init();
+
+    int m=0;
+
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA,ENABLE);
+  38:	2004      	movs	r0, #4
+  3a:	2101      	movs	r1, #1
+  3c:	f7ff fffe 	bl	0 <RCC_APB2PeriphClockCmd>
+C:\Users\Linux\Downloads\06_12\src/main.c:71
+    GPIO_TypeDef * GPIOx=GPIOC;
+    GPIO_InitTypeDef       GPIO_InitStructure= {0,}; //PIO 함수의 객체(A) 선언
+
+    GPIO_InitStructure.GPIO_Pin      = GPIO_Pin_4|GPIO_Pin_5|GPIO_Pin_6 ;         // 객체 A를 9번 핀으로 선언
+    GPIO_InitStructure.GPIO_Speed   = GPIO_Speed_50MHz;      // 최대 스피드를 50MHz
+  40:	2603      	movs	r6, #3
+C:\Users\Linux\Downloads\06_12\src/main.c:70
+
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA,ENABLE);
+    GPIO_TypeDef * GPIOx=GPIOC;
+    GPIO_InitTypeDef       GPIO_InitStructure= {0,}; //PIO 함수의 객체(A) 선언
+
+    GPIO_InitStructure.GPIO_Pin      = GPIO_Pin_4|GPIO_Pin_5|GPIO_Pin_6 ;         // 객체 A를 9번 핀으로 선언
+  42:	f04f 0270 	mov.w	r2, #112	; 0x70
+C:\Users\Linux\Downloads\06_12\src/main.c:72
+    GPIO_InitStructure.GPIO_Speed   = GPIO_Speed_50MHz;      // 최대 스피드를 50MHz
+    GPIO_InitStructure.GPIO_Mode   = GPIO_Mode_Out_PP;      // In/Out 모드 선택
+  46:	2410      	movs	r4, #16
+C:\Users\Linux\Downloads\06_12\src/main.c:74
+
+    GPIO_Init(GPIOA, &GPIO_InitStructure);            // Port B에 객체 A의 셋팅값 입력
+  48:	48b3      	ldr	r0, [pc, #716]	(318 <main+0x318>)
+  4a:	4629      	mov	r1, r5
+C:\Users\Linux\Downloads\06_12\src/main.c:70
+
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA,ENABLE);
+    GPIO_TypeDef * GPIOx=GPIOC;
+    GPIO_InitTypeDef       GPIO_InitStructure= {0,}; //PIO 함수의 객체(A) 선언
+
+    GPIO_InitStructure.GPIO_Pin      = GPIO_Pin_4|GPIO_Pin_5|GPIO_Pin_6 ;         // 객체 A를 9번 핀으로 선언
+  4c:	f8ad 200c 	strh.w	r2, [sp, #12]
+C:\Users\Linux\Downloads\06_12\src/main.c:71
+    GPIO_InitStructure.GPIO_Speed   = GPIO_Speed_50MHz;      // 최대 스피드를 50MHz
+  50:	f88d 600e 	strb.w	r6, [sp, #14]
+C:\Users\Linux\Downloads\06_12\src/main.c:72
+    GPIO_InitStructure.GPIO_Mode   = GPIO_Mode_Out_PP;      // In/Out 모드 선택
+  54:	f88d 400f 	strb.w	r4, [sp, #15]
+C:\Users\Linux\Downloads\06_12\src/main.c:74
+
+    GPIO_Init(GPIOA, &GPIO_InitStructure);            // Port B에 객체 A의 셋팅값 입력
+  58:	f7ff fffe 	bl	0 <GPIO_Init>
+C:\Users\Linux\Downloads\06_12\src/main.c:75
+    GPIO_ResetBits(GPIOA, GPIO_Pin_4|GPIO_Pin_5|GPIO_Pin_6);            //6번핀이 부저, 4,5번이 led 끈상태로 시작
+  5c:	48ae      	ldr	r0, [pc, #696]	(318 <main+0x318>)
+  5e:	2170      	movs	r1, #112
+  60:	f7ff fffe 	bl	0 <GPIO_ResetBits>
+C:\Users\Linux\Downloads\06_12\src/main.c:79
+    
+
+
+    GPIO_InitStructure.GPIO_Pin     = GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3 | GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6 | GPIO_Pin_7;    // 외부 Segment의 GPIO 핀 번호
+  64:	f04f 03ff 	mov.w	r3, #255	; 0xff
+C:\Users\Linux\Downloads\06_12\src/main.c:83
+    GPIO_InitStructure.GPIO_Speed   = GPIO_Speed_50MHz;
+    GPIO_InitStructure.GPIO_Mode    = GPIO_Mode_Out_PP;
+
+    GPIO_Init(GPIOC, &GPIO_InitStructure);
+  68:	48ac      	ldr	r0, [pc, #688]	(31c <main+0x31c>)
+  6a:	4629      	mov	r1, r5
+C:\Users\Linux\Downloads\06_12\src/main.c:79
+    GPIO_Init(GPIOA, &GPIO_InitStructure);            // Port B에 객체 A의 셋팅값 입력
+    GPIO_ResetBits(GPIOA, GPIO_Pin_4|GPIO_Pin_5|GPIO_Pin_6);            //6번핀이 부저, 4,5번이 led 끈상태로 시작
+    
+
+
+    GPIO_InitStructure.GPIO_Pin     = GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3 | GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6 | GPIO_Pin_7;    // 외부 Segment의 GPIO 핀 번호
+  6c:	f8ad 300c 	strh.w	r3, [sp, #12]
+C:\Users\Linux\Downloads\06_12\src/main.c:80
+    GPIO_InitStructure.GPIO_Speed   = GPIO_Speed_50MHz;
+  70:	f88d 600e 	strb.w	r6, [sp, #14]
+C:\Users\Linux\Downloads\06_12\src/main.c:81
+    GPIO_InitStructure.GPIO_Mode    = GPIO_Mode_Out_PP;
+  74:	f88d 400f 	strb.w	r4, [sp, #15]
+C:\Users\Linux\Downloads\06_12\src/main.c:83
+
+    GPIO_Init(GPIOC, &GPIO_InitStructure);
+  78:	f7ff fffe 	bl	0 <GPIO_Init>
+C:\Users\Linux\Downloads\06_12\src/main.c:91
+
+
+
+
+    // 아래 코드는 4digit segment를 키는 코드. (아래 함수들은 stm32 제공 라이브러리 함수를 기반으로 새롭게 만든 함수로 segment.c에서 해석 가능)
+    GPIO_4digit_segment_0();            // 4digit segment의 출력 숫자(0~9)을 결정
+  7c:	f7ff fffe 	bl	0 <GPIO_4digit_segment_0>
+C:\Users\Linux\Downloads\06_12\src/main.c:92
+    GPIO_4digit_segment_DIG_4();        // 4digit segment의 자릿수에 전원 인가를 결정(총 4자리.)
+  80:	f7ff fffe 	bl	0 <GPIO_4digit_segment_DIG_4>
+C:\Users\Linux\Downloads\06_12\src/main.c:93
+    delay_m();                          // delay 함수
+  84:	f7ff fffe 	bl	0 <delay_m>
+C:\Users\Linux\Downloads\06_12\src/main.c:97
+
+//여기서부터 임민혁이직접 작성한 코드
+
+        CCR1_Val = m_speed[m];
+  88:	4aa5      	ldr	r2, [pc, #660]	(320 <main+0x320>)
+  8a:	4ba6      	ldr	r3, [pc, #664]	(324 <main+0x324>)
+  8c:	8812      	ldrh	r2, [r2, #0]
+  8e:	f04f 0800 	mov.w	r8, #0	; 0x0
+  92:	801a      	strh	r2, [r3, #0]
+C:\Users\Linux\Downloads\06_12\src/main.c:106
+    {
+    
+         
+        
+        
+        while (USART_GetFlagStatus(USART3, USART_FLAG_TXE) == RESET);     // 1. TXE는 Tx Empty. 즉 USART_FLAG_TXE는 USART3 Rx쪽의 Tmp 저장장소가 비었는지, 안비워졌는지 확인하는 곳. 비워져야 데이터를 받아 전송할 수 있다.
+  94:	48a4      	ldr	r0, [pc, #656]	(328 <main+0x328>)
+  96:	2180      	movs	r1, #128
+  98:	f7ff fffe 	bl	0 <USART_GetFlagStatus>
+  9c:	2800      	cmp	r0, #0
+  9e:	d0f9      	beq.n	94 <main+0x94>
+C:\Users\Linux\Downloads\06_12\src/main.c:108
+        
+        if(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_1) == (uint8_t)Bit_SET)    //ok버튼
+  a0:	2102      	movs	r1, #2
+  a2:	489d      	ldr	r0, [pc, #628]	(318 <main+0x318>)
+  a4:	f7ff fffe 	bl	0 <GPIO_ReadInputDataBit>
+  a8:	2801      	cmp	r0, #1
+  aa:	d105      	bne.n	b8 <main+0xb8>
+C:\Users\Linux\Downloads\06_12\src/main.c:111
+                                                                        //버튼을 눌렀을 때 해당하는 코드를 작성하면 됩니다.
+            {
+                count=count+1;      //카운트변수에 따라 세그먼트 값 변경
+  ac:	f108 0801 	add.w	r8, r8, #1	; 0x1
+C:\Users\Linux\Downloads\06_12\src/main.c:112
+                delay_m_button();   //버튼을 짧게 누르면 여러번 입력이 되므로 약간 긴 딜레이 *2
+  b0:	f7ff fffe 	bl	0 <delay_m_button>
+C:\Users\Linux\Downloads\06_12\src/main.c:113
+                delay_m_button();   //그렇다면 딜레이 시간을 조정하려면 delay.c파일을 손보면 되겠죠?
+  b4:	f7ff fffe 	bl	0 <delay_m_button>
+C:\Users\Linux\Downloads\06_12\src/main.c:116
+            }
+    
+        if(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0) == (uint8_t)Bit_SET)    //A의 0번핀이 내장버튼이다.
+  b8:	2101      	movs	r1, #1
+  ba:	4897      	ldr	r0, [pc, #604]	(318 <main+0x318>)
+  bc:	f7ff fffe 	bl	0 <GPIO_ReadInputDataBit>
+  c0:	2801      	cmp	r0, #1
+  c2:	4604      	mov	r4, r0
+  c4:	d002      	beq.n	cc <main+0xcc>
+  c6:	f04f 0b00 	mov.w	fp, #0	; 0x0
+  ca:	e004      	b.n	c <delay_m_button+0xc>
+C:\Users\Linux\Downloads\06_12\src/main.c:119
+        {            
+            ok=ok+1;
+            delay_m_button();   //버튼을 짧게 누르면 여러번 입력이 되므로 약간 긴 딜레이 *2
+  cc:	f7ff fffe 	bl	0 <delay_m_button>
+C:\Users\Linux\Downloads\06_12\src/main.c:120
+            delay_m_button();   //그렇다면 딜레이 시간을 조정하려면 delay.c파일을 손보면 되겠죠?
+  d0:	f7ff fffe 	bl	0 <delay_m_button>
+  d4:	46a3      	mov	fp, r4
+C:\Users\Linux\Downloads\06_12\src/main.c:124
+        }
+
+        
+        USART_SendData(USART3, ok);                                // 2. Send_data값(Data)를 USART3의 Tmp에 넣는다.
+  d6:	4894      	ldr	r0, [pc, #592]	(328 <main+0x328>)
+  d8:	fa1f f18b 	uxth.w	r1, fp
+  dc:	f7ff fffe 	bl	0 <USART_SendData>
+C:\Users\Linux\Downloads\06_12\src/main.c:126
+
+        while (USART_GetFlagStatus(USART3, USART_FLAG_RXNE) == RESET);    // 3. RXNE는 RX Not Empty로, USART3 Rx의 Tmp 공간에 값이 들어왔는지 확인한다.
+  e0:	4891      	ldr	r0, [pc, #580]	(328 <main+0x328>)
+  e2:	2120      	movs	r1, #32
+  e4:	f7ff fffe 	bl	0 <USART_GetFlagStatus>
+  e8:	2800      	cmp	r0, #0
+  ea:	d0f9      	beq.n	e0 <main+0xe0>
+C:\Users\Linux\Downloads\06_12\src/main.c:127
+        Receive_data = USART_ReceiveData(USART3);                         // 4. USART3 Rx의 Tmp공간에 값이 들어왔으면, 해당 값을 변수(Receive_data)로 받아 통신을 완료시킨다.
+  ec:	488e      	ldr	r0, [pc, #568]	(328 <main+0x328>)
+  ee:	f7ff fffe 	bl	0 <USART_ReceiveData>
+  f2:	9001      	str	r0, [sp, #4]
+C:\Users\Linux\Downloads\06_12\src/main.c:129
+
+        printf("Received data is %d =ok\n", Receive_data);
+  f4:	9901      	ldr	r1, [sp, #4]
+  f6:	488d      	ldr	r0, [pc, #564]	(32c <main+0x32c>)
+  f8:	f7ff fffe 	bl	0 <printf>
+C:\Users\Linux\Downloads\06_12\src/main.c:130
+        printf("ok data is %d\n", ok);
+  fc:	4659      	mov	r1, fp
+  fe:	488c      	ldr	r0, [pc, #560]	(330 <main+0x330>)
+ 100:	f7ff fffe 	bl	0 <printf>
+C:\Users\Linux\Downloads\06_12\src/main.c:131
+        printf("count data is %d\n", count);
+ 104:	488b      	ldr	r0, [pc, #556]	(334 <main+0x334>)
+ 106:	4641      	mov	r1, r8
+ 108:	f7ff fffe 	bl	0 <printf>
+C:\Users\Linux\Downloads\06_12\src/main.c:134
+    
+
+        if(count==1)
+ 10c:	f1b8 0f01 	cmp.w	r8, #1	; 0x1
+ 110:	d04e      	beq.n	1b0 <main+0x1b0>
+C:\Users\Linux\Downloads\06_12\src/main.c:148
+                GPIO_4digit_segment_0();            // 두번쨰 자리에 1을 출력해주겠다. 
+                                                    // 이러면 와일문을 돌면서 1, 0이 반복 출력되면서 잔상효과로 세그먼트에 값 출력
+                delay_count();
+            }
+        
+         else if(count==2)
+ 112:	f1b8 0f02 	cmp.w	r8, #2	; 0x2
+ 116:	d112      	bne.n	28 <GPIO_4digit_segment_DIG_2+0x28>
+C:\Users\Linux\Downloads\06_12\src/main.c:150
+            {
+                GPIO_4digit_segment_DIG_2();        
+ 118:	f7ff fffe 	bl	0 <GPIO_4digit_segment_DIG_2>
+C:\Users\Linux\Downloads\06_12\src/main.c:151
+                GPIO_4digit_segment_1();
+ 11c:	f7ff fffe 	bl	0 <GPIO_4digit_segment_1>
+C:\Users\Linux\Downloads\06_12\src/main.c:152
+                delay_count();
+ 120:	f7ff fffe 	bl	0 <delay_count>
+C:\Users\Linux\Downloads\06_12\src/main.c:154
+            
+                GPIO_4digit_segment_DIG_3();        
+ 124:	f7ff fffe 	bl	0 <GPIO_4digit_segment_DIG_3>
+C:\Users\Linux\Downloads\06_12\src/main.c:155
+                GPIO_4digit_segment_0();
+ 128:	f7ff fffe 	bl	0 <GPIO_4digit_segment_0>
+C:\Users\Linux\Downloads\06_12\src/main.c:156
+                delay_count();
+ 12c:	f7ff fffe 	bl	0 <delay_count>
+C:\Users\Linux\Downloads\06_12\src/main.c:158
+            
+                GPIO_4digit_segment_DIG_4();        
+ 130:	f7ff fffe 	bl	0 <GPIO_4digit_segment_DIG_4>
+C:\Users\Linux\Downloads\06_12\src/main.c:159
+                GPIO_4digit_segment_0();
+ 134:	f7ff fffe 	bl	0 <GPIO_4digit_segment_0>
+C:\Users\Linux\Downloads\06_12\src/main.c:160
+                delay_count();
+ 138:	f7ff fffe 	bl	0 <delay_count>
+ 13c:	e051      	b.n	1e2 <main+0x1e2>
+C:\Users\Linux\Downloads\06_12\src/main.c:163
+            }
+        
+        else if(count==3)
+ 13e:	f1b8 0f03 	cmp.w	r8, #3	; 0x3
+ 142:	d104      	bne.n	c <GPIO_4digit_segment_DIG_2+0xc>
+C:\Users\Linux\Downloads\06_12\src/main.c:165
+            {
+                GPIO_4digit_segment_DIG_2();       
+ 144:	f7ff fffe 	bl	0 <GPIO_4digit_segment_DIG_2>
+C:\Users\Linux\Downloads\06_12\src/main.c:166
+                GPIO_4digit_segment_1();
+ 148:	f7ff fffe 	bl	0 <GPIO_4digit_segment_1>
+ 14c:	e02e      	b.n	1ac <main+0x1ac>
+C:\Users\Linux\Downloads\06_12\src/main.c:178
+                GPIO_4digit_segment_DIG_4();       
+                GPIO_4digit_segment_0();
+                delay_count();
+            }
+         
+        else if(count==4)
+ 14e:	f1b8 0f04 	cmp.w	r8, #4	; 0x4
+ 152:	d104      	bne.n	c <GPIO_4digit_segment_DIG_2+0xc>
+C:\Users\Linux\Downloads\06_12\src/main.c:180
+            {
+                GPIO_4digit_segment_DIG_2();       
+ 154:	f7ff fffe 	bl	0 <GPIO_4digit_segment_DIG_2>
+C:\Users\Linux\Downloads\06_12\src/main.c:181
+                GPIO_4digit_segment_2();
+ 158:	f7ff fffe 	bl	0 <GPIO_4digit_segment_2>
+ 15c:	e7e0      	b.n	120 <main+0x120>
+C:\Users\Linux\Downloads\06_12\src/main.c:193
+                GPIO_4digit_segment_DIG_4();       
+                GPIO_4digit_segment_0();
+                delay_count();
+            }
+         
+        else if(count==5)
+ 15e:	f1b8 0f05 	cmp.w	r8, #5	; 0x5
+ 162:	d104      	bne.n	c <GPIO_4digit_segment_DIG_2+0xc>
+C:\Users\Linux\Downloads\06_12\src/main.c:195
+            {
+                GPIO_4digit_segment_DIG_2();       
+ 164:	f7ff fffe 	bl	0 <GPIO_4digit_segment_DIG_2>
+C:\Users\Linux\Downloads\06_12\src/main.c:196
+                GPIO_4digit_segment_2();
+ 168:	f7ff fffe 	bl	0 <GPIO_4digit_segment_2>
+ 16c:	e01e      	b.n	1ac <main+0x1ac>
+C:\Users\Linux\Downloads\06_12\src/main.c:208
+                GPIO_4digit_segment_DIG_4();       
+                GPIO_4digit_segment_0();
+                delay_count();
+            }
+        
+        else if(count==6)
+ 16e:	f1b8 0f06 	cmp.w	r8, #6	; 0x6
+ 172:	d104      	bne.n	c <GPIO_4digit_segment_DIG_2+0xc>
+C:\Users\Linux\Downloads\06_12\src/main.c:210
+            {
+                GPIO_4digit_segment_DIG_2();       
+ 174:	f7ff fffe 	bl	0 <GPIO_4digit_segment_DIG_2>
+C:\Users\Linux\Downloads\06_12\src/main.c:211
+                GPIO_4digit_segment_3();
+ 178:	f7ff fffe 	bl	0 <GPIO_4digit_segment_3>
+ 17c:	e7d0      	b.n	120 <main+0x120>
+C:\Users\Linux\Downloads\06_12\src/main.c:222
+            
+                GPIO_4digit_segment_DIG_4();       
+                GPIO_4digit_segment_0();
+                delay_count();
+            }
+        else if(count==7)
+ 17e:	f1b8 0f07 	cmp.w	r8, #7	; 0x7
+ 182:	d104      	bne.n	c <GPIO_4digit_segment_DIG_2+0xc>
+C:\Users\Linux\Downloads\06_12\src/main.c:224
+            {
+                GPIO_4digit_segment_DIG_2();       
+ 184:	f7ff fffe 	bl	0 <GPIO_4digit_segment_DIG_2>
+C:\Users\Linux\Downloads\06_12\src/main.c:225
+                GPIO_4digit_segment_3();
+ 188:	f7ff fffe 	bl	0 <GPIO_4digit_segment_3>
+ 18c:	e00e      	b.n	1ac <main+0x1ac>
+C:\Users\Linux\Downloads\06_12\src/main.c:236
+            
+                GPIO_4digit_segment_DIG_4();       
+                GPIO_4digit_segment_0();
+                delay_count();
+            }
+        else if(count==8)
+ 18e:	f1b8 0f08 	cmp.w	r8, #8	; 0x8
+ 192:	d104      	bne.n	c <GPIO_4digit_segment_DIG_2+0xc>
+C:\Users\Linux\Downloads\06_12\src/main.c:238
+            {
+                GPIO_4digit_segment_DIG_2();       
+ 194:	f7ff fffe 	bl	0 <GPIO_4digit_segment_DIG_2>
+C:\Users\Linux\Downloads\06_12\src/main.c:239
+                GPIO_4digit_segment_4();
+ 198:	f7ff fffe 	bl	0 <GPIO_4digit_segment_4>
+ 19c:	e7c0      	b.n	120 <main+0x120>
+C:\Users\Linux\Downloads\06_12\src/main.c:250
+            
+                GPIO_4digit_segment_DIG_4();       
+                GPIO_4digit_segment_0();
+                delay_count();
+            }
+        else if(count==9)
+ 19e:	f1b8 0f09 	cmp.w	r8, #9	; 0x9
+ 1a2:	d10a      	bne.n	18 <GPIO_4digit_segment_DIG_2+0x18>
+C:\Users\Linux\Downloads\06_12\src/main.c:252
+            {
+                GPIO_4digit_segment_DIG_2();       
+ 1a4:	f7ff fffe 	bl	0 <GPIO_4digit_segment_DIG_2>
+C:\Users\Linux\Downloads\06_12\src/main.c:253
+                GPIO_4digit_segment_4();
+ 1a8:	f7ff fffe 	bl	0 <GPIO_4digit_segment_4>
+C:\Users\Linux\Downloads\06_12\src/main.c:254
+                delay_count();
+ 1ac:	f7ff fffe 	bl	0 <delay_count>
+C:\Users\Linux\Downloads\06_12\src/main.c:256
+            
+                GPIO_4digit_segment_DIG_3();       
+ 1b0:	f7ff fffe 	bl	0 <GPIO_4digit_segment_DIG_3>
+C:\Users\Linux\Downloads\06_12\src/main.c:257
+                GPIO_4digit_segment_5();
+ 1b4:	f7ff fffe 	bl	0 <GPIO_4digit_segment_5>
+ 1b8:	e7b8      	b.n	12c <main+0x12c>
+C:\Users\Linux\Downloads\06_12\src/main.c:264
+            
+                GPIO_4digit_segment_DIG_4();       
+                GPIO_4digit_segment_0();
+                delay_count();
+            }
+        else if(count==10)
+ 1ba:	f1b8 0f0a 	cmp.w	r8, #10	; 0xa
+ 1be:	d104      	bne.n	c <GPIO_4digit_segment_DIG_2+0xc>
+C:\Users\Linux\Downloads\06_12\src/main.c:266
+            {
+                GPIO_4digit_segment_DIG_2();       
+ 1c0:	f7ff fffe 	bl	0 <GPIO_4digit_segment_DIG_2>
+C:\Users\Linux\Downloads\06_12\src/main.c:267
+                GPIO_4digit_segment_5();
+ 1c4:	f7ff fffe 	bl	0 <GPIO_4digit_segment_5>
+ 1c8:	e7aa      	b.n	120 <main+0x120>
+C:\Users\Linux\Downloads\06_12\src/main.c:282
+            }
+        
+        
+        else
+            {
+                GPIO_SetBits(GPIOA, GPIO_Pin_4);            //6번핀이 부저, 4,5번이 led 끈상태로 시작
+ 1ca:	4853      	ldr	r0, [pc, #332]	(318 <main+0x318>)
+ 1cc:	2110      	movs	r1, #16
+ 1ce:	f7ff fffe 	bl	0 <GPIO_SetBits>
+C:\Users\Linux\Downloads\06_12\src/main.c:283
+                GPIO_4digit_segment_DIG_4();       
+ 1d2:	f7ff fffe 	bl	0 <GPIO_4digit_segment_DIG_4>
+C:\Users\Linux\Downloads\06_12\src/main.c:284
+                GPIO_4digit_segment_0();
+ 1d6:	f7ff fffe 	bl	0 <GPIO_4digit_segment_0>
+C:\Users\Linux\Downloads\06_12\src/main.c:285
+                delay_count();
+ 1da:	f7ff fffe 	bl	0 <delay_count>
+ 1de:	f04f 0800 	mov.w	r8, #0	; 0x0
+C:\Users\Linux\Downloads\06_12\src/main.c:289
+                count=0;
+            }
+        
+        if(Receive_data!=0||ok!=0)
+ 1e2:	9a01      	ldr	r2, [sp, #4]
+ 1e4:	b91a      	cbnz	r2, 1ee <main+0x1ee>
+ 1e6:	f1bb 0f00 	cmp.w	fp, #0	; 0x0
+ 1ea:	f43f af53 	beq.w	94 <main+0x94>
+C:\Users\Linux\Downloads\06_12\src/main.c:291
+       {
+            GPIO_ResetBits(GPIOA, GPIO_Pin_4);            //6번핀이 부저, 4,5번이 led 끈상태로 시작
+ 1ee:	484a      	ldr	r0, [pc, #296]	(318 <main+0x318>)
+ 1f0:	2110      	movs	r1, #16
+ 1f2:	f7ff fffe 	bl	0 <GPIO_ResetBits>
+C:\Users\Linux\Downloads\06_12\src/main.c:292
+            GPIO_SetBits(GPIOA, GPIO_Pin_5);            //6번핀이 부저, 4,5번이 led 끈상태로 시작
+ 1f6:	2400      	movs	r4, #0
+ 1f8:	4847      	ldr	r0, [pc, #284]	(318 <main+0x318>)
+ 1fa:	2120      	movs	r1, #32
+ 1fc:	f7ff fffe 	bl	0 <GPIO_SetBits>
+ 200:	46a1      	mov	r9, r4
+ 202:	f04f 0a06 	mov.w	sl, #6	; 0x6
+ 206:	e0fa      	b.n	3fe <main+0x3fe>
+C:\Users\Linux\Downloads\06_12\src/main.c:299
+         int n = 0;
+         int number=6;
+     while(number--)
+    {
+        //printf는 Token2Shell에서 확인 가능. 다음 시간에 설명할 예정.
+        printf("-----------------------------\n");
+ 208:	484b      	ldr	r0, [pc, #300]	(338 <main+0x338>)
+ 20a:	f7ff fffe 	bl	0 <puts>
+C:\Users\Linux\Downloads\06_12\src/main.c:302
+
+
+        CCR1_Val = m_speed[m];
+ 20e:	4b44      	ldr	r3, [pc, #272]	(320 <main+0x320>)
+ 210:	4f44      	ldr	r7, [pc, #272]	(324 <main+0x324>)
+ 212:	f853 1024 	ldr.w	r1, [r3, r4, lsl #2]
+C:\Users\Linux\Downloads\06_12\src/main.c:303
+        printf("CCR1_Val : %d\n", m_speed[m]);
+ 216:	4849      	ldr	r0, [pc, #292]	(33c <main+0x33c>)
+C:\Users\Linux\Downloads\06_12\src/main.c:302
+    {
+        //printf는 Token2Shell에서 확인 가능. 다음 시간에 설명할 예정.
+        printf("-----------------------------\n");
+
+
+        CCR1_Val = m_speed[m];
+ 218:	8039      	strh	r1, [r7, #0]
+C:\Users\Linux\Downloads\06_12\src/main.c:303
+        printf("CCR1_Val : %d\n", m_speed[m]);
+ 21a:	f7ff fffe 	bl	0 <printf>
+C:\Users\Linux\Downloads\06_12\src/main.c:306
+
+        // 아래 두 줄은 PWM에서 출력 채널을 선택하여 Pulse값을 입력하는 것과
+        TIM_OCInitStructure_PWM.TIM_Pulse = CCR1_Val;
+ 21e:	4d48      	ldr	r5, [pc, #288]	(340 <main+0x340>)
+ 220:	883b      	ldrh	r3, [r7, #0]
+C:\Users\Linux\Downloads\06_12\src/main.c:307
+        TIM_OC1Init(TIM4, &TIM_OCInitStructure_PWM);
+ 222:	4848      	ldr	r0, [pc, #288]	(344 <main+0x344>)
+C:\Users\Linux\Downloads\06_12\src/main.c:306
+
+        CCR1_Val = m_speed[m];
+        printf("CCR1_Val : %d\n", m_speed[m]);
+
+        // 아래 두 줄은 PWM에서 출력 채널을 선택하여 Pulse값을 입력하는 것과
+        TIM_OCInitStructure_PWM.TIM_Pulse = CCR1_Val;
+ 224:	80eb      	strh	r3, [r5, #6]
+C:\Users\Linux\Downloads\06_12\src/main.c:307
+        TIM_OC1Init(TIM4, &TIM_OCInitStructure_PWM);
+ 226:	4629      	mov	r1, r5
+ 228:	f7ff fffe 	bl	0 <TIM_OC1Init>
+C:\Users\Linux\Downloads\06_12\src/main.c:311
+
+       
+       // 모터 회전 방향 전환
+      if(n%2 ==0)
+ 22c:	f009 0601 	and.w	r6, r9, #1	; 0x1
+ 230:	f1b9 0f00 	cmp.w	r9, #0	; 0x0
+ 234:	d10c      	bne.n	250 <main+0x250>
+C:\Users\Linux\Downloads\06_12\src/main.c:313
+          {
+        GPIO_ResetBits(GPIOB, GPIO_Pin_12);     // 정방향
+ 236:	4844      	ldr	r0, [pc, #272]	(348 <main+0x348>)
+ 238:	f44f 5180 	mov.w	r1, #4096	; 0x1000
+ 23c:	f7ff fffe 	bl	0 <GPIO_ResetBits>
+C:\Users\Linux\Downloads\06_12\src/main.c:314
+        TIM_OCInitStructure_PWM.TIM_Pulse = CCR1_Val;
+ 240:	883f      	ldrh	r7, [r7, #0]
+C:\Users\Linux\Downloads\06_12\src/main.c:315
+        TIM_OC1Init(TIM4, &TIM_OCInitStructure_PWM);
+ 242:	4840      	ldr	r0, [pc, #256]	(344 <main+0x344>)
+ 244:	4629      	mov	r1, r5
+C:\Users\Linux\Downloads\06_12\src/main.c:314
+       
+       // 모터 회전 방향 전환
+      if(n%2 ==0)
+          {
+        GPIO_ResetBits(GPIOB, GPIO_Pin_12);     // 정방향
+        TIM_OCInitStructure_PWM.TIM_Pulse = CCR1_Val;
+ 246:	80ef      	strh	r7, [r5, #6]
+C:\Users\Linux\Downloads\06_12\src/main.c:315
+        TIM_OC1Init(TIM4, &TIM_OCInitStructure_PWM);
+ 248:	f7ff fffe 	bl	0 <TIM_OC1Init>
+C:\Users\Linux\Downloads\06_12\src/main.c:316
+           delay_m1();
+ 24c:	f7ff fffe 	bl	0 <delay_m1>
+C:\Users\Linux\Downloads\06_12\src/main.c:319
+        }
+    
+        if(n%2 ==1){
+ 250:	f1b9 0f00 	cmp.w	r9, #0	; 0x0
+ 254:	d00d      	beq.n	272 <main+0x272>
+C:\Users\Linux\Downloads\06_12\src/main.c:320
+       GPIO_SetBits(GPIOB, GPIO_Pin_12);     // 역방향
+ 256:	483c      	ldr	r0, [pc, #240]	(348 <main+0x348>)
+ 258:	f44f 5180 	mov.w	r1, #4096	; 0x1000
+ 25c:	f7ff fffe 	bl	0 <GPIO_SetBits>
+C:\Users\Linux\Downloads\06_12\src/main.c:321
+         TIM_OCInitStructure_PWM.TIM_Pulse = CCR1_Val;
+ 260:	4b30      	ldr	r3, [pc, #192]	(324 <main+0x324>)
+ 262:	4937      	ldr	r1, [pc, #220]	(340 <main+0x340>)
+ 264:	881b      	ldrh	r3, [r3, #0]
+C:\Users\Linux\Downloads\06_12\src/main.c:322
+        TIM_OC1Init(TIM4, &TIM_OCInitStructure_PWM);
+ 266:	4837      	ldr	r0, [pc, #220]	(344 <main+0x344>)
+C:\Users\Linux\Downloads\06_12\src/main.c:321
+           delay_m1();
+        }
+    
+        if(n%2 ==1){
+       GPIO_SetBits(GPIOB, GPIO_Pin_12);     // 역방향
+         TIM_OCInitStructure_PWM.TIM_Pulse = CCR1_Val;
+ 268:	80cb      	strh	r3, [r1, #6]
+C:\Users\Linux\Downloads\06_12\src/main.c:322
+        TIM_OC1Init(TIM4, &TIM_OCInitStructure_PWM);
+ 26a:	f7ff fffe 	bl	0 <TIM_OC1Init>
+C:\Users\Linux\Downloads\06_12\src/main.c:323
+        delay_m2();
+ 26e:	f7ff fffe 	bl	0 <delay_m2>
+C:\Users\Linux\Downloads\06_12\src/main.c:326
+    }
+        
+        m++;
+ 272:	3401      	adds	r4, #1
+C:\Users\Linux\Downloads\06_12\src/main.c:328
+
+        if(m==3)
+ 274:	2c03      	cmp	r4, #3
+ 276:	f040 80c2 	bne.w	3fe <main+0x3fe>
+C:\Users\Linux\Downloads\06_12\src/main.c:330
+        {
+      if(count==1)
+ 27a:	f1b8 0f01 	cmp.w	r8, #1	; 0x1
+ 27e:	d10c      	bne.n	29a <main+0x29a>
+C:\Users\Linux\Downloads\06_12\src/main.c:332
+       {
+         CCR1_Val = 0 ;
+ 280:	4b28      	ldr	r3, [pc, #160]	(324 <main+0x324>)
+C:\Users\Linux\Downloads\06_12\src/main.c:333
+        TIM_OCInitStructure_PWM.TIM_Pulse = CCR1_Val;
+ 282:	492f      	ldr	r1, [pc, #188]	(340 <main+0x340>)
+C:\Users\Linux\Downloads\06_12\src/main.c:332
+
+        if(m==3)
+        {
+      if(count==1)
+       {
+         CCR1_Val = 0 ;
+ 284:	f04f 0200 	mov.w	r2, #0	; 0x0
+ 288:	801a      	strh	r2, [r3, #0]
+C:\Users\Linux\Downloads\06_12\src/main.c:333
+        TIM_OCInitStructure_PWM.TIM_Pulse = CCR1_Val;
+ 28a:	80ca      	strh	r2, [r1, #6]
+C:\Users\Linux\Downloads\06_12\src/main.c:334
+        TIM_OC1Init(TIM4, &TIM_OCInitStructure_PWM);
+ 28c:	482d      	ldr	r0, [pc, #180]	(344 <main+0x344>)
+ 28e:	f7ff fffe 	bl	0 <TIM_OC1Init>
+C:\Users\Linux\Downloads\06_12\src/main.c:335
+        if(n%2 == 0) // 정방향
+ 292:	2e00      	cmp	r6, #0
+ 294:	f040 80a4 	bne.w	3e0 <main+0x3e0>
+ 298:	e0a0      	b.n	3dc <main+0x3dc>
+C:\Users\Linux\Downloads\06_12\src/main.c:339
+            delay_m3();
+       }
+   
+      if(count==2)
+ 29a:	f1b8 0f02 	cmp.w	r8, #2	; 0x2
+ 29e:	d10c      	bne.n	2ba <main+0x2ba>
+C:\Users\Linux\Downloads\06_12\src/main.c:341
+       {
+         CCR1_Val = 0 ;
+ 2a0:	4b20      	ldr	r3, [pc, #128]	(324 <main+0x324>)
+C:\Users\Linux\Downloads\06_12\src/main.c:342
+        TIM_OCInitStructure_PWM.TIM_Pulse = CCR1_Val;
+ 2a2:	4927      	ldr	r1, [pc, #156]	(340 <main+0x340>)
+C:\Users\Linux\Downloads\06_12\src/main.c:341
+            delay_m3();
+       }
+   
+      if(count==2)
+       {
+         CCR1_Val = 0 ;
+ 2a4:	f04f 0200 	mov.w	r2, #0	; 0x0
+ 2a8:	801a      	strh	r2, [r3, #0]
+C:\Users\Linux\Downloads\06_12\src/main.c:342
+        TIM_OCInitStructure_PWM.TIM_Pulse = CCR1_Val;
+ 2aa:	80ca      	strh	r2, [r1, #6]
+C:\Users\Linux\Downloads\06_12\src/main.c:343
+        TIM_OC1Init(TIM4, &TIM_OCInitStructure_PWM);
+ 2ac:	4825      	ldr	r0, [pc, #148]	(344 <main+0x344>)
+ 2ae:	f7ff fffe 	bl	0 <TIM_OC1Init>
+C:\Users\Linux\Downloads\06_12\src/main.c:344
+       if(n%2 == 0){
+ 2b2:	2e00      	cmp	r6, #0
+ 2b4:	f040 8094 	bne.w	3e0 <main+0x3e0>
+ 2b8:	e08e      	b.n	3d8 <main+0x3d8>
+C:\Users\Linux\Downloads\06_12\src/main.c:350
+         delay_m3();
+         delay_m3();
+       }
+       }
+   
+      if(count==3)
+ 2ba:	f1b8 0f03 	cmp.w	r8, #3	; 0x3
+ 2be:	d10c      	bne.n	2da <main+0x2da>
+C:\Users\Linux\Downloads\06_12\src/main.c:352
+       {
+         CCR1_Val = 0 ;
+ 2c0:	4b18      	ldr	r3, [pc, #96]	(324 <main+0x324>)
+C:\Users\Linux\Downloads\06_12\src/main.c:353
+        TIM_OCInitStructure_PWM.TIM_Pulse = CCR1_Val;
+ 2c2:	491f      	ldr	r1, [pc, #124]	(340 <main+0x340>)
+C:\Users\Linux\Downloads\06_12\src/main.c:352
+       }
+       }
+   
+      if(count==3)
+       {
+         CCR1_Val = 0 ;
+ 2c4:	f04f 0200 	mov.w	r2, #0	; 0x0
+ 2c8:	801a      	strh	r2, [r3, #0]
+C:\Users\Linux\Downloads\06_12\src/main.c:353
+        TIM_OCInitStructure_PWM.TIM_Pulse = CCR1_Val;
+ 2ca:	80ca      	strh	r2, [r1, #6]
+C:\Users\Linux\Downloads\06_12\src/main.c:354
+        TIM_OC1Init(TIM4, &TIM_OCInitStructure_PWM);
+ 2cc:	481d      	ldr	r0, [pc, #116]	(344 <main+0x344>)
+ 2ce:	f7ff fffe 	bl	0 <TIM_OC1Init>
+C:\Users\Linux\Downloads\06_12\src/main.c:355
+       if(n%2 == 0){
+ 2d2:	2e00      	cmp	r6, #0
+ 2d4:	f040 8084 	bne.w	3e0 <main+0x3e0>
+ 2d8:	e07c      	b.n	3d4 <main+0x3d4>
+C:\Users\Linux\Downloads\06_12\src/main.c:362
+            delay_m3();
+            delay_m3();
+       }
+       }
+   
+      if(count==4)
+ 2da:	f1b8 0f04 	cmp.w	r8, #4	; 0x4
+ 2de:	d10b      	bne.n	2f8 <main+0x2f8>
+C:\Users\Linux\Downloads\06_12\src/main.c:364
+       {
+         CCR1_Val = 0 ;
+ 2e0:	4b10      	ldr	r3, [pc, #64]	(324 <main+0x324>)
+C:\Users\Linux\Downloads\06_12\src/main.c:365
+        TIM_OCInitStructure_PWM.TIM_Pulse = CCR1_Val;
+ 2e2:	4917      	ldr	r1, [pc, #92]	(340 <main+0x340>)
+C:\Users\Linux\Downloads\06_12\src/main.c:364
+       }
+       }
+   
+      if(count==4)
+       {
+         CCR1_Val = 0 ;
+ 2e4:	f04f 0200 	mov.w	r2, #0	; 0x0
+ 2e8:	801a      	strh	r2, [r3, #0]
+C:\Users\Linux\Downloads\06_12\src/main.c:365
+        TIM_OCInitStructure_PWM.TIM_Pulse = CCR1_Val;
+ 2ea:	80ca      	strh	r2, [r1, #6]
+C:\Users\Linux\Downloads\06_12\src/main.c:366
+        TIM_OC1Init(TIM4, &TIM_OCInitStructure_PWM);
+ 2ec:	4815      	ldr	r0, [pc, #84]	(344 <main+0x344>)
+ 2ee:	f7ff fffe 	bl	0 <TIM_OC1Init>
+C:\Users\Linux\Downloads\06_12\src/main.c:367
+       if(n%2 == 0){
+ 2f2:	2e00      	cmp	r6, #0
+ 2f4:	d174      	bne.n	3e0 <main+0x3e0>
+ 2f6:	e06b      	b.n	3d0 <main+0x3d0>
+C:\Users\Linux\Downloads\06_12\src/main.c:375
+            delay_m3();
+            delay_m3();
+       }
+       }
+   
+      if(count==5)
+ 2f8:	f1b8 0f05 	cmp.w	r8, #5	; 0x5
+ 2fc:	d126      	bne.n	34c <main+0x34c>
+C:\Users\Linux\Downloads\06_12\src/main.c:377
+       {
+         CCR1_Val = 0 ;
+ 2fe:	4b09      	ldr	r3, [pc, #36]	(324 <main+0x324>)
+C:\Users\Linux\Downloads\06_12\src/main.c:378
+        TIM_OCInitStructure_PWM.TIM_Pulse = CCR1_Val;
+ 300:	490f      	ldr	r1, [pc, #60]	(340 <main+0x340>)
+C:\Users\Linux\Downloads\06_12\src/main.c:377
+       }
+       }
+   
+      if(count==5)
+       {
+         CCR1_Val = 0 ;
+ 302:	f04f 0200 	mov.w	r2, #0	; 0x0
+ 306:	801a      	strh	r2, [r3, #0]
+C:\Users\Linux\Downloads\06_12\src/main.c:378
+        TIM_OCInitStructure_PWM.TIM_Pulse = CCR1_Val;
+ 308:	80ca      	strh	r2, [r1, #6]
+C:\Users\Linux\Downloads\06_12\src/main.c:379
+        TIM_OC1Init(TIM4, &TIM_OCInitStructure_PWM);
+ 30a:	480e      	ldr	r0, [pc, #56]	(344 <main+0x344>)
+ 30c:	f7ff fffe 	bl	0 <TIM_OC1Init>
+C:\Users\Linux\Downloads\06_12\src/main.c:380
+       if(n%2 == 0){
+ 310:	2e00      	cmp	r6, #0
+ 312:	d165      	bne.n	3e0 <main+0x3e0>
+ 314:	e05a      	b.n	3cc <main+0x3cc>
+ 316:	46c0      	nop			(mov r8, r8)
+ 318:	40010800 	.word	0x40010800
+ 31c:	40011000 	.word	0x40011000
+	...
+ 328:	40004800 	.word	0x40004800
+ 32c:	00000000 	.word	0x00000000
+ 330:	00000019 	.word	0x00000019
+ 334:	00000028 	.word	0x00000028
+ 338:	0000003a 	.word	0x0000003a
+ 33c:	00000058 	.word	0x00000058
+ 340:	00000000 	.word	0x00000000
+ 344:	40000800 	.word	0x40000800
+ 348:	40010c00 	.word	0x40010c00
+C:\Users\Linux\Downloads\06_12\src/main.c:389
+            delay_m3();
+            delay_m3();
+       }
+       }
+   
+      if(count==6)
+ 34c:	f1b8 0f06 	cmp.w	r8, #6	; 0x6
+ 350:	d10b      	bne.n	36a <main+0x36a>
+C:\Users\Linux\Downloads\06_12\src/main.c:391
+       {
+         CCR1_Val = 0 ;
+ 352:	4b3f      	ldr	r3, [pc, #252]	(450 <main+0x450>)
+C:\Users\Linux\Downloads\06_12\src/main.c:392
+        TIM_OCInitStructure_PWM.TIM_Pulse = CCR1_Val;
+ 354:	493f      	ldr	r1, [pc, #252]	(454 <main+0x454>)
+C:\Users\Linux\Downloads\06_12\src/main.c:391
+       }
+       }
+   
+      if(count==6)
+       {
+         CCR1_Val = 0 ;
+ 356:	f04f 0200 	mov.w	r2, #0	; 0x0
+ 35a:	801a      	strh	r2, [r3, #0]
+C:\Users\Linux\Downloads\06_12\src/main.c:392
+        TIM_OCInitStructure_PWM.TIM_Pulse = CCR1_Val;
+ 35c:	80ca      	strh	r2, [r1, #6]
+C:\Users\Linux\Downloads\06_12\src/main.c:393
+        TIM_OC1Init(TIM4, &TIM_OCInitStructure_PWM);
+ 35e:	483e      	ldr	r0, [pc, #248]	(458 <main+0x458>)
+ 360:	f7ff fffe 	bl	0 <TIM_OC1Init>
+C:\Users\Linux\Downloads\06_12\src/main.c:394
+       if(n%2 == 0){
+ 364:	2e00      	cmp	r6, #0
+ 366:	d13b      	bne.n	3e0 <main+0x3e0>
+ 368:	e02e      	b.n	3c8 <main+0x3c8>
+C:\Users\Linux\Downloads\06_12\src/main.c:404
+            delay_m3();
+            delay_m3();
+       }
+       }
+   
+      if(count==7)
+ 36a:	f1b8 0f07 	cmp.w	r8, #7	; 0x7
+ 36e:	d10a      	bne.n	386 <main+0x386>
+C:\Users\Linux\Downloads\06_12\src/main.c:406
+       {
+         CCR1_Val = 0 ;
+ 370:	4b37      	ldr	r3, [pc, #220]	(450 <main+0x450>)
+C:\Users\Linux\Downloads\06_12\src/main.c:407
+        TIM_OCInitStructure_PWM.TIM_Pulse = CCR1_Val;
+ 372:	4938      	ldr	r1, [pc, #224]	(454 <main+0x454>)
+C:\Users\Linux\Downloads\06_12\src/main.c:406
+       }
+       }
+   
+      if(count==7)
+       {
+         CCR1_Val = 0 ;
+ 374:	f04f 0200 	mov.w	r2, #0	; 0x0
+ 378:	801a      	strh	r2, [r3, #0]
+C:\Users\Linux\Downloads\06_12\src/main.c:407
+        TIM_OCInitStructure_PWM.TIM_Pulse = CCR1_Val;
+ 37a:	80ca      	strh	r2, [r1, #6]
+C:\Users\Linux\Downloads\06_12\src/main.c:408
+        TIM_OC1Init(TIM4, &TIM_OCInitStructure_PWM);
+ 37c:	4836      	ldr	r0, [pc, #216]	(458 <main+0x458>)
+ 37e:	f7ff fffe 	bl	0 <TIM_OC1Init>
+C:\Users\Linux\Downloads\06_12\src/main.c:409
+       if(n%2 == 0){
+ 382:	bb6e      	cbnz	r6, 3e0 <main+0x3e0>
+ 384:	e01e      	b.n	3c4 <main+0x3c4>
+C:\Users\Linux\Downloads\06_12\src/main.c:420
+            delay_m3();
+            delay_m3();
+       }
+       }
+   
+      if(count==8)
+ 386:	f1b8 0f08 	cmp.w	r8, #8	; 0x8
+ 38a:	d10a      	bne.n	3a2 <main+0x3a2>
+C:\Users\Linux\Downloads\06_12\src/main.c:422
+       {
+         CCR1_Val = 0 ;
+ 38c:	4b30      	ldr	r3, [pc, #192]	(450 <main+0x450>)
+C:\Users\Linux\Downloads\06_12\src/main.c:423
+        TIM_OCInitStructure_PWM.TIM_Pulse = CCR1_Val;
+ 38e:	4931      	ldr	r1, [pc, #196]	(454 <main+0x454>)
+C:\Users\Linux\Downloads\06_12\src/main.c:422
+       }
+       }
+   
+      if(count==8)
+       {
+         CCR1_Val = 0 ;
+ 390:	f04f 0200 	mov.w	r2, #0	; 0x0
+ 394:	801a      	strh	r2, [r3, #0]
+C:\Users\Linux\Downloads\06_12\src/main.c:423
+        TIM_OCInitStructure_PWM.TIM_Pulse = CCR1_Val;
+ 396:	80ca      	strh	r2, [r1, #6]
+C:\Users\Linux\Downloads\06_12\src/main.c:424
+        TIM_OC1Init(TIM4, &TIM_OCInitStructure_PWM);
+ 398:	482f      	ldr	r0, [pc, #188]	(458 <main+0x458>)
+ 39a:	f7ff fffe 	bl	0 <TIM_OC1Init>
+C:\Users\Linux\Downloads\06_12\src/main.c:425
+       if(n%2 == 0){
+ 39e:	b9fe      	cbnz	r6, 3e0 <main+0x3e0>
+ 3a0:	e00e      	b.n	3c0 <main+0x3c0>
+C:\Users\Linux\Downloads\06_12\src/main.c:437
+            delay_m3();
+            delay_m3();
+       }
+       }
+   
+      if(count==9)
+ 3a2:	f1b8 0f09 	cmp.w	r8, #9	; 0x9
+ 3a6:	d11b      	bne.n	3e0 <main+0x3e0>
+C:\Users\Linux\Downloads\06_12\src/main.c:439
+       {
+         CCR1_Val = 0 ;
+ 3a8:	4b29      	ldr	r3, [pc, #164]	(450 <main+0x450>)
+C:\Users\Linux\Downloads\06_12\src/main.c:440
+        TIM_OCInitStructure_PWM.TIM_Pulse = CCR1_Val;
+ 3aa:	492a      	ldr	r1, [pc, #168]	(454 <main+0x454>)
+C:\Users\Linux\Downloads\06_12\src/main.c:439
+       }
+       }
+   
+      if(count==9)
+       {
+         CCR1_Val = 0 ;
+ 3ac:	f04f 0200 	mov.w	r2, #0	; 0x0
+ 3b0:	801a      	strh	r2, [r3, #0]
+C:\Users\Linux\Downloads\06_12\src/main.c:440
+        TIM_OCInitStructure_PWM.TIM_Pulse = CCR1_Val;
+ 3b2:	80ca      	strh	r2, [r1, #6]
+C:\Users\Linux\Downloads\06_12\src/main.c:441
+        TIM_OC1Init(TIM4, &TIM_OCInitStructure_PWM);
+ 3b4:	4828      	ldr	r0, [pc, #160]	(458 <main+0x458>)
+ 3b6:	f7ff fffe 	bl	0 <TIM_OC1Init>
+C:\Users\Linux\Downloads\06_12\src/main.c:442
+       if(n%2 == 0){
+ 3ba:	b9c6      	cbnz	r6, 34 <delay_m3+0x34>
+C:\Users\Linux\Downloads\06_12\src/main.c:443
+            delay_m3();
+ 3bc:	f7ff fffe 	bl	0 <delay_m3>
+C:\Users\Linux\Downloads\06_12\src/main.c:444
+            delay_m3();
+ 3c0:	f7ff fffe 	bl	0 <delay_m3>
+C:\Users\Linux\Downloads\06_12\src/main.c:445
+            delay_m3();
+ 3c4:	f7ff fffe 	bl	0 <delay_m3>
+C:\Users\Linux\Downloads\06_12\src/main.c:446
+            delay_m3();
+ 3c8:	f7ff fffe 	bl	0 <delay_m3>
+C:\Users\Linux\Downloads\06_12\src/main.c:447
+            delay_m3();
+ 3cc:	f7ff fffe 	bl	0 <delay_m3>
+C:\Users\Linux\Downloads\06_12\src/main.c:448
+            delay_m3();
+ 3d0:	f7ff fffe 	bl	0 <delay_m3>
+C:\Users\Linux\Downloads\06_12\src/main.c:449
+            delay_m3();
+ 3d4:	f7ff fffe 	bl	0 <delay_m3>
+C:\Users\Linux\Downloads\06_12\src/main.c:450
+            delay_m3();
+ 3d8:	f7ff fffe 	bl	0 <delay_m3>
+C:\Users\Linux\Downloads\06_12\src/main.c:451
+            delay_m3();
+ 3dc:	f7ff fffe 	bl	0 <delay_m3>
+C:\Users\Linux\Downloads\06_12\src/main.c:456
+       }
+       }
+   
+           m=0;
+           if(n==0)
+ 3e0:	f1b9 0f00 	cmp.w	r9, #0	; 0x0
+ 3e4:	d103      	bne.n	3ee <main+0x3ee>
+ 3e6:	464c      	mov	r4, r9
+ 3e8:	f109 0901 	add.w	r9, r9, #1	; 0x1
+ 3ec:	e007      	b.n	3fe <main+0x3fe>
+C:\Users\Linux\Downloads\06_12\src/main.c:458
+              n = 1;
+           else if(n==1)
+ 3ee:	f1b9 0f00 	cmp.w	r9, #0	; 0x0
+ 3f2:	d101      	bne.n	3f8 <main+0x3f8>
+ 3f4:	2400      	movs	r4, #0
+ 3f6:	e002      	b.n	3fe <main+0x3fe>
+ 3f8:	f04f 0900 	mov.w	r9, #0	; 0x0
+ 3fc:	464c      	mov	r4, r9
+C:\Users\Linux\Downloads\06_12\src/main.c:296
+            GPIO_ResetBits(GPIOA, GPIO_Pin_4);            //6번핀이 부저, 4,5번이 led 끈상태로 시작
+            GPIO_SetBits(GPIOA, GPIO_Pin_5);            //6번핀이 부저, 4,5번이 led 끈상태로 시작
+         int m = 0;
+         int n = 0;
+         int number=6;
+     while(number--)
+ 3fe:	f1ba 0a01 	subs.w	sl, sl, #1	; 0x1
+ 402:	f4bf af01 	bcs.w	208 <main+0x208>
+C:\Users\Linux\Downloads\06_12\src/main.c:466
+    
+      }     // end of while
+
+      } // end of ok if
+  
+    if(Receive_data!=0||ok!=0)
+ 406:	9b01      	ldr	r3, [sp, #4]
+ 408:	b91b      	cbnz	r3, 412 <main+0x412>
+ 40a:	f1bb 0f00 	cmp.w	fp, #0	; 0x0
+ 40e:	f43f ae41 	beq.w	94 <main+0x94>
+C:\Users\Linux\Downloads\06_12\src/main.c:468
+            {
+            GPIO_SetBits(GPIOA, GPIO_Pin_6);
+ 412:	2140      	movs	r1, #64
+ 414:	4811      	ldr	r0, [pc, #68]	(45c <main+0x45c>)
+ 416:	f7ff fffe 	bl	0 <GPIO_SetBits>
+C:\Users\Linux\Downloads\06_12\src/main.c:470
+
+            delay_m_button();   
+ 41a:	f7ff fffe 	bl	0 <delay_m_button>
+C:\Users\Linux\Downloads\06_12\src/main.c:471
+            delay_m_button();   
+ 41e:	f7ff fffe 	bl	0 <delay_m_button>
+C:\Users\Linux\Downloads\06_12\src/main.c:472
+            delay_m_button();   
+ 422:	f7ff fffe 	bl	0 <delay_m_button>
+C:\Users\Linux\Downloads\06_12\src/main.c:473
+            delay_m_button();   
+ 426:	f7ff fffe 	bl	0 <delay_m_button>
+C:\Users\Linux\Downloads\06_12\src/main.c:474
+            delay_m_button();
+ 42a:	f7ff fffe 	bl	0 <delay_m_button>
+C:\Users\Linux\Downloads\06_12\src/main.c:475
+            delay_m_button();
+ 42e:	f7ff fffe 	bl	0 <delay_m_button>
+C:\Users\Linux\Downloads\06_12\src/main.c:476
+            delay_m_button();
+ 432:	f7ff fffe 	bl	0 <delay_m_button>
+C:\Users\Linux\Downloads\06_12\src/main.c:477
+            delay_m_button();
+ 436:	f7ff fffe 	bl	0 <delay_m_button>
+C:\Users\Linux\Downloads\06_12\src/main.c:478
+            delay_m_button();            
+ 43a:	f7ff fffe 	bl	0 <delay_m_button>
+C:\Users\Linux\Downloads\06_12\src/main.c:479
+            GPIO_ResetBits(GPIOA, GPIO_Pin_6);
+ 43e:	2140      	movs	r1, #64
+ 440:	4806      	ldr	r0, [pc, #24]	(45c <main+0x45c>)
+ 442:	f7ff fffe 	bl	0 <GPIO_ResetBits>
+C:\Users\Linux\Downloads\06_12\src/main.c:481
+            
+            GPIO_ResetBits(GPIOA, GPIO_Pin_5);            //6번핀이 부저, 4,5번이 led 끈상태로 시작
+ 446:	4805      	ldr	r0, [pc, #20]	(45c <main+0x45c>)
+ 448:	2120      	movs	r1, #32
+ 44a:	f7ff fffe 	bl	0 <GPIO_ResetBits>
+ 44e:	e621      	b.n	fffffc46 <CCR4_Val+0xfffffc40>
+	...
+ 458:	40000800 	.word	0x40000800
+ 45c:	40010800 	.word	0x40010800
